@@ -1,2 +1,2 @@
-# Desenvolvimento-de-aplica-es-Modernas-e-escalaveis-com-microservi-es
-Serie - Desenvolvimento de aplicações Modernas e escalaveis com microserviços
+# Desenvolvimento aaplicações com microsserviços
+Serie com objetivo de melhorar conhecimento de desenvolvimento trabalhando com micro serviços 

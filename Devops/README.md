@@ -131,7 +131,6 @@ quando container morre, tudo se perde.
 
 ```
 
-
 ## Docker Client
 ```
 	° Containers
@@ -139,3 +138,9 @@ quando container morre, tudo se perde.
 	º Volumes
 	º Network
 ```
+
+
+## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
+
+
+

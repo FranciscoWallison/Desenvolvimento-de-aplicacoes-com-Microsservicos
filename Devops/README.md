@@ -139,8 +139,49 @@ quando container morre, tudo se perde.
 	º Network
 ```
 
-
 ## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
 
 
+## Comandos Docker
 
+#### docker run
+```
+	cmd : docker run hello-word
+```
+
+#### docker ps
+```
+	cmd: docker ps
+
+		Mostrar os container rodando
+
+	cmd: docker ps -a
+
+		Aqui tão todos os container criado e q não esta rodando
+
+```
+
+#### docker rm
+```
+	cmd: docker rm  (name, ID)
+
+		Remover o container pelo nome e ID
+
+```
+
+#### docker images
+```
+	cmd: docker images
+
+		Verifica imagens já criadas
+
+```
+
+#### docker rmi
+```
+	cmd: docker rmi (name, ID)
+
+		Remover o imagens pelo nome e ID.
+		obs: remova primeiro os containers
+
+```

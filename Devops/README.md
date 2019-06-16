@@ -189,4 +189,6 @@ quando container morre, tudo se perde.
 #### docker criando volume
 ```
 $ docker volume create --driver local --opt type=none --opt device=$(pwd) --opt o=bind teste_laravel_docker
+or
+$ docker volume create --driver local --opt type=none --opt device="$(pwd)" --opt o=bind teste_laravel_docker
 ```

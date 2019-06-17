@@ -141,6 +141,12 @@ quando container morre, tudo se perde.
 
 ## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
 
+### linux 
+Install docker
+
+```
+https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-16-04-pt
+```
 
 ## Comandos Docker
 

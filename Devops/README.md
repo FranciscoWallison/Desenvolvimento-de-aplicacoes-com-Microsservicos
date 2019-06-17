@@ -191,3 +191,10 @@ https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-n
 		obs: remova primeiro os containers
 
 ```
+
+#### docker criando volume
+```
+$ docker volume create --driver local --opt type=none --opt device=$(pwd) --opt o=bind teste_laravel_docker
+or
+$ docker volume create --driver local --opt type=none --opt device="$(pwd)" --opt o=bind teste_laravel_docker
+```

@@ -196,10 +196,10 @@ https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-n
 ```
 $ docker volume create --driver local --opt type=none --opt device=$(pwd) --opt o=bind teste_laravel_docker
 or
-$ docker volume create --driver local --opt type=none --opt device="$(pwd)" --opt o=bind teste_laravel_docker
+$ docker volume create --driver local --opt type=none --opt device="$(pwd)" --opt o=bind teste_laravel_docker
 ```
 
-#### docker-compose up -d 
+#### docker-compose up -d OR docker-compose up -d --build
 ```
 Criando as imagens e container
 ```

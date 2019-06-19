@@ -152,7 +152,7 @@ https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-n
 
 #### docker run
 ```
-	cmd : docker run hello-word
+	cmd : docker run --name teste -p 9090:80 hello-word
 ```
 
 #### docker ps
@@ -208,5 +208,17 @@ Criando as imagens e container
 ```
 Destruindo os container
 ```
+
+#### docker exec -it app-exeplo bash
+```
+Entra dentro da SO do container
+```
+
+#### Criando images aprti do prod
+```
+docker build -t chico/laravel-optmized -f Dockerfile.prod .
+```
+
+
 
 [Workflow laravel](https://github.com/FranciscoWallison/laradocker-publicando-imagem)

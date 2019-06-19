@@ -198,3 +198,15 @@ $ docker volume create --driver local --opt type=none --opt device=$(pwd) --opt 
 or
 $ docker volume create --driver local --opt type=none --opt device="$(pwd)" --opt o=bind teste_laravel_docker
 ```
+
+#### docker-compose up -d 
+```
+Criando as imagens e container
+```
+
+#### docker-compose down
+```
+Destruindo os container
+```
+
+[Workflow laravel](https://github.com/FranciscoWallison/laradocker-publicando-imagem)

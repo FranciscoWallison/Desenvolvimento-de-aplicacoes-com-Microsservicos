@@ -222,3 +222,20 @@ docker build -t chico/laravel-optmized -f Dockerfile.prod .
 
 
 [Workflow laravel](https://github.com/FranciscoWallison/laradocker-publicando-imagem)
+
+
+
+
+
+#### Conf Docker-machine
+```
+docker-machine ssh default
+sudo vi /etc/resolv.conf
+change nameserver to 8.8.8.8
+
+Conf shell 
+Exec command shell "#!/bin/bash"
+entrypoints
+
+```
+

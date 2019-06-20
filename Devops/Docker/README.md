@@ -214,7 +214,7 @@ Destruindo os container
 Entra dentro da SO do container
 ```
 
-#### Criando images aprti do prod
+#### Criando imagens partir do prod
 ```
 docker build -t chico/laravel-optmized -f Dockerfile.prod .
 ```

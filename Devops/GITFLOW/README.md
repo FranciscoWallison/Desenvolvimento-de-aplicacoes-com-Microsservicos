@@ -25,16 +25,6 @@ gerenciar a criações de novas features, correções de bugs e releases.
 
 ```
 
-#### Exemplo :x:
-```
- - Nova brash
- 	º git checkout -b formulario_de_registro :x:
- 	º git checkout -b bug_01 :x:
- - Pegando do master
- 	º git push origin master :x: 
-
-```
-
 #### Exemplo :heavy_check_mark:
 ```
 	º git checkout -b feature/registro

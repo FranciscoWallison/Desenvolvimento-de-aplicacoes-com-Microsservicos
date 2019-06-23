@@ -143,7 +143,6 @@ Res:
 ----
 
 #### $ git flow feature start exemplo-gitflow
---- Traduzido
 Res:
 ```
 		Comutado para uma nova branches 'feature/exemplo-gitflow'
@@ -165,7 +164,6 @@ Res:
 ---
 
 #### $ git flow finish exemplo-gitflow
---- Traduzido
 Res:
 ```
 	Alterado para 'desenvolver'
@@ -182,12 +180,14 @@ Res:
 	- Você está agora na branch 'desenvolver'
 
 ```
---- Lembrete
+
+---- 
+	Lembrete
  * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'.
  * Recomendado fazer teste unitário 'nivel de Prod'.
+----
 	
 #### Criando a release ex: '$ git flow release start 0.1.0'
---- Traduzido
 Res:
 ```
 	Movido para a Branch 'release/0.1.0'
@@ -244,6 +244,7 @@ Res:
 ----
 	O que foi alterado
 ----
+Res:
 ```
 	Comutado para branch 'master'
 	Merge feito pela estratégia "recursiva".
@@ -292,10 +293,12 @@ Res:
 ----
 
 
-#### git flow hotfix finish ajustando-gitflow
+#### $ git flow hotfix finish ajustando-gitflow
 
 Res:
-Branch 'hotfix /hotfix justando-gitflow'
+
+```
+	Branch 'hotfix /hotfix justando-gitflow'
 
 	# Por favor, insira uma mensagem de commit para explicar porque essa merge é necessária,
 	# especialmente se l merge um upstream atualizado em um branch de tópico.

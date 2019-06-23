@@ -18,10 +18,10 @@ gerenciar a criações de novas features, correções de bugs e releases.
 #### Exemplo :x:
 ```
  - Nova brash
- 	º git checkout -b formulario_de_registro :x:
- 	º git checkout -b bug_01 :x:
+ 	º git checkout -b formulario_de_registro
+ 	º git checkout -b bug_01
  - Pegando do master
- 	º git push origin master :x: 
+ 	º git push origin master 
 
 ```
 
@@ -82,9 +82,13 @@ gerenciar a criações de novas features, correções de bugs e releases.
 prorém a utilização da mesma é TOTALMENTE opcional.
 
 
-	Para iniciar um projeto usando a extensão:
-		- git flow init
 ```
+
+----
+	Para iniciar um projeto usando a extensão:
+	
+		- $ git flow init
+----
 
  ---- Dinamica de trabalho com Features - Release - Hotfix ----
 
@@ -133,7 +137,7 @@ Res:
 	Branches de correcções? [hotfix /]
 	Branches de suporte? [Apoio, suporte /]
 	Prefixo na tag de versão? []
-			Diretório de ganchos e filtros? [C:/Users/.git/hooks]
+	Diretório de ganchos e filtros? [C:/Users/.git/hooks]
 ```
 
 ---- 
@@ -166,7 +170,7 @@ Res:
 #### $ git flow finish exemplo-gitflow
 Res:
 ```
-	Alterado para 'desenvolver'
+	Alterado para 'develop'
 	Atualizando 94397ab..97f46a4
 	Avanço rápido
 	  index.html | 1 +
@@ -177,7 +181,7 @@ Res:
 	Resumo das ações:
 	- A branch de feature 'feature/exemplo-gitflow' foi mesclada em 'develop'
 	- A branch de feature 'feature/exemplo-gitflow' foi excluída localmente
-	- Você está agora na branch 'desenvolver'
+	- Você está agora na branch 'develop'
 
 ```
 
@@ -187,7 +191,13 @@ Res:
  * Recomendado fazer teste unitário 'nivel de Prod'.
 ----
 	
-#### Criando a release ex: '$ git flow release start 0.1.0'
+
+----
+	Criando a release
+----
+
+#### $ git flow release start 0.1.0
+
 Res:
 ```
 	Movido para a Branch 'release/0.1.0'
@@ -241,6 +251,8 @@ Res:
  * Depois de salvar as mensagens de 'release' e 'tag' e ira aparecera mais uma de confirmação.
 ----
 
+	* As alerações foram feitas no MASTER e DEVELOP 
+
 ----
 	O que foi alterado
 ----
@@ -252,7 +264,7 @@ Res:
 	  1 arquivo alterado, 1 inserção (+)
 	  criar modo 100644 index.html
 	Já em 'master'
-	Comutado para branch 'desenvolver'
+	Comutado para branch 'develop'
 	Já atualizado!
 	Merge feito pela estratégia "recursiva".
 	Liberação da branch deletada / 0.1.0 (era 97f46a4).
@@ -260,9 +272,9 @@ Res:
 	Resumo das ações:
 	- Liberação da branch 'release / 0.1.0' foi incorporada em 'master'
 	- O lançamento foi marcado com '0.1.0'
-	- A tag de lançamento "0.1.0" foi mesclada em "desenvolver"
+	- A tag de lançamento "0.1.0" foi mesclada em "develop"
 	- Liberação da branch 'release / 0.1.0' foi excluída localmente
-	- Você está agora na branch 'desenvolver'
+	- Você está agora na branch 'develop'
 ```
 
 #### $ git tag
@@ -270,7 +282,11 @@ Res:
 	0.1.0
 ```
 
-#### Correção de erros $ git flow hotfix start ajustando-gitflow
+----
+	Correção de erros 
+----
+
+#### $ git flow hotfix start ajustando-gitflow
 ```
 	Comutado para uma nova branch 'hotfix / ajustando-gitflow'
 
@@ -305,6 +321,7 @@ Res:
 	#
 	# Linhas começando com '#' serão ignoradas e uma mensagem vazia será anulaa
 	 
+```
 
 ----
 	Mensagem Para TEG
@@ -325,7 +342,7 @@ Res:
 
 
 ```
-	Comutado para branch 'desenvolver'
+	Comutado para branch 'develop'
 	Merge feito pela estratégia "recursiva".
 	  index.html | 2 + -
 	  1 arquivo alterado, 1 inserção (+), 1 exclusão (-)
@@ -334,9 +351,9 @@ Res:
 	Resumo das ações:
 	- Hotfix branch 'hotfix/ajustando-gitflow' foi fundido em 'master'
 	- O hotfix foi marcado como 'ajustando-gitflow'
-	- A tag de hotfix 'ajustando-gitflow' foi mesclada em 'desenvolver'
+	- A tag de hotfix 'ajustando-gitflow' foi mesclada em 'develop'
 	- A correção 'hotfix/ajustando-gitflow' foi eliminada localmente
-	- Você está agora na branch 'desenvolver'
+	- Você está agora na branch 'develop'
 ```
 
 

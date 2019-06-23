@@ -324,7 +324,7 @@ Res:
 ```
 
 ----
-	Mensagem Para TEG
+ * Mensagem Para TEG
 ----
 
 
@@ -337,7 +337,7 @@ Res:
 ```
 
 --- 
-	Mensagem de confirmação
+ * Mensagem de confirmação
 ---
 
 

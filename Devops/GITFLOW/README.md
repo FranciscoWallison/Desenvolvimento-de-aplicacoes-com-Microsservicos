@@ -363,3 +363,158 @@ Res:
 	0.1.0
 	ajustando-gitflow
 ```
+
+# Trabalhando com PULL REQUEST (PR)
+
+#### $ git push origin feature/exemplo_senha
+
+----
+	Quando cehgar do repositório terar um aviso "Compare & pull request"
+
+----
+	Ao ver uma nova "New pull request" - comprar sempre "DEVELOP" com a nova "FEATURE/.."
+
+----
+	Reviewers - validar o PR (Verificar se foi revisado DEV)
+
+#### $ git flow feature finish feature/exemplo_senha
+
+---- 
+	Sera finalizado a branch "feature/exemplo_senha"
+
+----
+	Estara no develop 
+
+
+#### $ git flow release start 0.2.0
+
+----
+	git push para repositorio
+
+#### $ git push origin release/0.2.0
+
+----
+	Open a pull request. Nesse caso sera "MASTER" do "release/0.2.0" 
+
+----
+	Reviewers - validar o PR (Verificar se foi revisado PROD)
+
+
+#### $ git flow release finish '0.2.0'
+
+----
+	Comentario sobre a release
+
+----
+	O que foi entreque, comentario da TAG
+
+----
+	Sera finalizado os comentarios da RELEASE e redirecionado para develop
+
+
+#### $ git flow hotfix start 0.1.1
+
+----
+	Resolvendo um problema do master 
+
+----
+	Create pull request (Validar a corrção) Reviewers
+
+----
+	Faz o merge no repositorio e dar o pull no master no local 
+
+```
+$ git checkout master
+$ git pull oririn master
+$ git branch hotfix/0.1.1
+```
+
+----
+	Deverar ser criado a tag para representar o hotfix
+
+```
+	$ git tag 0.1.2
+	
+	$ git checkout develop
+
+	$ git merge master
+
+	$ git push origin develop --tag
+
+```
+
+---- 
+	Lembrete - evitar de usar o finish para evitar complicações no repositorio
+
+
+## Semantic Versioning
+
+----
+	SEMVER = Semantic Versioning
+
+#### Major 
+```
+	Tudo que foi mudado não vai ser mais compativel com as demais verção
+```
+
+#### Minor
+```
+	Melhorias, não irar interferir na verção e no bug 
+```
+
+#### Patch 
+```
+	Irar validar os erros da Minor
+```
+
+
+#### SEMVER
+
+```
+	- Não pode possuir números negativos
+	- Uma vez que uma versão é gerada, não é possível mais fazer modificações
+	- Major que comece com 0.y.z é publicamente instavel é compatibilidades podem ser quebradas 
+
+```
+
+
+#### Metada
+
+----
+	Alpha = em desenvolvimento sem se preocupar com testes unitários antigos
+
+----
+	Beta = em desenvolvimento, mas os testes unitários antigos agora são válidos
+
+---- 
+	rc1 = testes para novas funcionnalidades estão válidos
+	rc2 = mais testes devem ser criados
+	rc3 = mais testes
+
+----
+	1.0.0-alpha, 1.0.0-alpha.1, 1.0.0-rc.1	
+
+
+
+#### Minhas Observações
+
+
+```
+
+		Branch criadas para o desenvolvimento de novas funcionalidades ou correção, tag usadas 
+	para marcar uma entrega tipo versão 1.0.0
+
+		GitLab, Github bitbucket são repositório aonde seu código ficará versionado, contendo todo 
+	histórico dos projetos
+
+		Gitkraken e Sourcetree são ferramentas pra auxiliar no uso do git, pra quem quiser uma ferramenta 
+	gráfica pra utilizar o Git, para fazer conflitos e ver o histórico de uma arquivo ou brash, no 
+	bash uso mais quando estou na correria ou um hotfix .
+
+	Algumas dessas ferramentas vai além do versionamendo de código
+
+
+```
+
+
+[Projeto pratico](https://github.com/FranciscoWallison/gitflow-exemplo) 

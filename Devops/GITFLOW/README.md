@@ -20,6 +20,7 @@ gerenciar a criações de novas features, correções de bugs e releases.
  - Nova brash
  	º git checkout -b formulario_de_registro
  	º git checkout -b bug_01
+	
  - Pegando do master
  	º git push origin master 
 
@@ -29,10 +30,13 @@ gerenciar a criações de novas features, correções de bugs e releases.
 ```
 	º git checkout -b feature/registro
 		- uma nova carecterística
+		
 	º git checkout -b hotfix/registro
 		- corrigindo um erro na parte de registro
+		
 	º git push origin deveop
 		- tudo q está no processo de desenvolvimento
+		
 	º git checkout master && git merge deveop
 		- nunca vai dar um push no master
 ```
@@ -64,7 +68,7 @@ gerenciar a criações de novas features, correções de bugs e releases.
  	 	(Tag-1.0.0)
 
  ° Hotfix
- 	--- O master tem que receber a correção repidamente
+ 	--- O master tem que receber a correção rapidamente
  		1 - git checkout master
  		2 - git merge hotfix/correcao-feature
  		3 - git checkput develop
@@ -504,7 +508,7 @@ $ git branch hotfix/0.1.1
 		Branch criadas para o desenvolvimento de novas funcionalidades ou correção, tag usadas 
 	para marcar uma entrega tipo versão 1.0.0
 
-		GitLab, Github bitbucket são repositório aonde seu código ficará versionado, contendo todo 
+		GitLab, Github e Bitbucket são repositório aonde seu código ficará versionado, contendo todo 
 	histórico dos projetos
 
 		Gitkraken e Sourcetree são ferramentas pra auxiliar no uso do git, pra quem quiser uma ferramenta 

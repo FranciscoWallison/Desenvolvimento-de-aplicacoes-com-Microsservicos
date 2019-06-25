@@ -255,7 +255,7 @@ Res:
  * Depois de salvar as mensagens de 'release' e 'tag' e ira aparecera mais uma de confirmação.
 ----
 
-	* As alerações foram feitas no MASTER e DEVELOP 
+	* As alterações foram feitas no MASTER e DEVELOP 
 
 ----
 	O que foi alterado

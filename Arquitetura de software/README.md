@@ -150,8 +150,7 @@ serviçõs tornando o processo difícil de ser refeito
 ----
 	Conceito importante
 
-	- Um projeto é baseado em um ou mais produtos que trabalham em diferentes
-contextos.
+	- Um projeto é baseado em um ou mais produtos que trabalham em diferentes contextos.
 
 #### Microserviços: Organização em torno do negócio
 

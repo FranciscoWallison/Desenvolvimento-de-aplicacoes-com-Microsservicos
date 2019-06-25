@@ -82,7 +82,7 @@ essencialmente no objetivo fibal. Frameworks nos ajudam a deficnir um padrão de
 ----
 	Exemplo:
 
- * SOA:Arquitetura Orientada a Srviçõs
+ * SOA:Arquitetura Orientada a Serviços
  	- Serviçõs normalmente maiores baseados em funcionlidade
  	- Necessidade de ESB
  	- Single point of failure

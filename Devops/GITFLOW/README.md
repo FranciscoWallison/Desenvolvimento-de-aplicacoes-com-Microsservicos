@@ -2,7 +2,7 @@
 ```
  * - Padronizar a estrutura de trabalho no controle de versão
  * - Trabalhando com equipes com o git
- * - Padão
+ * - Padrão
  * - Legibilidade
  * - Processo 
 ```

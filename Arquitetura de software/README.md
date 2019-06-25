@@ -51,15 +51,15 @@ essencialmente no objetivo fibal. Frameworks nos ajudam a deficnir um padrão de
 
  * Visão geral de tipos de arquiteturas:
 
- ° Negócio
- ° Sistemas de informação
- ° Tecnologia
- ° Planos de migração
+ 	° Negócio
+ 	° Sistemas de informação
+ 	° Tecnologia
+ 	° Planos de migração
 
 
 #### [ISO/IEC/IEEE 42010:2011](https://en.wikipedia.org/wiki/ISO/IEC_42010)
  * Systems and software engineering -- Architecture description
 
- ° Lançada em 2011 pelo ISO
- ° Mais simplificado
- ° Formaliza os fundamentos da área de arquitetura de software.
+	 ° Lançada em 2011 pelo ISO
+	 ° Mais simplificado
+	 ° Formaliza os fundamentos da área de arquitetura de software.

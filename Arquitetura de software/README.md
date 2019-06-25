@@ -92,7 +92,7 @@ essencialmente no objetivo fibal. Frameworks nos ajudam a deficnir um padrão de
  sendo utilizados como serviçõs
 
 
-#### Arquitetura baseda em Microserviçõs
+#### Arquitetura baseda em Microsserviços
 
 	- Serviçõs pequenos com poucos responsabilidades
 	- Maior tolerância a falhas
@@ -101,7 +101,7 @@ essencialmente no objetivo fibal. Frameworks nos ajudam a deficnir um padrão de
 	- Comunicação sícrona ou assícrona
 
 
-#### Microserviçõs não são para todas as situações :x:
+#### Microsserviços não são para todas as situações :x:
 
 	- Arquitetura complexa
 	- Custo mais elevado
@@ -133,7 +133,7 @@ essencialmente no objetivo fibal. Frameworks nos ajudam a deficnir um padrão de
 	- Desenhado para Falhar
 	- Design evolutivo 
 
-#### Microserviçõs: Componetização via serviçõs
+#### Microsserviços: Componetização via serviçõs
 
 	- "Componente é uma unidade de software independente que
 pode ser substituída ou atualizada"

@@ -4,7 +4,7 @@
 #### O que é Arquitetura?
 ```
 	Organização de um sistema, contemplando seus componentes, os relacionamentos entre
-estes e com o ambiente, e os princíios que governam seu projeto e evolução
+estes e com o ambiente, e os princípios que governam seu projeto e evolução
 ```
 
 #### Pilares
@@ -110,6 +110,17 @@ essencialmente no objetivo fibal. Frameworks nos ajudam a deficnir um padrão de
 	- Gera problemas que normalmente você não tinha antes
 	- Monitoramento complexo
 
+
+#### [Motivos para usar Microserviços](https://github.com/FranciscoWallison/DESENVOLVIMENTO-DE-SISTEMAS-WEB) :heavy_check_mark:
+
+	- Aplicação descentralizada
+	- Equipes trabalhando simultaneamente
+	- Ferramenta certa para cada serviço
+	- Recontrução de codigo mais rápido (se necessário)
+	- Manutenção facilitada
+	- Escalabilidade aprimorada
+
+
 #### [Microservices: Principais características](https://martinfowler.com/articles/microservices.html)
 
 	- Componentização via serviçõs
@@ -121,3 +132,34 @@ essencialmente no objetivo fibal. Frameworks nos ajudam a deficnir um padrão de
 	- Automação de infraestrutura
 	- Desenhado para Falhar
 	- Design evolutivo 
+
+#### Microserviçõs: Componetização via serviçõs
+
+	- "Componente é uma unidade de software independente que
+pode ser substituída ou atualizada"
+
+----
+	Desvantagens
+
+	- Chamadas externas são mais custosas do que chamadas locais
+	- Cruzamento entre componentes pode ser tornar complexo
+	- Transações entre serviçõs são "grandes desafios"
+	- Mudanças bruscas em regras de negócio podem afetar diversos
+serviçõs tornando o processo difícil de ser refeito
+
+----
+	Conceito importante
+
+	- Um projeto é baseado em um ou mais produtos que trabalham em diferentes
+contextos.
+
+#### Microserviços: Organização em torno do negócio
+
+	- Time de desenvolvedores por produto
+	- Muitas empresas tratam os times como "squads"
+	- Cada "squad" é multidisciplinar
+	- Cada "squad" é responsável por um ou mais produtos
+	- Cada produto pode ter um ou mais serviçõs envolvidos
+
+----
+	Cada Squad estar responsavel por um area de negocio

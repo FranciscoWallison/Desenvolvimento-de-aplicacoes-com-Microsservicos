@@ -1,9 +1,9 @@
-# Desenvolvimento de aplicações com Microserviços
+# Desenvolvimento de aplicações com Microsserviços
 Serie com objetivo de melhorar o conhecimento de desenvolvimento, trabalhando com micro serviços, levantamento de requisitos, manutenção e agilidade em entrega de projetos. 
 
 
 
-#### [Motivos para usar Microserviços](https://github.com/FranciscoWallison/DESENVOLVIMENTO-DE-SISTEMAS-WEB)
+#### [Motivos para usar Microsserviços](https://github.com/FranciscoWallison/DESENVOLVIMENTO-DE-SISTEMAS-WEB)
 ```
  - Aplicação descentralizada
  - Equipes trabalhando simultaneamente

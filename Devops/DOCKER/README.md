@@ -1,11 +1,11 @@
 ## Objetivo
 
-* - O que são Containers :x:
-* - Como funcionam os Container :x:
-* - Como o Docker funciona :x:
-* - Principais comandos utilizado :x:
-* - Dockerfile :x:
-* - Trabalhando com imagens Docker :x:
+* - O que são Containers
+* - Como funcionam os Container
+* - Como o Docker funciona
+* - Principais comandos utilizado
+* - Dockerfile
+* - Trabalhando com imagens Docker
 
 ## O que são containers?
 

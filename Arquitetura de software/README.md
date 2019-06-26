@@ -92,7 +92,7 @@ essencialmente no objetivo fibal. Frameworks nos ajudam a deficnir um padrão de
  sendo utilizados como serviçõs
 
 
-#### Arquitetura baseda em Microsserviços
+#### Arquitetura baseada em Microsserviços
 
 	- Serviçõs pequenos com poucos responsabilidades
 	- Maior tolerância a falhas
@@ -162,3 +162,36 @@ serviçõs tornando o processo difícil de ser refeito
 
 ----
 	Cada Squad estar responsavel por um area de negocio
+
+
+# Microsserviçõs: Smart endpoints & dumb pipes
+
+	- Exposição de APIs (ex: Rest)
+	- Comunicação entre serviços
+	- Comunicação sícrona e assícrona
+	- Utilização de sistemas de mensageria (ex: RabitMQ)
+	- Garantia de que um serviços foi executado baseada na execução das filas
+
+## Microsserviçõs: Governança descentralizada
+	- Ferramenta certa para o trabalho certo. Tecnologia podem ser definidas baseadas na necessidade do produto
+	- Diferentes padrões entre squads
+	- Contratos de interface de forma independente
+
+## Microsserviçõs: Automação de infraestrutura
+	- Cloud computing
+	- Testes automatizados
+	- Continuous delivery
+	- Continuous integration
+	- Load balancer / Autoscaling
+
+## Microsserviçõs: Desenhado para falhar
+	- Tolerância a falha
+	- Serviços que se comunicam presisam de fallback
+	- Logging
+	- Monitoramento em tempo real
+	- Alarmes
+
+## Microsserviçõs: Design evolutivo
+	- Produtos bem definidos podem evoluir ou serem extintos por reazções de negócio
+	- Gerenciamento de versões
+	- Replacement and upgradebility

@@ -502,7 +502,7 @@ $ git branch hotfix/0.1.1
  * Observação
 	- Regra: tudo que começa com zero é instável e pode quebrar a compatibilidade a qualquer momento.
 	- Tudo que passar do terceiro digito é "metadata" e está sendo utilizado para representar alguma versão após o patch. 
-	- O que vc deve se preocupar é o X.Y.Z
+	- O que tem que se preocupar é o X.Y.Z
 
 
 

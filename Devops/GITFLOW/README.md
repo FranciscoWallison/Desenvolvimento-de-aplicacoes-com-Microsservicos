@@ -59,7 +59,7 @@ gerenciar a criações de novas features, correções de bugs e releases.
  		2 - git merge feature/register
 
  ° Releases
- 	 -- Lança uma nova versão
+ 	 --- Lança uma nova versão
  	 	1 - git checkout develop
  	 	2 - git checkout -b release/1.0.0
  	 	3 - git merge master
@@ -497,6 +497,13 @@ $ git branch hotfix/0.1.1
 
 ----
 	1.0.0-alpha, 1.0.0-alpha.1, 1.0.0-rc.1	
+
+
+ * Observação
+	- Regra: tudo que começa com zero é instável e pode quebrar a compatibilidade a qualquer momento.
+	- Tudo que passar do terceiro digito é "metadata" e está sendo utilizado para representar alguma versão após o patch. 
+	- O que tem que se preocupar é o X.Y.Z
+
 
 
 

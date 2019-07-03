@@ -192,6 +192,6 @@ serviçõs tornando o processo difícil de ser refeito
 	- Alarmes
 
 ## Microsserviçõs: Design evolutivo
-	- Produtos bem definidos podem evoluir ou serem extintos por reazções de negócio
+	- Produtos bem definidos podem evoluir ou serem extintos por razões de negócio
 	- Gerenciamento de versões
 	- Replacement and upgradebility

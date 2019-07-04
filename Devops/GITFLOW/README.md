@@ -128,7 +128,7 @@ prorém a utilização da mesma é TOTALMENTE opcional.
 #### $ git flow init 
 Res:
 ```
-		Repositório Git vazio inicializado em C:/Users/.git/
+	Repositório Git vazio inicializado em C:/Users/.git/
 	Nenhum branches existe ainda. As branches básicas devem ser criadas agora.
 	Nome da branches para versões de produção: [master]
 	Nome do branches para o desenvolvimento do "próximo release ": [develop]

@@ -15,6 +15,9 @@ gerenciar a criações de novas features, correções de bugs e releases.
 
 ## Importância de padronização do processo de desenvolvimento
 
+<details><summary><b>Certo e errado</b></summary>
+<p>
+
 #### Exemplo :x:
 ```
  - Nova brash
@@ -40,6 +43,12 @@ gerenciar a criações de novas features, correções de bugs e releases.
 	º git checkout master && git merge deveop
 		- nunca vai dar um push no master
 ```
+
+
+</p>
+</details>
+
+---
 
 #### Como funciona o Gitflow
 

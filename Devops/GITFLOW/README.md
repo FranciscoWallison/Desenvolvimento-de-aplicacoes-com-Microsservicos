@@ -50,8 +50,10 @@ gerenciar a criações de novas features, correções de bugs e releases.
 
 ---
 
-#### Como funciona o Gitflow
 
+<details><summary><b>Como funciona o Gitflow</b></summary>
+<p>
+	
  - Master
 ```
  - Nunca comita diretamente do master
@@ -88,7 +90,8 @@ gerenciar a criações de novas features, correções de bugs e releases.
 		1 - LTS
 		
 ```
-
+</p>
+</details>
 #### Extensão Gitflow
 ```
 	Gitflow possui  uma extensão para facilitar todo o processo, 

@@ -9,7 +9,7 @@
 
 ## O que é o Gitflow
 ```
-	Gitflow é um processo que visa utilizar o git como ferramneta para 
+	Gitflow é um processo que visa utilizar o git como ferramenta para 
 gerenciar a criações de novas features, correções de bugs e releases.
 ```
 

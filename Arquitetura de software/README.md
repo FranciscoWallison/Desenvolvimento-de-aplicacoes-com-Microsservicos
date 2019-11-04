@@ -44,7 +44,7 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 
 ```
 	Frameworks são ferramentas e métodos que nos ajudam a focar 
-essencialmente no objetivo fibal. Frameworks nos ajudam a deficnir um padrão de trabalho.
+essencialmente no objetivo fibal. Frameworks nos ajudam a definir um padrão de trabalho.
 ```
 
 #### [TOGAF](https://cio.com.br/voce-sabe-o-que-e-o-togaf-e-como-ele-vem-sendo-atualizado/)

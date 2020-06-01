@@ -5,4 +5,10 @@ DevOps é um movimento/cultura que veio para os conflitos em ambientes de desenv
 ````
 
 ## Objetivo
-
+````
+- Velocidade na entrega sem comprometer a qualidade
+- Melhor colaboração
+- Melhor qualidade
+- Diminunit tempo de entregas 
+- Entregas mais seguras
+````

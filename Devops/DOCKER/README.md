@@ -84,6 +84,13 @@ diferente da virtualização.
 	Quando for criar uma imagen só irar so essencial.  
 ```
 
+## Layered File System
+````
+ - Toda imagem que baixamos é composta de uma ou mais camadas.
+ - Essas camadas podem ser reaproveitadas em outras imagens, acelerando assim o tempo de download.
+ - As camadas na imagem são apenas de leitura.
+````
+
 ## Imagens
 ```
 	Trabalhar com camadas de dependencias e reutilizar processo 
@@ -196,6 +203,16 @@ https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-n
 		obs: remova primeiro os containers
 
 ```
+
+#### docker container prune
+```
+	cmd: docker container prune
+
+		Remover todos os containers inativos 
+		de uma só vez
+
+```
+
 
 #### docker criando volume
 ```

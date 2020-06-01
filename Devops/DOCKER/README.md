@@ -1,11 +1,13 @@
 ## Objetivo
 
+
 * - O que são Containers
 * - Como funcionam os Container
 * - Como o Docker funciona
 * - Principais comandos utilizado
 * - Dockerfile
 * - Trabalhando com imagens Docker
+
 
 ## O que são containers?
 
@@ -15,6 +17,8 @@ que empacota código e todas as dependências de
 uma aplicação fazendo que a mesma seja executada 
 rapidamente de forma confiável de uma ambiente 
 computacional para outro.
+
+
 ```
 
 ## Como funcionam os Container
@@ -30,6 +34,7 @@ gera um conjunto de processo, nome do projeto Pai. É uma forma de
 isolamento dos processos. Namespaces = Isola os processos
 
 ```
+
 
 ## Namespaces
 ```
@@ -225,8 +230,6 @@ docker build -t chico/laravel-optmized -f Dockerfile.prod .
 
 
 
-
-
 #### Conf Docker-machine
 ```
 docker-machine ssh default
@@ -239,3 +242,42 @@ entrypoints
 
 ```
 
+
+#### Docker Engine
+````
+Responsável por fazer o meio de campo entre os containers e o SO.
+````
+#### Docker Hub
+````
+Provê um repositório com muitas aplicações para você usar em sua infraestrutura.
+````
+#### Docker Swarm
+````
+Tecnologia permite o uso de múltiplos docker hosts.
+````
+
+#### Containers VS VM(Máquinas Virtuais)
+
+
+## Vantagens dos Containers
+````
+ - Agilidade na hora de subir novas imagens de atualizações
+ - Melhor controle do uso dos recursos do sistema operacional.
+ - Trabalhar com diferentes versões de bibliotecas e linguagens.
+````
+
+
+
+## Vantagens das máquinas virtuais
+````
+ - Reduzindo assim os custos de luz e rede
+ - Reduzindo gastos de servições fisicos
+ - Ociosidade do hardware.
+````
+
+## Desvantagens das máquinas virtuais
+````
+ - Possuem um custo de hardware para manter suas funcionalidades.
+ - Configurações iniciais e atualizações frequentes do SO
+ - Manter vários sistemas operacionais. 
+````

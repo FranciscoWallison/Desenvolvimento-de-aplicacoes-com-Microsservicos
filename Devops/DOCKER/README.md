@@ -251,17 +251,18 @@ docker build -t chico/laravel-optmized -f Dockerfile.prod .
 ```
 
 #### Mostra as portas do container e local (poderá acessar pelo navegar)
-```
+````
 docker port <CONTAINER ID>
 
 Exp: definindo a porta 
  docker run -d -p 12345:8081 dockersamples/static-site
-```
+````
 
 
 <details><summary><b>Comando rapidos Fonte Alura</b></summary>
 <p>
-```
+````
+
 docker ps - exibe todos os containers em execução no momento.
 docker ps -a - exibe todos os containers, independentemente de estarem em execução ou não.
 docker run -it NOME_DA_IMAGEM - conecta o terminal que estamos utilizando com o do container.
@@ -274,7 +275,8 @@ docker rmi NOME_DA_IMAGEM - remove a imagem passada como parâmetro.
 docker run -d -P --name NOME dockersamples/static-site - ao executar, dá um nome ao container.
 docker run -d -p 12345:80 dockersamples/static-site - define uma porta específica para ser atribuída à porta 80 do container, neste caso 12345.
 docker run -d -P -e AUTHOR="Fulano" dockersamples/static-site - define uma variável de ambiente AUTHOR com o valor Fulano no container criado.
-```
+
+````
 
 </p>
 </details>

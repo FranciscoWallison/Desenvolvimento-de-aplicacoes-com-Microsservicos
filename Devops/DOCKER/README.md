@@ -53,18 +53,18 @@ isolamento dos processos. Namespaces = Isola os processos
 	O container só ver os processo dele, isolando todos os demais
 do sistema q ele esta sendo executados.
 
-```
+````
 
 ## Namespaces isolando ex
-```
+````
 	º Pid
 	° User
 	° Network
 	º File system
-``` 
+```` 
 
 ## CGroups
-```
+````
 	Controla os recursos computacionais dos containes.
 
 	Isolando recursos para que esses processos não
@@ -75,14 +75,14 @@ interfira nos recursos de outra maquina.
 		cpu_shares = 512
 
 
-``` 
+```` 
 
 ## File System OFS(Overlay File System)
-```
+````
 	Não preciso colocar todas as dependências para rodar
 diferente da virtualização.
 	Quando for criar uma imagen só irar so essencial.  
-```
+````
 
 ## Layered File System
 ````

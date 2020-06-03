@@ -214,6 +214,15 @@ https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-n
 ```
 
 
+#### docker stop -t 0 <CONTAINER ID>
+```
+	cmd: docker stop -t 0 <CONTAINER ID>
+
+		Tempo de espera para parar o conteiner
+
+```
+
+
 #### docker criando volume
 ```
 $ docker volume create --driver local --opt type=none --opt device=$(pwd) --opt o=bind teste_laravel_docker
@@ -241,6 +250,10 @@ Entra dentro da SO do container
 docker build -t chico/laravel-optmized -f Dockerfile.prod .
 ```
 
+#### Mostra as portas do container e local (poderá acessar pelo navegar)
+```
+docker port <CONTAINER ID>
+```
 
 
 [Workflow laravel](https://github.com/FranciscoWallison/laradocker-publicando-imagem)

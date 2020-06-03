@@ -253,6 +253,9 @@ docker build -t chico/laravel-optmized -f Dockerfile.prod .
 #### Mostra as portas do container e local (poderá acessar pelo navegar)
 ```
 docker port <CONTAINER ID>
+
+Exp: definindo a porta 
+ docker run -d -p 12345:8081 dockersamples/static-site
 ```
 
 

@@ -53,18 +53,18 @@ isolamento dos processos. Namespaces = Isola os processos
 	O container só ver os processo dele, isolando todos os demais
 do sistema q ele esta sendo executados.
 
-```
+````
 
 ## Namespaces isolando ex
-```
+````
 	º Pid
 	° User
 	° Network
 	º File system
-``` 
+```` 
 
 ## CGroups
-```
+````
 	Controla os recursos computacionais dos containes.
 
 	Isolando recursos para que esses processos não
@@ -75,14 +75,14 @@ interfira nos recursos de outra maquina.
 		cpu_shares = 512
 
 
-``` 
+```` 
 
 ## File System OFS(Overlay File System)
-```
+````
 	Não preciso colocar todas as dependências para rodar
 diferente da virtualização.
 	Quando for criar uma imagen só irar so essencial.  
-```
+````
 
 ## Layered File System
 ````
@@ -278,23 +278,35 @@ Se der um "prume" os arquivos atrelado no seu local ou predefinido iram permanec
 
 <details><summary><b>Comando rapidos Fonte Alura</b></summary>
 <p>
-````
+
 docker ps - exibe todos os containers em execução no momento.
+
 docker ps -a - exibe todos os containers, independentemente de estarem em execução ou não.
+
 docker run -it NOME_DA_IMAGEM - conecta o terminal que estamos utilizando com o do container.
+
 docker start ID_CONTAINER - inicia o container com id em questão.
+
 docker stop ID_CONTAINER - interrompe o container com id em questão.
+
 docker start -a -i ID_CONTAINER - inicia o container com id em questão e integra os terminais, além de permitir interação entre ambos.
+
 docker rm ID_CONTAINER - remove o container com id em questão.
+
 docker container prune - remove todos os containers que estão parados.
+
 docker rmi NOME_DA_IMAGEM - remove a imagem passada como parâmetro.
+
 docker run -d -P --name NOME dockersamples/static-site - ao executar, dá um nome ao container.
+
 docker run -d -p 12345:80 dockersamples/static-site - define uma porta específica para ser atribuída à porta 80 do container, neste caso 12345.
+
 docker run -d -P -e AUTHOR="Fulano" dockersamples/static-site - define uma variável de ambiente AUTHOR com o valor Fulano no container criado.
-````
+
 </p>
 </details>
-[Workflow laravel](https://github.com/FranciscoWallison/laradocker-publicando-imagem)
+
+[Workflow-laravel](https://github.com/FranciscoWallison/laradocker-publicando-imagem)
 
 
 

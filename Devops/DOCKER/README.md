@@ -259,6 +259,23 @@ Exp: definindo a porta
 ```
 
 
+#### Criando Volumes
+```
+docker run -it -v "C:\Users\User\Documents\Volumes:/var/www" ubuntu 
+
+
+Exmplo criando uma pasta 
+	@5fb4bb4c5b1d:/# cd var/www/
+	@5fb4bb4c5b1d:/var/www# touch novo-arquivo.txt
+	@5fb4bb4c5b1d:/var/www# echo "Este arquivo foi criado dentro de um volume" > novo-arquivo.txt
+
+
+
+Se der um "prume" os arquivos atrelado no seu local ou predefinido iram permanecer
+	docker container prune
+```
+
+
 <details><summary><b>Comando rapidos Fonte Alura</b></summary>
 <p>
 ````

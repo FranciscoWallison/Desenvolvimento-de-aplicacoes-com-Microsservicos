@@ -203,7 +203,14 @@ https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-n
 		obs: remova primeiro os containers
 
 ```
+#### docker rmi -f $(docker images -q)
+```
+	cmd: docker rmi -f $(docker images -q)
 
+		Remover todos as imagens
+		de uma só vez
+
+```
 #### docker container prune
 ```
 	cmd: docker container prune

@@ -268,7 +268,15 @@ Exp: definindo a porta
 
 #### Criando Volumes
 ```
-docker run -it -v "C:\Users\User\Documents\Volumes:/var/www" ubuntu 
+Windows (cmd),
+	docker run -it -v "C:\Users\User\Documents\Volumes:/var/www" ubuntu 
+	docker run -it -v %cd%/Volumes:/var/www ubuntu 
+	
+ Windows (PowerShell),
+	docker run -it -v ${PWD}/Volumes:/var/www ubuntu 
+
+Linux (bash),
+	docker run -it -v "C:\Users\User\Documents\Volumes:/var/www" ubuntu 
 
 
 Exmplo criando uma pasta 

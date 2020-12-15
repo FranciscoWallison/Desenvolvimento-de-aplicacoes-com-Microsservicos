@@ -333,10 +333,6 @@ docker inspect ID_CONTAINER - retorna diversas informações sobre o container.
 </p>
 </details>
 
-[Workflow-laravel](https://github.com/FranciscoWallison/laradocker-publicando-imagem)
-
-
-
 #### Conf Docker-machine
 ```
 docker-machine ssh default
@@ -388,3 +384,10 @@ Tecnologia permite o uso de múltiplos docker hosts.
  - Configurações iniciais e atualizações frequentes do SO
  - Manter vários sistemas operacionais. 
 ````
+
+
+# Meus projetos com docker
+
+[Workflow-laravel](https://github.com/FranciscoWallison/laradocker-publicando-imagem)
+
+[EnvioEailsComWorkes](https://github.com/FranciscoWallison/Projeto-EnvioEailsComWorkes)

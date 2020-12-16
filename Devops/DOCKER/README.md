@@ -206,7 +206,9 @@ https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-n
 #### docker rmi -f $(docker images -q)
 ```
 	cmd: docker rmi -f $(docker images -q)
-
+	ou
+	cmd: docker rm $(docker ps -a -q)  -f
+	
 		Remover todos as imagens
 		de uma só vez
 

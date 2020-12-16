@@ -198,6 +198,13 @@ serviçõs tornando o processo difícil de ser refeito
 
 ## API Gateway
 	- Controle, monitoramento e analise dos serviços feitos para as requisições.
+----
+	Exemplo:
 
-	Exp: "Quando um cliente faz uma solicitação, o gateway de API a divide em várias solicitações, as direciona para os locais adequados, produz uma resposta e faz o monitoramento." (redhat)
+ * A função do gateway no gerenciamento da API *(redhat)*
+ 	- Quando um cliente faz uma solicitação, o gateway de API a divide em várias solicitações, as direciona para os locais adequados, produz uma resposta e faz o monitoramento.
+ 	- Um gateway de API faz parte do sistema de gerenciamento da API. Ele intercepta todas as solicitações de entrada e as envia por meio desse sistema, que processa diversas funções necessárias.
+	- Em organizações que adotam uma abordagem de DevOps, os desenvolvedores usam microsserviços para criar e implantar aplicações de maneira rápida e iterativa. As APIs são um dos meios mais usados na comunicação entre microsserviços.
+
+
 

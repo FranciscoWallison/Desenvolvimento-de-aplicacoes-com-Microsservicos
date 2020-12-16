@@ -195,3 +195,9 @@ serviçõs tornando o processo difícil de ser refeito
 	- Produtos bem definidos podem evoluir ou serem extintos por razões de negócio
 	- Gerenciamento de versões
 	- Replacement and upgradebility
+
+## API Gateway
+	- Controle, monitoramento e analise dos serviços feitos para as requisições.
+
+	Exp: "Quando um cliente faz uma solicitação, o gateway de API a divide em várias solicitações, as direciona para os locais adequados, produz uma resposta e faz o monitoramento." (redhat)
+

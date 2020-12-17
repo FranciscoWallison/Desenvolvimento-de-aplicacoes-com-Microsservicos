@@ -196,8 +196,16 @@ serviçõs tornando o processo difícil de ser refeito
 	- Gerenciamento de versões
 	- Replacement and upgradebility
 
-## API Gateway
+## Microsserviçõs: Comunicação assíncrona
+	- Sempre tratar informações
+	- Dar resposta sobre as requisições
+	- Evita que processos fiquem travados quando recebem uma solicitação
+	- Serviços de mensageria 
+
+# API Gateway
 	- Controle, monitoramento e analise dos serviços feitos para as requisições.
+	- Recebe todas as chamadas dos clientes e as roteia para os serviços correspondentes.
+	- Pode tratar de aspectos de segurança e autenticação da aplicação 
 ----
 	Exemplo:
 
@@ -207,4 +215,9 @@ serviçõs tornando o processo difícil de ser refeito
 	- Em organizações que adotam uma abordagem de DevOps, os desenvolvedores usam microsserviços para criar e implantar aplicações de maneira rápida e iterativa. As APIs são um dos meios mais usados na comunicação entre microsserviços.
 
 
+# Service discovery
+	- Um processo que auxilia mecanismos de identificação dos serviços disponíveis e suas instâncias.
+	- O Service Discovery tem a capacidade de localizar uma rede automaticamente, fazendo com que não haja necessidade de um longo processo de definição da configuração. A descoberta de serviço funciona por dispositivos que se conectam por meio de um idioma comum na rede, permitindo que dispositivos ou serviços se conectem sem qualquer intervenção manual. (ou seja, descoberta de serviço Kubernetes, descoberta de serviço AWS) (avinetworks)
 
+# Backend for Frontend (BFF)
+	- Garantir a performace do dispossitio que está soclicianto serviços.

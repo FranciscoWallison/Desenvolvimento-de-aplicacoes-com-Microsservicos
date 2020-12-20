@@ -24,6 +24,8 @@
         - kubectl create deployment hello-nginx --image=nginx:1.17-alpine
     ° Consultando DEPLOYMENT
         - kubectl get deployments
+    ° Deletando todos os DEPLOYMENT
+        - kubectl delete deployments --all
 ````
 #### K8S SERVICES
 ````

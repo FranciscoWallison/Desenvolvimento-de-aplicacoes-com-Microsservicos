@@ -33,6 +33,15 @@
         - kubectl expose deployment hello-nginx --type=LoadBalancer --port=80
     ° Consultando services
         - kubectl get services
+        - kubectl get svc
     ° Testando service
         - minikube service hello-nginx
+    ° Deletando todos os SERVICES
+        - kubectl delete services hello-nginx
+   
+````
+#### K8S CONFIGMAPS
+````
+    ° Criando configmaps
+        - kubectl get configmaps
 ````

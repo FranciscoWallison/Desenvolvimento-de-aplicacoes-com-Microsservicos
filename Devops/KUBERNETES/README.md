@@ -42,12 +42,19 @@
 ````
 #### K8S CONFIGMAPS
 ````
-    ° Criando configmaps
+    ° Mosrtrado configmaps
         - kubectl get configmaps
 ````
 #### K8S PERSISTENTVOLUMECLAIM
 ````
-    ° Criando persistentvolumeclaim
+    ° Mosrtrado persistentvolumeclaim
         - kubectl get persistentvolumeclaim
 ````
-
+#### K8S EXEMPLO SECRETS
+````
+    ° Criando Secret mysql
+        - kubectl create secret generic mysql-pass --from-literal=password='MyPasswordRoot'
+    ° Mosrtrado Secret
+        - kubectl get secretS
+````
+ 

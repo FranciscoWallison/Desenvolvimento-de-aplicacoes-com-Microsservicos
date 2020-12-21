@@ -24,8 +24,9 @@ spec: # spec do deployment
           env:
           - name: MYSQL_ROOT_PASSWORD
             valueFrom:
-              name: mysql-pass
-              key: password
+              secretKeyRef:
+                name: mysql-pass
+                key: password
           ports:
           - containerPort: 3306
           volumeMounts: # Montando volume

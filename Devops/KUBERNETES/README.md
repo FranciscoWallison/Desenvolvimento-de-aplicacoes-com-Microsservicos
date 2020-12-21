@@ -45,3 +45,9 @@
     ° Criando configmaps
         - kubectl get configmaps
 ````
+#### K8S PERSISTENTVOLUMECLAIM
+````
+    ° Criando persistentvolumeclaim
+        - kubectl get persistentvolumeclaim
+````
+

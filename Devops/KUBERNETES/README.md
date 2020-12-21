@@ -49,12 +49,23 @@
 ````
     ° Mosrtrado persistentvolumeclaim
         - kubectl get persistentvolumeclaim
+        - kubectl get pvc
+    ° Deletando todos os PERSISTENTVOLUMECLAIM
+        - kubectl delete persistentvolumeclaim <NAME-persistentvolumeclaim>
+        - kubectl delete pvc <NAME-persistentvolumeclaim>
 ````
-#### K8S EXEMPLO SECRETS
+#### K8S SECRETS
 ````
     ° Criando Secret mysql
         - kubectl create secret generic mysql-pass --from-literal=password='MyPasswordRoot'
     ° Mosrtrado Secret
-        - kubectl get secretS
+        - kubectl get secrets
 ````
  
+#### K8S Acessando containe
+Exemplo:
+____________________________
+```` 
+    - kubectl exec -it <NAME-POD> bash
+    - kubectl exec -it mysql-server-7885f79678-x7fw6 bash
+````

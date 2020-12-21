@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-server
+spec: # spec do deployment
+  replicas: 1
+
+  selector: # selector utilizado para criar o service
+    matchLabels:
+      app: mysql-server
+      tier: db
+
+  template: # rerente ao POD
+    metadata:
+      labels:
+        app: mysql-server
+        tier: db
+    spec: # spec do PDO
+      containers:
+        - image: mysql:5.7
+          name: mysql-server
+          env:
+          - name: MYSQL_ROOT_PASSWORD
+            value: root
+          ports:
+          - containerPort: 3306

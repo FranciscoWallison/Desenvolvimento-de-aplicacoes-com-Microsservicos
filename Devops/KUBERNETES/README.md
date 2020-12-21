@@ -61,7 +61,6 @@
     ° Mosrtrado Secret
         - kubectl get secrets
 ````
- 
 #### K8S Acessando containe
 Exemplo:
 ____________________________
@@ -69,3 +68,17 @@ ____________________________
     - kubectl exec -it <NAME-POD> bash
     - kubectl exec -it mysql-server-7885f79678-x7fw6 bash
 ````
+
+#### Testando Autoscaler
+```` 
+    ° Comsultando HPA
+        - kubectl get hpa
+    ° Criando POD e SERVICE aparti de uma image do DOCKER
+        - kubectl run php-apache-hpa --image=chicowall/php-apache-hpa --requests=cpu=200m --expose --port=80
+        ° Testando (criando pod/maquina busybox) e acessando via bash
+            - kubectl run -it loader --image=busybox /bin/sh
+            ° Teste estresse (Consultando POD "php-apache-hpa" )
+                - wget -q -O- http://php-apache-hpa.default.svc.cluster.local;
+            ° Teste estressando Autoscaler
+                - while true; do wget -q -O- http://php-apache-hpa.default.svc.cluster.local; done;
+```` 

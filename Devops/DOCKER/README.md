@@ -290,6 +290,14 @@ Se der um "prume" os arquivos atrelado no seu local ou predefinido iram permanec
 	docker container prune
 ```
 
+#### [Criando Comandos RUN, CMD e ENTRYPOINT](https://cursos.alura.com.br/forum/topico-diferenca-entre-run-cmd-e-entrypoint-103504)
+```
+ ° O ENTRYPOINT especifica um comando que sempre será executado quando o contêiner for iniciado.
+
+ ° O CMD deve ser usado como uma maneira de definir argumentos padrão para um comando ENTRYPOINT ou para executar um comando em um contêiner.
+
+ ° RUN permite executar comandos dentro da sua imagem do Docker. Esses comandos são executados uma vez no tempo de compilação e gravados na imagem do Docker como uma nova camada.
+```
 
 <details><summary><b>Comando rapidos Fonte Alura</b></summary>
 <p>

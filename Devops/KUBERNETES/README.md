@@ -44,7 +44,8 @@
 ### Exec Linux
      - minikube start --vm-driver=virtualbox
 #### K8S POD's
- ° É um recurso que encapsular um container no k8s
+ ° É um recurso que encapsular um ou mais container no k8s
+ ° Se todos os containeres no POD's pararem o POD parar.
 ````
     ° Criando POD's
         - kubectl apply -f pod.yaml

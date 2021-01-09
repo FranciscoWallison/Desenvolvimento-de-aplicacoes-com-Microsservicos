@@ -25,7 +25,7 @@
 ````
 
 
-#### Instalando m0 Linux
+## Instalando no Linux
 ##### K8S
 ````
       - sudo apt-get install curl -y

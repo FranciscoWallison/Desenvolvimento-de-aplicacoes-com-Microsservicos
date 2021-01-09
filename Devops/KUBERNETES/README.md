@@ -8,7 +8,20 @@
 ````
      - Orquestrar os containers de forma escalavel conforme o desempenho imposto pela maquina virtual.
      - Reiniciando aplicações altomaticamente em casos de falhas.
+````
 
+
+#### Master
+````
+     - Gerenciar o cluster
+     - Manter e atualizar o estado desejado
+     - Receber e executar novos comandos
+````
+
+#### Node
+````
+      - Executar as aplicações
+      - Administra os POD's que por sua vez manipula os CONTAINES
 ````
 
 

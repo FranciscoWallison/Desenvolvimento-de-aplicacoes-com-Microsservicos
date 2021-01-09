@@ -14,7 +14,7 @@
 #### Master
 ````
      - Gerenciar o cluster
-     - Manter e atualizar o estado desejado
+     - Manter e atualizar o estado desejado dos POD's
      - Receber e executar novos comandos
 ````
 

@@ -65,8 +65,20 @@ essencialmente no objetivo fibal. Frameworks nos ajudam a definir um padrão de 
 	 - Formaliza os fundamentos da área de arquitetura de software.
 
 
+
+# Usabilidade para STEVE KRUG
+#### - ÚTIL
+	- Faz algo que alguém precisa?
+#### - Fácil de aprender
+	- As pessoas consequem descobrir como usar?
+#### - Memorável
+	- É necessário reaprender sempre que for usar?
+#### - Efetivo
+	- Faz o seu trabalho
+	
 ----
 
+----
 ----
 
 # Microsserviços

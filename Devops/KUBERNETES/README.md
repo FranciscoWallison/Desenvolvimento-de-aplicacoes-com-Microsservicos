@@ -26,6 +26,8 @@
 
 
 ## Comandos
+## Exec Linux
+     - minikube start --vm-driver=virtualbox
 #### K8S POD's
  ° É um recurso que encapsular um container no k8s
 ````

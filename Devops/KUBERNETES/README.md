@@ -14,7 +14,7 @@
 
 ## Comandos
 #### K8S POD's
- ° É um recurso e encapsular um container no k8s
+ ° É um recurso que encapsular um container no k8s
 ````
     ° Criando POD's
         - kubectl apply -f pod.yaml

@@ -62,6 +62,8 @@
         - kubectl delete deployments --all
 ````
 #### K8S SERVICES
+##### Parque que serve?
+
      ° Abstrações para expor aplicações excutando em um ou mais pods
      ° Proveem IP's fixos para comunicação
      ° Proveem um DNS para um ou mais pods

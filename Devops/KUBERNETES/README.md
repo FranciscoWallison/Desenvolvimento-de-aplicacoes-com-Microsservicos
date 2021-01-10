@@ -71,6 +71,7 @@
 ----------------------------------------------------
 
      ° ClusterIP
+          - Serve para comunicar diferentes POD's do mesmo cluster
      ° NodePort
      ° LoadBalancer
 ----------------------------------------------------

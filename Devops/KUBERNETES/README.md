@@ -116,3 +116,7 @@ ____________________________
             ° Teste estressando Autoscaler
                 - while true; do wget -q -O- http://php-apache-hpa.default.svc.cluster.local; done;
 ```` 
+
+## Dicas
+#### Comotestar Yaml
+     - https://kubeyaml.com/

@@ -44,8 +44,8 @@
 ### Exec Linux
      - minikube start --vm-driver=virtualbox
 #### K8S POD's
- ° É um recurso que encapsular um ou mais container no k8s
- ° Se todos os containeres no POD's pararem o POD parar.
+     ° É um recurso que encapsular um ou mais container no k8s
+     ° Se todos os containeres no POD's pararem o POD parar.
 ````
     ° Criando POD's
         - kubectl apply -f pod.yaml
@@ -62,10 +62,10 @@
         - kubectl delete deployments --all
 ````
 #### K8S SERVICES
-° Abstrações para expor aplicações excutando em um ou mais pods
-° Proveem IP's fixos para comunicação
-° Proveem um DNS para um ou mais pods
-° São capaszes de balanceamento de carga
+     ° Abstrações para expor aplicações excutando em um ou mais pods
+     ° Proveem IP's fixos para comunicação
+     ° Proveem um DNS para um ou mais pods
+     ° São capaszes de balanceamento de carga
 ````
     ° Criando service
         - kubectl expose deployment hello-nginx --type=LoadBalancer --port=80

@@ -62,6 +62,10 @@
         - kubectl delete deployments --all
 ````
 #### K8S SERVICES
+° Abstrações para expor aplicações excutando em um ou mais pods
+° Proveem IP's fixos para comunicação
+° Proveem um DNS para um ou mais pods
+° São capaszes de balanceamento de carga
 ````
     ° Criando service
         - kubectl expose deployment hello-nginx --type=LoadBalancer --port=80

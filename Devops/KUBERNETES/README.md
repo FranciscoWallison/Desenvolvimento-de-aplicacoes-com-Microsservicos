@@ -66,6 +66,13 @@
      ° Proveem IP's fixos para comunicação
      ° Proveem um DNS para um ou mais pods
      ° São capaszes de balanceamento de carga
+----------------------------------------------------
+
+     ° ClusterIP
+     ° NodePort
+     ° LoadBalancer
+----------------------------------------------------
+
 ````
     ° Criando service
         - kubectl expose deployment hello-nginx --type=LoadBalancer --port=80

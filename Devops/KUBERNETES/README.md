@@ -27,8 +27,9 @@
 
 ### Exec Linux
 Iniciando minikube
-____
+````
      - minikube start --vm-driver=virtualbox
+```` 
 ____
 ##  A arquitetura do Kubernetes
 

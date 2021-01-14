@@ -40,13 +40,15 @@
       - sudo install minikube /usr/local/bin/
 ````
 
-## Comandos
 ### Exec Linux
+Iniciando minikube
+____
      - minikube start --vm-driver=virtualbox
 #### K8S POD's
-Conceitos:
+Concepts:
+_____
      ° É um recurso que encapsular um ou mais container no k8s
-     ° Se todos os containeres no POD's pararem o POD parar.
+     ° Se todos os containers no POD's pararem o POD parar.
         - Containers
             ° Como possuem IP's diferentes, containers em pods diferentes podem utilizar o mesmo número de porta.
             ° Containers dentro de um mesmo pod conseguem se comunicar via localhost.
@@ -54,10 +56,20 @@ Conceitos:
 Command:
 _____
 ````
+    ° Criando POD utilizando imagens
+        - kubectl run nginx-pod ---image=nginx:latest
+        - kubectl run <NOME_POD> ---image=<NOME_IMAGE>
     ° Criando POD's
         - kubectl apply -f pod.yaml
     ° Consultando POD's
         - kubectl get pods
+        - kubectl get pods --watch
+    ° Consultando descrição do POD
+        - kubectl describe pod nginx-pod
+        - kubectl describe pod <NOME_POD>
+    ° Editando o POD
+        - kubectl edit pod nginx-pod
+        - kubectl edit pod <NOME_POD>
 ````
 #### K8S DEPLOYMENT
 ````

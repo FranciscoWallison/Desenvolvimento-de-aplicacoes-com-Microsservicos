@@ -56,20 +56,27 @@ _____
 Command:
 _____
 ````
-    ° Criando POD utilizando imagens
+    ° Criando POD's utilizando imagens
         - kubectl run nginx-pod ---image=nginx:latest
         - kubectl run <NOME_POD> ---image=<NOME_IMAGE>
-    ° Criando POD's
+    ° Criando POD's Declarativa
         - kubectl apply -f pod.yaml
+        - kubectl apply -f <FILE_NAME>
     ° Consultando POD's
         - kubectl get pods
         - kubectl get pods --watch
     ° Consultando descrição do POD
         - kubectl describe pod nginx-pod
         - kubectl describe pod <NOME_POD>
-    ° Editando o POD
+    ° Editando os POD's
         - kubectl edit pod nginx-pod
         - kubectl edit pod <NOME_POD>
+    ° Deletando os POD's imagens
+        - kubectl delete pod nginx-pod
+        - kubectl delete pod <NOME_POD>
+    ° Deletando POD's Declarativa
+        - kubectl delete -f pod.yaml
+        - kubectl delete -f <FILE_NAME>
 ````
 #### K8S DEPLOYMENT
 ````
@@ -151,5 +158,5 @@ ____________________________
 ```` 
 
 ## Dicas
-#### Comotestar Yaml
+#### Testando de maneira declarativa .Yaml
      - https://kubeyaml.com/

@@ -78,6 +78,9 @@ _____
     ° Deletando POD's Declarativa
         - kubectl delete -f pod.yaml
         - kubectl delete -f <FILE_NAME>
+    ° Executando comandos POD's Interativa
+        - kubectl exec -it pod.yaml
+        - kubectl exec -it <FILE_NAME>
 ````
 #### K8S DEPLOYMENT
 ````

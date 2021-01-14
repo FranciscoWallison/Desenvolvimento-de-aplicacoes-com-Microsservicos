@@ -9,21 +9,6 @@
      - Orquestrar os containers de forma escalavel conforme o desempenho imposto pela maquina virtual.
      - Reiniciando aplicações altomaticamente em casos de falhas.
 ````
-##  A arquitetura do Kubernetes
-
-#### Master
-````
-     - Gerenciar o cluster
-     - Manter e atualizar o estado desejado dos POD's
-     - Receber e executar novos comandos
-````
-
-#### Node
-````
-      - Executar as aplicações
-      - Administra os POD's que por sua vez manipula os CONTAINES
-````
-
 
 ## Instalando no Linux
 ##### K8S
@@ -44,6 +29,22 @@
 Iniciando minikube
 ____
      - minikube start --vm-driver=virtualbox
+____
+##  A arquitetura do Kubernetes
+
+#### Master
+````
+     - Gerenciar o cluster
+     - Manter e atualizar o estado desejado dos POD's
+     - Receber e executar novos comandos
+````
+
+#### Node
+````
+      - Executar as aplicações
+      - Administra os POD's que por sua vez manipula os CONTAINES
+````
+
 #### K8S POD's
 Concepts:
 _____

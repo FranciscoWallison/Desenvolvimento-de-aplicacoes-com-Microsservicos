@@ -44,8 +44,15 @@
 ### Exec Linux
      - minikube start --vm-driver=virtualbox
 #### K8S POD's
+Conceitos:
      ° É um recurso que encapsular um ou mais container no k8s
      ° Se todos os containeres no POD's pararem o POD parar.
+        - Containers
+            ° Como possuem IP's diferentes, containers em pods diferentes podem utilizar o mesmo número de porta.
+            ° Containers dentro de um mesmo pod conseguem se comunicar via localhost.
+
+Command:
+_____
 ````
     ° Criando POD's
         - kubectl apply -f pod.yaml

@@ -66,6 +66,7 @@ _____
     ° Consultando POD's
         - kubectl get pods
         - kubectl get pods --watch
+        - kubectl get pods -o wide
     ° Consultando descrição do POD
         - kubectl describe pod nginx-pod
         - kubectl describe pod <NOME_POD>
@@ -92,18 +93,19 @@ _____
         - kubectl delete deployments --all
 ````
 #### K8S SERVICES
-##### Parque que serve?
-
-     ° Abstrações para expor aplicações excutando em um ou mais pods
-     ° Proveem IP's fixos para comunicação
-     ° Proveem um DNS para um ou mais pods
-     ° São capaszes de balanceamento de carga
+Para que serve?
+_____
+    ° Abstrações para expor aplicações executando em um ou mais pods
+    ° Proveem IP's fixos para comunicação
+    ° Proveem um DNS para um ou mais pods
+    ° São capazes de balanceamento de carga
+    ° Fazem o balanceamento de carga.
 ----------------------------------------------------
 
-     ° ClusterIP
-          - Serve para comunicar diferentes POD's do mesmo cluster
-     ° NodePort
-     ° LoadBalancer
+    ° ClusterIP
+        - Serve para comunicar diferentes POD's do mesmo cluster
+    ° NodePort
+    ° LoadBalancer
 ----------------------------------------------------
 
 ````

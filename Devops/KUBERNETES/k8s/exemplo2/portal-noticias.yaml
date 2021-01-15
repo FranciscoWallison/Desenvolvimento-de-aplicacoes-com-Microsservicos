@@ -8,7 +8,3 @@ spec:
   containers:
   - name: portal-noticias
     image: aluracursos/portal-noticias:1
-    resources:
-      limits:
-        memory: "128Mi"
-        cpu: "500m"

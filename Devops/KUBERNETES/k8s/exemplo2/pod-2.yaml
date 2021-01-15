@@ -8,9 +8,5 @@ spec:
   containers:
   - name: container-pod-2
     image: nginx:latest
-    resources:
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
     ports:
       - containerPort: 80

@@ -2,13 +2,11 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: pod-1
+  labels:
+    app: primeiro-pod
 spec:
   containers:
   - name: container-pod-1
     image: nginx:latest
-    resources:
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
     ports:
       - containerPort: 80

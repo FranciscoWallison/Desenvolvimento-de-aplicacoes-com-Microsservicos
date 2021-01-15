@@ -24,11 +24,10 @@
       - curl -Lo minikube https://storage.googleapis.com/minikube/releases/v1.12.1/minikube-linux-amd64 \ && chmod +x minikube
       - sudo install minikube /usr/local/bin/
 ````
-
-### Exec Linux
 Iniciando minikube
-____
+````
      - minikube start --vm-driver=virtualbox
+```` 
 ____
 ##  A arquitetura do Kubernetes
 

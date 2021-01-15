@@ -80,7 +80,7 @@ _____
         - kubectl delete -f pod.yaml
         - kubectl delete -f <FILE_NAME>
     ° Executando comandos POD's Interativa
-        - kubectl exec -it pod.yaml
+        - kubectl exec -it pod.yaml -- bash
         - kubectl exec -it <FILE_NAME>
 ````
 #### K8S DEPLOYMENT
@@ -104,7 +104,12 @@ _____
 
     ° ClusterIP
         - Serve para comunicar diferentes POD's do mesmo cluster
+        - Através de "labels" definidas no "metadata" e utilizando o campo "selector" no service(SVC).
     ° NodePort
+        - Utilizamos o IP do "nó"(NODE) para acessar o service através da porta especificada 
+        - Serve para comunicar diferentes POD's para o exterior dentro do cluster
+            ° Consultando NodePort
+                - kubectl get nodes -o wide
     ° LoadBalancer
 ----------------------------------------------------
 

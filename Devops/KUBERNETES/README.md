@@ -105,12 +105,19 @@ _____
     ° ClusterIP
         - Serve para comunicar diferentes POD's do mesmo cluster
         - Através de "labels" definidas no "metadata" e utilizando o campo "selector" no service(SVC).
+        - Um ClusterIP funciona apenas dentro do cluster
     ° NodePort
         - Utilizamos o IP do "nó"(NODE) para acessar o service através da porta especificada 
         - Serve para comunicar diferentes POD's para o exterior dentro do cluster
             ° Consultando NodePort
                 - kubectl get nodes -o wide
+        - Um NodePort expõe Pods para dentro e fora do cluster
     ° LoadBalancer
+        - Abre comunicação para o mundo externo usando o Load Balancer do provedor!
+        - Utilizam automaticamente os balanceadores de carga de cloud providers.
+        - Por serem um Load Balancer, também são um NodePort e ClusterIP ao mesmo tempo.
+        - Um LoadBalancer também é um NodePort e ClusterIP
+        - Um LoadBalancer é capaz de automaticamente utilizar um balanceador de carga de um cloud provider
 ----------------------------------------------------
 
 ````

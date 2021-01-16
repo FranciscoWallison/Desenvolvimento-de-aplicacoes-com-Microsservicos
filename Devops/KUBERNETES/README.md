@@ -82,15 +82,7 @@ _____
         - kubectl exec -it pod.yaml -- bash
         - kubectl exec -it <FILE_NAME>
 ````
-#### K8S DEPLOYMENT
-````
-    ° Criando DEPLOYMENT
-        - kubectl create deployment hello-nginx --image=nginx:1.17-alpine
-    ° Consultando DEPLOYMENT
-        - kubectl get deployments
-    ° Deletando todos os DEPLOYMENT
-        - kubectl delete deployments --all
-````
+
 #### K8S SERVICES
 Para que serve?
 _____
@@ -120,7 +112,7 @@ _____
         - Um LoadBalancer também é um NodePort e ClusterIP.
         - Um LoadBalancer é capaz de automaticamente utilizar um balanceador de carga de um cloud provider.
 ----------------------------------------------------
-Comandos
+Comandos:
 _____
 ````
     ° Criando service
@@ -139,9 +131,30 @@ Para que serve?
 _____
     ° Desacoplar configurações dos POD's
 ----------------------------------------------------
+Comandos:
 ````
     ° Mosrtrado configmaps
         - kubectl get configmaps
+````
+#### K8S REPLICASETS
+Para que serve?
+_____
+    ° Administra todas os POD's criados, criando redundâncias para cada imagem.
+----------------------------------------------------
+Comandos:
+_____
+````
+    ° Consultando REPLICASETS
+        - kubectl get rs    
+````
+#### K8S DEPLOYMENT
+````
+    ° Criando DEPLOYMENT
+        - kubectl create deployment hello-nginx --image=nginx:1.17-alpine
+    ° Consultando DEPLOYMENT
+        - kubectl get deployments
+    ° Deletando todos os DEPLOYMENT
+        - kubectl delete deployments --all
 ````
 #### K8S PERSISTENTVOLUMECLAIM
 ````

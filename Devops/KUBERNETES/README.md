@@ -100,7 +100,8 @@ _____
     ° São capazes de balanceamento de carga
     ° Fazem o balanceamento de carga.
 ----------------------------------------------------
-
+Tipo/type
+_____
     ° ClusterIP
         - Serve para comunicar diferentes POD's do mesmo cluster
         - Através de "labels" definidas no "metadata" e utilizando o campo "selector" no service(SVC).
@@ -119,7 +120,8 @@ _____
         - Um LoadBalancer também é um NodePort e ClusterIP.
         - Um LoadBalancer é capaz de automaticamente utilizar um balanceador de carga de um cloud provider.
 ----------------------------------------------------
-
+Comandos
+_____
 ````
     ° Criando service
         - kubectl expose deployment hello-nginx --type=LoadBalancer --port=80

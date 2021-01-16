@@ -135,6 +135,10 @@ _____
    
 ````
 #### K8S CONFIGMAPS
+Para que serve?
+_____
+    ° Desacoplar configurações dos POD's
+----------------------------------------------------
 ````
     ° Mosrtrado configmaps
         - kubectl get configmaps
@@ -178,5 +182,7 @@ ____________________________
 ```` 
 
 ## Dicas
+#### Variáveis de Ambiente
+    - Podemos usar o campo 'env' para definir uma ou mais variáveis.
 #### Testando de maneira declarativa .Yaml
      - https://kubeyaml.com/

@@ -3,8 +3,10 @@ kind: Pod
 metadata:
   name: portal-noticias
   labels:
-    name: portal-noticias
+    app: portal-noticias
 spec:
   containers:
   - name: portal-noticias
     image: aluracursos/portal-noticias:1
+    ports:
+      - containerPort: 80

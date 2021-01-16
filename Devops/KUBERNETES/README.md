@@ -148,6 +148,12 @@ _____
         - kubectl get rs    
 ````
 #### K8S DEPLOYMENT
+Para que serve?
+_____
+    ° Administra todas os POD's criados, criando redundâncias como um REPLICASETS.
+----------------------------------------------------
+Comandos:
+_____
 ````
     ° Criando DEPLOYMENT
         - kubectl create deployment hello-nginx --image=nginx:1.17-alpine

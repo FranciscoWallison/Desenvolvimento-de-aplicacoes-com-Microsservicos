@@ -135,7 +135,10 @@ _____
     ° Mosrtrado configmaps
         - kubectl get configmaps
 ````
-
+#### K8S REPLICASETS
+Para que serve?
+_____
+    ° Administra todas os POD's criados, criando redundâncias para cada imagem. 
 #### K8S DEPLOYMENT
 ````
     ° Criando DEPLOYMENT

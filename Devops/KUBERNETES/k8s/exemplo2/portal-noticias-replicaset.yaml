@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: portal-noticias-replicaset
+spec:
+  template:
+  # iniciando configurações do POD's
+    metadata:
+      name: portal-noticias
+      labels:
+        app: portal-noticias
+    spec:
+      containers:
+      - name: portal-noticias
+        image: aluracursos/portal-noticias:1
+        ports:
+          - containerPort: 80
+        envFrom:
+          - configMapRef:
+              name: portal-configmap
+  # iniciando configurações de redundâncias POD's
+  replicas: 3
+  selector:
+    matchLabels:
+      app: portal-noticias

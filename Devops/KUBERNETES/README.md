@@ -112,7 +112,7 @@ _____
         - Um LoadBalancer também é um NodePort e ClusterIP.
         - Um LoadBalancer é capaz de automaticamente utilizar um balanceador de carga de um cloud provider.
 ----------------------------------------------------
-Comandos
+Comandos:
 _____
 ````
     ° Criando service
@@ -131,6 +131,7 @@ Para que serve?
 _____
     ° Desacoplar configurações dos POD's
 ----------------------------------------------------
+Comandos:
 ````
     ° Mosrtrado configmaps
         - kubectl get configmaps
@@ -138,7 +139,14 @@ _____
 #### K8S REPLICASETS
 Para que serve?
 _____
-    ° Administra todas os POD's criados, criando redundâncias para cada imagem. 
+    ° Administra todas os POD's criados, criando redundâncias para cada imagem.
+----------------------------------------------------
+Comandos:
+_____
+````
+    ° Consultando REPLICASETS
+        - kubectl get rs    
+````
 #### K8S DEPLOYMENT
 ````
     ° Criando DEPLOYMENT

@@ -112,7 +112,7 @@ _____
             ° Consultando NodePort
                 - kubectl get nodes -o wide
         - Um NodePort expõe Pods para dentro e fora do cluster
-        - Ótimo para sistema de comunicação com o Cliente/FronTEnd
+        - Ótimo para sistema que tenha comunicação com o Cliente/FrontEnd
     ° LoadBalancer
         - Abre comunicação para o mundo externo usando o Load Balancer do provedor.
         - Utilizam automaticamente os balanceadores de carga de cloud providers.

@@ -112,11 +112,10 @@ _____
                 - kubectl get nodes -o wide
         - Um NodePort expõe Pods para dentro e fora do cluster
     ° LoadBalancer
-        - Abre comunicação para o mundo externo usando o Load Balancer do provedor!
+        - Abre comunicação para o mundo externo usando o Load Balancer do provedor.
         - Utilizam automaticamente os balanceadores de carga de cloud providers.
-        - Por serem um Load Balancer, também são um NodePort e ClusterIP ao mesmo tempo.
-        - Um LoadBalancer também é um NodePort e ClusterIP
-        - Um LoadBalancer é capaz de automaticamente utilizar um balanceador de carga de um cloud provider
+        - Um LoadBalancer também é um NodePort e ClusterIP.
+        - Um LoadBalancer é capaz de automaticamente utilizar um balanceador de carga de um cloud provider.
 ----------------------------------------------------
 
 ````

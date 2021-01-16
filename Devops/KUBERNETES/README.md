@@ -183,6 +183,6 @@ ____________________________
 
 ## Dicas
 #### Variáveis de Ambiente
-    - Podemos usar o campo 'env' para definir uma ou mais variáveis.
+    - Podemos usar o campo 'env' para definir uma ou mais variáveis. (Recomendável usar ConfigMap)
 #### Testando de maneira declarativa .Yaml
      - https://kubeyaml.com/

@@ -82,15 +82,7 @@ _____
         - kubectl exec -it pod.yaml -- bash
         - kubectl exec -it <FILE_NAME>
 ````
-#### K8S DEPLOYMENT
-````
-    ° Criando DEPLOYMENT
-        - kubectl create deployment hello-nginx --image=nginx:1.17-alpine
-    ° Consultando DEPLOYMENT
-        - kubectl get deployments
-    ° Deletando todos os DEPLOYMENT
-        - kubectl delete deployments --all
-````
+
 #### K8S SERVICES
 Para que serve?
 _____
@@ -142,6 +134,16 @@ _____
 ````
     ° Mosrtrado configmaps
         - kubectl get configmaps
+````
+
+#### K8S DEPLOYMENT
+````
+    ° Criando DEPLOYMENT
+        - kubectl create deployment hello-nginx --image=nginx:1.17-alpine
+    ° Consultando DEPLOYMENT
+        - kubectl get deployments
+    ° Deletando todos os DEPLOYMENT
+        - kubectl delete deployments --all
 ````
 #### K8S PERSISTENTVOLUMECLAIM
 ````

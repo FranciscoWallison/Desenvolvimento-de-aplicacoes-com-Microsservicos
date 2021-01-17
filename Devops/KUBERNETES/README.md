@@ -145,11 +145,21 @@ Comandos:
 _____
 ````
     ° Consultando REPLICASETS
-        - kubectl get rs    
+        - kubectl get rs
+        - kubectl get replicasets    
 ````
 #### K8S DEPLOYMENT
 Para que serve?
 _____
+    ° Versiona cada POD com o comando "annotate", como se fosse um commit do git.
+        - kubectl annotate deployments nginx-deployment kubernetes.io/change-cause="Descrição da imagem"
+        - kubectl annotate deployments <NAME_METADATA> kubernetes.io/change-cause="Descrição da imagem"
+    ° Podendo restaurar versões POD com o comando "rollout undo"
+        - kubectl rollout undo deployments nginx-deployment --to-revision=2
+        - kubectl rollout undo deployments  <NAME_METADATA> --to-revision=<HISTORY_NUMBER>
+    ° Podendo ver histórico versões POD com o comando "rollout history"
+        - kubectl rollout history deployments nginx-deployment
+        - kubectl rollout history deployments <NAME_METADATA>
     ° Administra todas os POD's criados, criando redundâncias como um REPLICASETS.
 ----------------------------------------------------
 Comandos:
@@ -161,6 +171,11 @@ _____
         - kubectl get deployments
     ° Deletando todos os DEPLOYMENT
         - kubectl delete deployments --all
+    ° Consultar as replicas criadas pelo DEPLOYMENT
+        - kubectl get rs
+    ° Visualizar o histórico de implantações 
+        - kubectl rollout history deployments nginx-deployment
+        - kubectl rollout history deployments <NAME_METADATA>
 ````
 #### K8S PERSISTENTVOLUMECLAIM
 ````

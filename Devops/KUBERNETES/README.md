@@ -186,6 +186,9 @@ _____
 Para que serve?
 _____
     ° Volumes possuem ciclo de vida dependentes de Pods e independentes de containers.
+    ° PersistentVolumes possuem ciclo de vida independente de quaisquer outros recursos, inclusive Pods
+    ° Precisamos de um PersistentVolumeClaim para acessar um PersistentVolume
+    ° PersistentVolumes persistem dados de pods como um todo
 ````
     ° Mosrtrado persistentvolumeclaim
         - kubectl get persistentvolumeclaim
@@ -194,6 +197,15 @@ _____
         - kubectl delete persistentvolumeclaim <NAME-persistentvolumeclaim>
         - kubectl delete pvc <NAME-persistentvolumeclaim>
 ````
+#### K8S Storage Classes
+Para que serve?
+_____
+    ° Storage Classes fornecem dinamismo para criação de PersistentVolumes conforme demanda.
+````
+    ° Mosrtrado Storage Classes
+        - kubectl get sc
+````
+
 #### K8S SECRETS
 ````
     ° Criando Secret mysql

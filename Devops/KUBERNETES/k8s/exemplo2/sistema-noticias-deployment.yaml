@@ -1,0 +1,31 @@
+# criando annotate deployment
+# - kubectl annotate deployment sistema-noticias-deployment kubernetes.io/change-cause="Subindo o sistema na versão 1"
+# - kubectl rollout history deployments sistema-noticias-deployment
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sistema-noticias-deployment
+  labels:
+    app: sistema-noticias-deployment
+spec:
+  # iniciando configurações de deployment e redundâncias POD's
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sistema-noticias
+  template:
+  # iniciando configurações do POD's
+    metadata:
+      name: sistema-noticias
+      labels:
+        app: sistema-noticias
+    spec:
+      containers:
+      - name: sistema-noticias-container
+        image: aluracursos/sistema-noticias:1
+        ports:
+          - containerPort: 80
+        envFrom:
+          - configMapRef:
+              name: sistema-configmap

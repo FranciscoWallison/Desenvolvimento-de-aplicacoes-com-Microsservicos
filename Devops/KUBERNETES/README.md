@@ -151,13 +151,14 @@ _____
 #### K8S DEPLOYMENT
 Para que serve?
 _____
+    ° Quando criados, Deployments auxiliam com controle de versionamento e criam um ReplicaSet automaticamente.
     ° Versiona cada POD com o comando "annotate", como se fosse um commit do git.
         - kubectl annotate deployments nginx-deployment kubernetes.io/change-cause="Descrição da imagem"
         - kubectl annotate deployments <NAME_METADATA> kubernetes.io/change-cause="Descrição da imagem"
     ° Podendo restaurar versões POD com o comando "rollout undo"
         - kubectl rollout undo deployments nginx-deployment --to-revision=2
         - kubectl rollout undo deployments  <NAME_METADATA> --to-revision=<HISTORY_NUMBER>
-    ° Podendo ver histórico versões POD com o comando "rollout history"
+    ° Podendo ver histórico de versões Deployments com o comando "rollout history"
         - kubectl rollout history deployments nginx-deployment
         - kubectl rollout history deployments <NAME_METADATA>
     ° Administra todas os POD's criados, criando redundâncias como um REPLICASETS.
@@ -176,6 +177,8 @@ _____
     ° Visualizar o histórico de implantações 
         - kubectl rollout history deployments nginx-deployment
         - kubectl rollout history deployments <NAME_METADATA>
+    ° Visualizar todos os históricos de versões Deployments.
+        - kubectl rollout history deployments
 ````
 #### K8S PERSISTENTVOLUMECLAIM
 ````

@@ -1,0 +1,28 @@
+# criando annotate deployment
+# - kubectl annotate deployment db-noticias-deployment kubernetes.io/change-cause="Subindo o db na versão 1"
+# - kubectl rollout history deployments db-noticias-deployment
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db-noticias-deployment
+spec:
+ # iniciando configurações de deployment
+  selector:
+    matchLabels:
+      app: db-noticias
+  template:
+  # iniciando configurações do POD's
+    metadata:
+      name: db-noticias
+      labels:
+        app: db-noticias
+    spec:
+      containers:
+        - name: db-noticias-container
+          image: aluracursos/mysql-db:1
+          ports:
+            - containerPort: 3306
+          envFrom:
+            - configMapRef:
+                name: db-configmap

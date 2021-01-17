@@ -183,6 +183,9 @@ _____
         - kubectl rollout history deployments
 ````
 #### K8S PERSISTENTVOLUMECLAIM
+Para que serve?
+_____
+    ° Volumes possuem ciclo de vida dependentes de Pods e independentes de containers.
 ````
     ° Mosrtrado persistentvolumeclaim
         - kubectl get persistentvolumeclaim
@@ -198,14 +201,6 @@ _____
     ° Mosrtrado Secret
         - kubectl get secrets
 ````
-#### K8S Acessando containe
-Exemplo:
-____________________________
-```` 
-    - kubectl exec -it <NAME-POD> bash
-    - kubectl exec -it mysql-server-7885f79678-x7fw6 bash
-````
-
 #### Testando Autoscaler
 ```` 
     ° Comsultando HPA
@@ -225,3 +220,10 @@ ____________________________
     - Podemos usar o campo 'env' para definir uma ou mais variáveis. (Recomendável usar ConfigMap)
 #### Testando de maneira declarativa .Yaml
      - https://kubeyaml.com/
+#### K8S Acessando containe/POD
+Exemplo:
+____________________________
+```` 
+    - kubectl exec -it mysql-server bash
+    - kubectl exec -it <NAME-POD> bash    
+````

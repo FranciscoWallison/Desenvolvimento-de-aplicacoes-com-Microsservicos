@@ -151,7 +151,10 @@ _____
 #### K8S DEPLOYMENT
 Para que serve?
 _____
+    ° Um Deployments é responsável por criar POD'S e suas respectivas REPLICASETS.
+    ° Os Pods normalmente são criados através de Deployments, e não individualmente.
     ° Quando criados, Deployments auxiliam com controle de versionamento e criam um ReplicaSet automaticamente.
+    ° Administra todas os POD's criados, criando redundâncias como um REPLICASETS.
     ° Versiona cada POD com o comando "annotate", como se fosse um commit do git.
         - kubectl annotate deployments nginx-deployment kubernetes.io/change-cause="Descrição da imagem"
         - kubectl annotate deployments <NAME_METADATA> kubernetes.io/change-cause="Descrição da imagem"
@@ -161,7 +164,6 @@ _____
     ° Podendo ver histórico de versões Deployments com o comando "rollout history"
         - kubectl rollout history deployments nginx-deployment
         - kubectl rollout history deployments <NAME_METADATA>
-    ° Administra todas os POD's criados, criando redundâncias como um REPLICASETS.
 ----------------------------------------------------
 Comandos:
 _____

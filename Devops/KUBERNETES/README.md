@@ -205,7 +205,13 @@ _____
     ° Mosrtrado Storage Classes
         - kubectl get sc
 ````
-
+#### K8S StatefulSets
+Para que serve?
+_____
+    ° StatefulSets podem ser usados quando estados devem ser persistidos.
+    ° StatefulSets usam PersistentVolumes e PersistentVolumeClaims para persistência de dados.
+````
+````
 #### K8S SECRETS
 ````
     ° Criando Secret mysql

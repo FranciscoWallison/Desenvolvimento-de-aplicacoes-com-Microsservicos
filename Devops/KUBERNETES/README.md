@@ -151,6 +151,7 @@ _____
 #### K8S DEPLOYMENT
 Para que serve?
 _____
+    ° Quando criados, Deployments auxiliam com controle de versionamento e criam um ReplicaSet automaticamente.
     ° Versiona cada POD com o comando "annotate", como se fosse um commit do git.
         - kubectl annotate deployments nginx-deployment kubernetes.io/change-cause="Descrição da imagem"
         - kubectl annotate deployments <NAME_METADATA> kubernetes.io/change-cause="Descrição da imagem"

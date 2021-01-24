@@ -186,6 +186,9 @@ _____
 Para que serve?
 _____
     ° Volumes possuem ciclo de vida dependentes de Pods e independentes de containers.
+    ° PersistentVolumes possuem ciclo de vida independente de quaisquer outros recursos, inclusive Pods
+    ° Precisamos de um PersistentVolumeClaim para acessar um PersistentVolume
+    ° PersistentVolumes persistem dados de pods como um todo
 ````
     ° Mosrtrado persistentvolumeclaim
         - kubectl get persistentvolumeclaim
@@ -193,6 +196,21 @@ _____
     ° Deletando todos os PERSISTENTVOLUMECLAIM
         - kubectl delete persistentvolumeclaim <NAME-persistentvolumeclaim>
         - kubectl delete pvc <NAME-persistentvolumeclaim>
+````
+#### K8S Storage Classes
+Para que serve?
+_____
+    ° Storage Classes fornecem dinamismo para criação de PersistentVolumes conforme demanda.
+````
+    ° Mosrtrado Storage Classes
+        - kubectl get sc
+````
+#### K8S StatefulSets
+Para que serve?
+_____
+    ° StatefulSets podem ser usados quando estados devem ser persistidos.
+    ° StatefulSets usam PersistentVolumes e PersistentVolumeClaims para persistência de dados.
+````
 ````
 #### K8S SECRETS
 ````
@@ -227,3 +245,12 @@ ____________________________
     - kubectl exec -it mysql-server bash
     - kubectl exec -it <NAME-POD> bash    
 ````
+#### K8S Criando uma publicação [Google Cloud Platform]
+    1° - Defina um "Gatilho" em  "Cloud Build"
+    2° - Defina seu Repositório no "GITHUB"
+    3° - Configuração o Repositório e definindo arquivos cloudbuild.yaml e branch
+    4° - Criando arquivo "cloudbuild.yaml" com a versão do "Container Registry" gerado por ("cloud-build-docker-compose")
+    5° - Configurando CI pelo arquivo "cloudbuild.yaml" com os test e builds
+    6° - Configurando CD pelo arquivo "cloudbuild.yaml" com as imagens e publicando em "Container Registry"
+    7° - Dando permissão para "Cloud Build" em  "IAM e administrador" 
+    8° - Configurações de K8S para "Deployment"    

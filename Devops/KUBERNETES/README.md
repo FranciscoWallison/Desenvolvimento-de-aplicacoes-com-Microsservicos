@@ -245,3 +245,12 @@ ____________________________
     - kubectl exec -it mysql-server bash
     - kubectl exec -it <NAME-POD> bash    
 ````
+#### K8S Criando uma publicação [Google Cloud Platform]
+    1° - Defina um "Gatilho" em  "Cloud Build"
+    2° - Defina seu Repositório no "GITHUB"
+    3° - Configuração o Repositório e definindo arquivos cloudbuild.yaml e branch
+    4° - Criando arquivo "cloudbuild.yaml" com a versão do "Container Registry" gerado por ("cloud-build-docker-compose")
+    5° - Configurando CI pelo arquivo "cloudbuild.yaml" com os test e builds
+    6° - Configurando CD pelo arquivo "cloudbuild.yaml" com as imagens e publicando em "Container Registry"
+    7° - Dando permissão para "Cloud Build" em  "IAM e administrador" 
+    8° - Configurações de K8S para "Deployment"    

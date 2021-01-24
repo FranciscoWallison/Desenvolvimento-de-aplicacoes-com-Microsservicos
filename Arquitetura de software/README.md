@@ -40,30 +40,6 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 		- DevOps (Desenvolvendo e Operacional)
 
 ----
-```
-	Frameworks
-
-		- Frameworks são ferramentas e métodos que nos ajudam a focar 
-essencialmente no objetivo final. Frameworks nos ajudam a definir um padrão de trabalho.
-```
-
-#### [TOGAF](https://cio.com.br/voce-sabe-o-que-e-o-togaf-e-como-ele-vem-sendo-atualizado/)
-
- * Visão geral de tipos de arquiteturas:
-
- 	- Negócio
- 	- Sistemas de informação
- 	- Tecnologia
- 	- Planos de migração
-
-
-#### [ISO/IEC/IEEE 42010:2011](https://en.wikipedia.org/wiki/ISO/IEC_42010)
- * Systems and software engineering -- Architecture description
-
-	 - Lançada em 2011 pelo ISO
-	 - Mais simplificado
-	 - Formaliza os fundamentos da área de arquitetura de software.
-
 
 
 # Usabilidade para STEVE KRUG
@@ -75,11 +51,14 @@ essencialmente no objetivo final. Frameworks nos ajudam a definir um padrão de 
 	- É necessário reaprender sempre que for usar?
 #### - Efetivo
 	- Faz o seu trabalho
+
 	
 ----
+# "Nem tudo é bala de prata!"
+----
+# "Aprenda a martelar do que simplesmente à não usar o martelo!"
+----
 
-----
-----
 
 # Microsserviços
 
@@ -139,16 +118,16 @@ essencialmente no objetivo final. Frameworks nos ajudam a definir um padrão de 
 	- Organização em torno do negócio
 	- Estrutura baseada em Produtos. Não em projetos
 	- Smart andpoints & Dumb pipes
-	- Governaça descentralizada
+	- Governança descentralizada
 	- Descentralização no Gerenciamento de dados
 	- Automação de infraestrutura
 	- Desenhado para Falhar
 	- Design evolutivo 
 
-#### Microsserviços: Componetização via serviçõs
-
-	- "Componente é uma unidade de software independente que
-pode ser substituída ou atualizada"
+#### Microsserviços: Componentização via serviçõs
+Componentização
+____
+	- "Componente é uma unidade de software independente que pode ser substituída ou atualizada"
 
 ----
 	Desvantagens
@@ -156,8 +135,7 @@ pode ser substituída ou atualizada"
 	- Chamadas externas são mais custosas do que chamadas locais
 	- Cruzamento entre componentes pode ser tornar complexo
 	- Transações entre serviçõs são "grandes desafios"
-	- Mudanças bruscas em regras de negócio podem afetar diversos
-serviçõs tornando o processo difícil de ser refeito
+	- Mudanças bruscas em regras de negócio podem afetar diversos serviçõs tornando o processo difícil de ser refeito
 
 ----
 	Conceito importante
@@ -171,9 +149,7 @@ serviçõs tornando o processo difícil de ser refeito
 	- Cada "squad" é multidisciplinar
 	- Cada "squad" é responsável por um ou mais produtos
 	- Cada produto pode ter um ou mais serviçõs envolvidos
-
-----
-	Cada Squad estar responsavel por um area de negocio
+	- Cada Squad estar responsável por um área de negocio
 
 
 # Microsserviçõs: Smart endpoints & dumb pipes
@@ -252,3 +228,27 @@ serviçõs tornando o processo difícil de ser refeito
 		° DDD preza que os desenvolvedores façam parte do processo de entender o negócio e todas os seus modelos nos mais diversos ângulos ao invés de simplesmente entrevistar especialistas.
 	3 - Definir a falar a linguagem Ubígua baseada em um contexto delimitado
 		° Linguagem Ubíqua é a linguagem falada no dia a dia no contexto da empresa. É a linguagem que utiliza as terminologias da realidade do negócio.
+
+#### Frameworks
+_____
+```
+	- Frameworks são ferramentas e métodos que nos ajudam a focar 
+	essencialmente no objetivo final. Frameworks nos ajudam a definir um padrão de trabalho.
+```
+
+#### [TOGAF](https://cio.com.br/voce-sabe-o-que-e-o-togaf-e-como-ele-vem-sendo-atualizado/)
+
+ * Visão geral de tipos de arquiteturas:
+
+ 	- Negócio
+ 	- Sistemas de informação
+ 	- Tecnologia
+ 	- Planos de migração
+
+
+#### [ISO/IEC/IEEE 42010:2011](https://en.wikipedia.org/wiki/ISO/IEC_42010)
+ * Systems and software engineering -- Architecture description
+
+	 - Lançada em 2011 pelo ISO
+	 - Mais simplificado
+	 - Formaliza os fundamentos da área de arquitetura de software.

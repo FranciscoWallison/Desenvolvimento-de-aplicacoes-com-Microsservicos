@@ -10,7 +10,7 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 #### Pilares
 	° Organização de um sistema
 
-	° Componetização
+	° Componentização
 		- Retrabalho
 		- Funcionalidade distribuida
 
@@ -46,7 +46,7 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 #### - ÚTIL
 	- Faz algo que alguém precisa?
 #### - Fácil de aprender
-	- As pessoas consequem descobrir como usar?
+	- As pessoas conseguem descobrir como usar?
 #### - Memorável
 	- É necessário reaprender sempre que for usar?
 #### - Efetivo
@@ -54,9 +54,9 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 
 	
 ----
-# "Nem tudo é bala de prata!"
+#### "Nem tudo é bala de prata!"
 ----
-# "Aprenda a martelar do que simplesmente à não usar o martelo!"
+#### "Aprenda a martelar do que simplesmente à usar o martelo!"
 ----
 
 
@@ -83,7 +83,7 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
  sendo utilizados como serviçõs
 
 
-#### Arquitetura baseada em Microsserviços
+## Arquitetura baseada em Microsserviços
 
 	- Serviçõs pequenos com poucos responsabilidades
 	- Maior tolerância a falhas
@@ -92,7 +92,7 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 	- Comunicação sícrona ou assícrona
 
 
-#### Microsserviços não são para todas as situações :x:
+## Microsserviços não são para todas as situações :x:
 
 	- Arquitetura complexa
 	- Custo mais elevado
@@ -102,7 +102,7 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 	- Monitoramento complexo
 
 
-#### [Motivos para usar Microserviços](https://github.com/FranciscoWallison/DESENVOLVIMENTO-DE-SISTEMAS-WEB) :heavy_check_mark:
+## [Motivos para usar Microserviços](https://github.com/FranciscoWallison/DESENVOLVIMENTO-DE-SISTEMAS-WEB) :heavy_check_mark:
 
 	- Aplicação descentralizada
 	- Equipes trabalhando simultaneamente
@@ -112,7 +112,7 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 	- Escalabilidade aprimorada
 
 
-#### [Microservices: Principais características](https://martinfowler.com/articles/microservices.html)
+## [Microservices: Principais características](https://martinfowler.com/articles/microservices.html)
 
 	- Componentização via serviçõs
 	- Organização em torno do negócio
@@ -124,25 +124,26 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 	- Desenhado para Falhar
 	- Design evolutivo 
 
-#### Microsserviços: Componentização via serviçõs
+# Microsserviços: Componentização via serviçõs
 Componentização
 ____
 	- "Componente é uma unidade de software independente que pode ser substituída ou atualizada"
 
-----
-	Desvantagens
+
+Desvantagens
+____
 
 	- Chamadas externas são mais custosas do que chamadas locais
 	- Cruzamento entre componentes pode ser tornar complexo
 	- Transações entre serviçõs são "grandes desafios"
 	- Mudanças bruscas em regras de negócio podem afetar diversos serviçõs tornando o processo difícil de ser refeito
 
-----
-	Conceito importante
 
+Conceito importante
+____
 	- Um projeto é baseado em um ou mais produtos que trabalham em diferentes contextos.
 
-#### Microserviços: Organização em torno do negócio
+# Microserviços: Organização em torno do negócio
 
 	- Time de desenvolvedores por produto
 	- Muitas empresas tratam os times como "squads"

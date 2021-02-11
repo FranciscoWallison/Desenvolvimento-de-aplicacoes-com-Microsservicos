@@ -9,7 +9,8 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 
 #### Pilares
 	° Organização de um sistema
-
+		- Usabilidade
+		- Métricas
 	° Componentização
 		- Retrabalho
 		- Funcionalidade distribuida
@@ -52,7 +53,9 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 #### - Efetivo
 	- Faz o seu trabalho
 
-	
+
+# Métricas de software
+#### - 
 ----
 #### "Nem tudo é bala de prata!"
 ----

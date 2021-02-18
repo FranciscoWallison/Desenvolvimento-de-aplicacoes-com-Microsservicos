@@ -56,11 +56,15 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 
 # Métricas de software
 #### - 
+
 ----
 #### "Nem tudo é bala de prata!"
 ----
 #### "Aprenda a martelar do que simplesmente à usar o martelo!"
 ----
+
+# Mobile First
+#### - 
 
 
 # Microsserviços

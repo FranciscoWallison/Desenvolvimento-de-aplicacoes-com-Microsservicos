@@ -1,6 +1,14 @@
-## Objetivo
+# Descomplicando ambiente de trabalho usando docker
+- Tendo dificuldade de instalar todas as bibliotecas sempre que precisa criar um novo projeto?
+- Problemas para buidar e utilizar as suas aplicações em qualquer Sistema Operacional desktop?
+
+## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
+
+### linux 
+Install docker
 
 
+## Sobre Docker
 * - O que são Containers
 * - Como funcionam os Container
 * - Como o Docker funciona
@@ -150,12 +158,6 @@ quando container morre, tudo se perde.
 	º Volumes
 	º Network
 ```
-
-## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
-
-### linux 
-Install docker
-
 ```
 https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-16-04-pt
 ```

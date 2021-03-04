@@ -394,7 +394,22 @@ Tecnologia permite o uso de múltiplos docker hosts.
  - Configurações iniciais e atualizações frequentes do SO
  - Manter vários sistemas operacionais. 
 ````
+## Possiveis erros e soluções
+```
+Building app
+Traceback (most recent call last):
+  File "site-packages\docker\utils\build.py", line , in create_archive
+OSError: [Errno 22] Invalid argument: 'public\\storage'
 
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+```
+```
+   - docker-compose kill
+   - docker rmi $(docker images -a -q)
+   - docker-compose up --force-recreate
+```  
 
 # Meus projetos com docker
 
@@ -403,3 +418,5 @@ Tecnologia permite o uso de múltiplos docker hosts.
 [EnvioEailsComWorkes](https://github.com/FranciscoWallison/Projeto-EnvioEailsComWorkes)
 
 [Videos-laravel](https://github.com/FranciscoWallison/laravel-microservice-docker)
+
+[Api-nodejs-express](https://github.com/FranciscoWallison/nlw-04-nodejs)

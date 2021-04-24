@@ -126,7 +126,7 @@ Nas linhas ````'sonar.login':'admin',```` e ````'sonar.password':'admin'```` lem
 
 Voltando para a ````HOME```` SonarQube logo de cara irar ver um botão com ````Create new project````
 
-<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/create_new_project.png" width="250" />
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/sonar_home.png" width="250" />
 
 Criando um novo projeto estarei utilizando ````Manually````
 

@@ -1,5 +1,18 @@
 
+## Introcução
+````
+Jenkins, para quem não conhece, é uma ferramenta de integração contínua de 
+código aberto, fácil de instalar e configurar. 
 
+````
+
+## Objetivo
+````
+- Automação
+- Produtividade
+- Gestão de qualidade
+- Segurança
+````
 
 ## Criando docker-compose
 Crie um arquivo chamado ````docker-compose.yml````

@@ -67,7 +67,7 @@ yarn test:coverage
 ````
 Ao finalizar o comando espera-se gerar uma pasta na raiz do projeto com nome ````coverage````.
 
-FOTO::
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/test-reporte.png" width="250" />
 
 ## Criando docker-compose
 Crie um arquivo chamado ````docker-compose.yml````

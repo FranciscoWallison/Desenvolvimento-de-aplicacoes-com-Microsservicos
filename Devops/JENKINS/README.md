@@ -59,7 +59,9 @@ Dentro do container execute o comando:
     Two-factor code: ********
     Logged in as me@heroku.com
 ````
+
 Quando terminar de efetuar o login o Jenkins agora pode acessar e fazer o build, alem de publicar a aplicação.
+
 
 <details><summary><b>Caso queria publicar usando docker no Heroku sequencia básica.</b></summary>
 <p>
@@ -177,10 +179,32 @@ Em ````Branch to Push```` é a branch que iremos merge com a dev e
 Agora iremos criar o PIPE-LINE indo pra ````HOME```` e selecionando ````Novo Job```` 
 der ao nome o projeto e selecione  ````Pipeline````.
 
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/18_create_pipe.png" width="350" />
 
 
+Em ````General```` adicione uma descrição e selecione ````GitHub Project```` adicionando a url do projeto.
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/19_create_pipe.png" width="350" />
 
 
+Em ````Builder Triggers```` selecione ````Construir após a construção de outros projetos```` e selecione
+um projeto.
 
 
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/20_create_pipe.png" width="350" />
 
+
+Em pipe line adicione o seu ````jenkinsfile```` exemplos de arquivos [nlw-04-nodejs](https://github.com/FranciscoWallison/nlw-04-nodejs/blob/master/jenkins/jenkinsfile). [nlw-05-nodejs](https://github.com/FranciscoWallison/nlw-05-nodejs/blob/master/jenkins/jenkinsfile) e a [doc](https://www.jenkins.io/doc/).
+
+
+Ao configurar o terminar as configurações pode monitorar todo o seu projeto.
+
+Start 
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/start_pipe.png" width="350" />
+
+Sucesso
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/start_pipe_sucesso.png" width="350" />
+
+
+CI/CD Sucesso
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/piple_completo.png" width="350" />

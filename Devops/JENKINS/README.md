@@ -37,30 +37,52 @@ Depois rode o comando
 ````
 lt --port 8080
 ````
-Ele irar retorna uma mensagem como essa: ````your url is: https://fuzzy-deer-73.loca.lt````, criar uma ponte, do nosso local do JenKins.
+Ele irar retorna uma mensagem como essa: 
+````your url is: https://fuzzy-deer-73.loca.lt````, criar uma ponte, do nosso local do JenKins.
 
 No seu repositório do GitHub 
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/github_hooks.png" width="450" />
 
-## OBS:: Pode esta utilizando outras alternativas, mas precisamos que a aplicação do Jenkins estejá apontando em um HTTPS publico, lembrando de sempre por arrota ````SUA_URL/github-webhook/```` dando como o exemplo ````https://fuzzy-deer-73.loca.lt/github-webhook/````
+OBS:: Pode esta utilizando outras alternativas, mas precisamos que a aplicação do Jenkins estejá apontando em um HTTPS publico, lembrando de sempre por arrota ````SUA_URL/github-webhook/```` dando como o exemplo ````https://fuzzy-deer-73.loca.lt/github-webhook/````
 
 
+Indo para rota criada em ````http://localhost:8080/````
+iremos depara com 
+````Unlock Jenkins````
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/1_unlock_jenkins.png" width="450" />
 
-Unlock Jenkins 
-
-
-docker exec -it <nome do container> bash
+Aqui está pedindo uma senha para o primeiro acesso da plataforma utilizando o comando  ````docker exec -it <nome do container> cat /var/jenkins_home/secrets/initialAdminPassword````
 ou 
-docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
-jenkins
+````docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword````
+ele irar retornar a senha que foi gerado.
+
+Na tela de Customize Jenkins iremos instalar plug-ins recomendado pela comunidade.
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/3_getting_started.png" width="450" />
+
+Logo em seguida teremos essa tela, pode demorar um pouco ...
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/4_getting_started.png" width="450" />
 
 
-Instalar plug-ins recomendado pela comunidade
+Ao finaliza a instalação dos plug-ins irar pedir para criar login de acesso.
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/7_getting_started_create_first_admin_user.png" width="450" />
+
+
+Ao criar o cadastro perguntar sobre criação da instancia aqui é só prosseguir em ````Save````.
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/7_getting_started.png" width="450" />
+
+Proxima tela é só ````Start do jenkins````.
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/8_getting_started.png" width="450" />
 
 
 Na home do painel do Jenkins selecione ````Novo Job```` adicione o nome do seu projeto e selecione ````Construir um projeto de software free-style````.
 
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/9_home.png.png" width="250" /><img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/10_create_new_project.png.png" width="250" />
 
 
 

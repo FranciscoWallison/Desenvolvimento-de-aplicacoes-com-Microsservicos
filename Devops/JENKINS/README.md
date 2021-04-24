@@ -131,18 +131,55 @@ Na home do painel do Jenkins selecione ````Novo Job```` adicione o nome do seu p
 
 
 
-Ativando nodeJs ser não já estiver ativo, precisamos configurar em ````Gerenciar o Jenkins```` >  ````Global Tool Configuration```` 
+Ativando nodeJs ser não já estiver ativo, precisamos configurar em ````Gerenciar o Jenkins```` >  ````Global Tool Configuration```` em nome adicione o ````node```` e ````save````.
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/add_nodejs_av_global.png" width="350" />
 
-
-
-Criando um Build de Implantação Contínua
-
-Adicionar novo credenciais, iremos adicionar as credenciais do Heroku ````http://localhost:8080/credentials/store/system/domain/_/````
-em adicionar credencias.
+Criando um Build de Implantação Contínua. Iremos adicionar o titulo do projeto, o máximo  de builder para manter coloquei como 2(caso tenha vários  não fique uma lista gigantesca), selecione ````Github Project```` 
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/11_general.png" width="350" />
+
+Adicionar novo credenciais, iremos adicionar as credenciais do GitHub, para que o Jenkins possa fazer o merger e dar o push, em  ````http://localhost:8080/credentials/store/system/domain/_/````
+em adicionar credencias.
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/12_add_credentials.png" width="350" />
+
+OBS:: PODE TROCAR O EMAIL PELO USERNAME DO GITHUB.
+
+Selecione ````GIT```` adicione a URL do seu repository, selecionar as credencias de acesso do github, a branches que irar ficar monitorando, no meu casos deixarei como ````*/develop*````
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/13_genrenciamento.png" width="350" />
+
+
+Em trigger selecione ````GitHub hook````.
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/14_trigger.png" width="350" />
+
+
+Em Ambiente de build selecione ````Add Timestamps```` e ````Provide Node & npm````.
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/15_build.png" width="350" />
+
+
+Em ````Build```` como estou usando 100% docker e já faço os teste direto no 
+container, aqui pode desconsiderar, pode causar erro por não encontra o projeto na rais os comandos 
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/16_build_script.png" width="350" />
+
+
+Em ````Assoes pós Builder```` iremos selecionar ````Git Publish```` com os campos 
+````Publish Only ````, ````Merge Result```` e ````Force Push````.
+Em ````Branch to Push```` é a branch que iremos merge com a dev e 
+````Target Remote```` o origin.
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/17_build_script.png" width="350" />
+
+Agora iremos criar o PIPE-LINE indo pra ````HOME```` e selecionando ````Novo Job```` 
+der ao nome o projeto e selecione  ````Pipeline````.
+
+
+
+
 
 
 

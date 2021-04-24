@@ -1,6 +1,7 @@
 ## Introcução
 ````
-SonarQube é uma ferramenta para garantir a qualidade do código.
+SonarQube é uma ferramenta para garantir a 
+qualidade do código.
 
 ````
 
@@ -149,5 +150,7 @@ FOTO::
 https://www.sonarqube.org/
 
 https://hub.docker.com/_/sonarqube
+
+https://jestjs.io/pt-BR/
 
 https://medium.com/swlh/nodejs-code-evaluation-using-jest-sonarqube-and-docker-f6b41b2c319d

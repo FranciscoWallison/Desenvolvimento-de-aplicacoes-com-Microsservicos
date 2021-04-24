@@ -125,25 +125,26 @@ Nas linhas ````'sonar.login':'admin',```` e ````'sonar.password':'admin'```` lem
 ### Todas as informações passadas podem ser encontradas na DOC ````https://docs.sonarqube.org/latest/analysis/analysis-parameters/````
 
 Voltando para a ````HOME```` SonarQube logo de cara irar ver um botão com ````Create new project````
-FOTO::
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/create_new_project.png" width="250" />
 
 Criando um novo projeto estarei utilizando ````Manually````
-FOTO::
+
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/create_new_project.png" width="250" />
 
 No campo ````Project key```` estarei utilizando o nome como EXEMPLO ````nlw-05-nodejs```` e ````Set Up````.
 
-FOTO::
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/project_key.png" width="250" />
 
 Finalizando aqui espera-se essa tela, que é a de dashboard.
 
-FOTO::
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/project_key.png" width="250" />
 
 Feito tudo isso, esperasse que já tenha dado o comando  ````yarn test:coverage```` para poder gerar a pasta ````./coverage````, já podemos rodar o comando ````yarn sonar```` esperando no fim do builder um ````Analysis finished.````.
 
 Após ter finalizado espera-se que no dashboard da plataforma criada mostre os dados do projeto.````.http://sonarqube:9000/dashboard?id=nlw-05-nodejs````
 
-FOTO::
-
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/sonar_dashboard_start.png" width="250" />
 
 
 # Algumas referencias

@@ -1,6 +1,51 @@
 
 
 
+## Criando docker-compose
+Crie um arquivo chamado ````docker-compose.yml````
+
+Com as configurações da imagem e container
+````
+version: '3' # vs mais atual
+services:         
+    jenkins:
+        build: jenkins
+        privileged: true
+        user: root
+        ports:
+            - 8080:8080
+            - 50000:50000
+        container_name: jenkins
+
+````
+Rode o comando: 
+````
+docker-compose -f docker-compose.sonar.yml up -d
+````
+
+Ao finalizar o build ele irar criar uma rota em ````http://localhost:8080/````.
+
+Antes de iniciar começar as configurações do Jenkins, vamos iniciar o hook do GiHut.
+Iremos criara o server utilizando.
+
+Primeiro instale 
+````
+npm install -g localtunnel
+````
+
+Depois rode o comando 
+````
+lt --port 8080
+````
+Ele irar retorna uma mensagem como essa: ````your url is: https://fuzzy-deer-73.loca.lt````, criar uma ponte, do nosso local do JenKins.
+
+No seu repositório do GitHub 
+
+FOTO::
+
+OBS:: Pode esta utilizando outras alternativas, mas precisamos que a aplicação do Jenkins estejá apontando em um HTTPS publico, lembrando de sempre por arrota ````SUA_URL/github-webhook/```` dando como o exemplo ````https://fuzzy-deer-73.loca.lt/github-webhook/````
+
+
 
 Unlock Jenkins 
 

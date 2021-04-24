@@ -137,7 +137,7 @@ Ativando nodeJs ser não já estiver ativo, precisamos configurar em ````Gerenci
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/add_nodejs_av_global.png" width="350" />
 
-Criando um Build de Implantação Contínua. Iremos adicionar o titulo do projeto, o máximo  de builder para manter coloquei como 2(caso tenha vários  não fique uma lista gigantesca), selecione ````Github Project```` 
+Criando um Build de Implantação Contínua. Iremos adicionar o ````titulo```` do projeto, o ````máximo de builder```` para manter coloquei como 2(caso tenha vários  não fique uma lista gigantesca), selecione ````Github Project```` 
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/11_general.png" width="350" />
 

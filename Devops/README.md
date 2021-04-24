@@ -142,3 +142,12 @@ Feito tudo isso, esperasse que já tenha dado o comando  ````yarn test:coverage`
 Após ter finalizado espera-se que no dashboard da plataforma criada mostre os dados do projeto.````.http://sonarqube:9000/dashboard?id=nlw-05-nodejs````
 
 FOTO::
+
+
+
+# Algumas referencias
+https://www.sonarqube.org/
+
+https://hub.docker.com/_/sonarqube
+
+https://medium.com/swlh/nodejs-code-evaluation-using-jest-sonarqube-and-docker-f6b41b2c319d

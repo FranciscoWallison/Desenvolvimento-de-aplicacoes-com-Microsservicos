@@ -82,7 +82,7 @@ Proxima tela é só ````Start do jenkins````.
 
 Na home do painel do Jenkins selecione ````Novo Job```` adicione o nome do seu projeto e selecione ````Construir um projeto de software free-style````.
 
-<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/9_home.png" width="250" /><img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/10_create_new_project.png" width="250" />
+<img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/9_home.png" width="350" />   <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/10_create_new_project.png" width="350" />
 
 
 

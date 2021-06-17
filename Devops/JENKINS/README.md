@@ -17,7 +17,7 @@ código aberto, fácil de instalar e configurar.
 ## Criando docker-compose
 Crie um arquivo chamado ````docker-compose.yml````
 
-Com as configurações da imagem e container
+Configurações da imagem e container
 ````
 version: '3' # vs mais atual
 services:         

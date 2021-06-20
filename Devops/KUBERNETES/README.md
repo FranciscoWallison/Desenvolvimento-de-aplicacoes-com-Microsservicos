@@ -165,6 +165,8 @@ _____
     ° Podendo ver histórico de versões Deployments com o comando "rollout history"
         - kubectl rollout history deployments nginx-deployment
         - kubectl rollout history deployments <NAME_METADATA>
+     ° Podendo voltar Deployments com o comando "rollout undo deployment" (Font: Alura)
+        - kubectl rollout undo deployment <nome do deployment> --to-revision=<versão a ser retornada>
 ----------------------------------------------------
 Comandos:
 _____

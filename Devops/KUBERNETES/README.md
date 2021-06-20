@@ -140,6 +140,7 @@ Comandos:
 Para que serve?
 _____
     ° Administra todas os POD's criados, criando redundâncias para cada imagem.
+    ° Quando criados, Deployments auxiliam com controle de versionamento e criam um ReplicaSet automaticamente.(Font: Alura)
 ----------------------------------------------------
 Comandos:
 _____

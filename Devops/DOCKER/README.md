@@ -419,4 +419,8 @@ Traceback (most recent call last):
 
 [Videos-laravel](https://github.com/FranciscoWallison/laravel-microservice-docker)
 
-[Api-nodejs-express](https://github.com/FranciscoWallison/nlw-04-nodejs)
+[Api-nodejs-express-email](https://github.com/FranciscoWallison/nlw-04-nodejs)
+
+[Api-nodejs-express-socket](https://github.com/FranciscoWallison/nlw-05-nodejs)
+	
+[Api-nodejs-express-jwt](https://github.com/FranciscoWallison/nlw-06-nodejs)

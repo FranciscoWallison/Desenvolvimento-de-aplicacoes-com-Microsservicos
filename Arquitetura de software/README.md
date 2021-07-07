@@ -55,8 +55,16 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 
 
 # Métricas de software
-#### - 
-
+#### 
+```
+Existem dois tipos de métricas no contexto de desenvolvimento de produtos de software: as métricas diretas, que são realizadas 
+em termos de atributos observáveis, como por exemplo, esforço, tamanho e custo, e as métricas indiretas ou derivadas, que podem 
+ser obtidas através de outras métricas, como por exemplo, complexidade, confiabilidade, e facilidade de manutenção. 
+Quanto ao contexto, podem ser aplicadas em produtos ou em processos. Quando as métricas incidem diretamente 
+no produto de software, são chamadas de métricas de predição, quando em processos de software, são comumente chamadas de 
+métricas de controle e sua aplicação normalmente é realizada em processos já maduros e controlados.
+```
+[devmedia](https://www.devmedia.com.br/artigo-engenharia-de-software-21-metricas-de-software/15776)
 ----
 #### "Nem tudo é bala de prata!"
 ----

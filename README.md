@@ -14,4 +14,4 @@ Não existe uma chave mestra que abra todas as portas.
 — ARNOLD TOYNBEE, Um estudo da história
 ````
 
-#### Frase tirada do livro ["POR QUE OS GENERALISTASVENCEM EM UM MUNDODE ESPECIALISTAS"](https://www.amazon.com/Generalistas-Vencem-Especialistas-Portugues-Brasil/dp/6580634340) de David Epstein
+#### Frase do livro ["POR QUE OS GENERALISTASVENCEM EM UM MUNDODE ESPECIALISTAS"](https://www.amazon.com/Generalistas-Vencem-Especialistas-Portugues-Brasil/dp/6580634340) de David Epstein

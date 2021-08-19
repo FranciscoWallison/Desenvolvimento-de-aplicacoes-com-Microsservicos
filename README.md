@@ -2,7 +2,6 @@
 Serie com objetivo de melhorar o conhecimento de desenvolvimento, trabalhando com Microsserviços, levantamento de requisitos, manutenção e agilidade em entrega de projetos. 
 
 
-
 ````
 E ele se recusou a se especializar em algo, preferindo ficar de olho
 na propriedade em geral em vez de em alguma de suas partes... E a

@@ -147,7 +147,7 @@ Após ter finalizado espera-se que no dashboard da plataforma criada mostre os d
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/sonar_dashboard.png" width="350" />
 
 
-# Algumas referencias
+# Algumas referências
 https://www.sonarqube.org/
 
 https://hub.docker.com/_/sonarqube

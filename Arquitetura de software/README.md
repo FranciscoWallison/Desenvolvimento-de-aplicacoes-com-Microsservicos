@@ -7,7 +7,7 @@
 estes e com o ambiente, e os princípios que governam seu projeto e evolução
 ```
 
-#### Pilares
+#### Pré-requisitos
 	° Organização de um sistema
 		- Usabilidade
 		- Métricas
@@ -39,7 +39,6 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 	° Cultura
 		- Perfil de cada profissional e das equipes
 		- DevOps (Desenvolvendo e Operacional)
-
 ----
 
 

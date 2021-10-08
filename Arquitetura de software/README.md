@@ -41,7 +41,6 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução
 		- DevOps (Desenvolvendo e Operacional)
 ----
 
-
 # Usabilidade para STEVE KRUG
 #### - ÚTIL
 	- Faz algo que alguém precisa?

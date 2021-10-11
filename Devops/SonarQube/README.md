@@ -2,7 +2,6 @@
 ````
 SonarQube é uma ferramenta para garantir a 
 qualidade do código.
-
 ````
 
 ## Objetivo

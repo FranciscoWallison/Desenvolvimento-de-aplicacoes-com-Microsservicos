@@ -50,7 +50,6 @@ gerenciar a criações de novas features, correções de bugs e releases.
 
 ---
 
-
 <details><summary><b>Como funciona o Gitflow</b></summary>
 <p>
 	

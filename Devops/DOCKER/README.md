@@ -7,7 +7,6 @@
 ### linux 
 Install docker
 
-
 ## Sobre Docker
 * - O que são Containers
 * - Como funcionam os Container
@@ -25,7 +24,6 @@ que empacota código e todas as dependências de
 uma aplicação fazendo que a mesma seja executada 
 rapidamente de forma confiável de uma ambiente 
 computacional para outro.
-
 
 ```
 

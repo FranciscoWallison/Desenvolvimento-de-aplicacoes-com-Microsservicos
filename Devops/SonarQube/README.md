@@ -52,12 +52,12 @@ Ainda em ````package.json```` add esses linhas em ````"scripts":````. (Caso já 
 ````
 
 Ao gerar o arquivo ````jest.config.js```` modificar a linda ou add.
-
 ````
 ...
     testResultsProcessor: "jest-sonar-reporter",
 ...
 ````
+
 Com essas configurações em projeto já podermos esperar resultado, com a analise o ````testExecutions```` que o SonarQube necessita.
 
 Rode o comando: 

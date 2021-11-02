@@ -31,17 +31,19 @@ gerenciar a criações de novas features, correções de bugs e releases.
 
 #### Exemplo :heavy_check_mark:
 ````
+	
+- Uma nova carecterística
 	º git checkout -b feature/registro
-		- uma nova carecterística
-		
+	
+- Corrigindo um erro na parte de registro
 	º git checkout -b hotfix/registro
-		- corrigindo um erro na parte de registro
-		
+	
+- Tudo que está no processo de desenvolvimento
 	º git push origin deveop
-		- tudo q está no processo de desenvolvimento
 		
+- Nunca vai dar um push no master		
 	º git checkout master && git merge deveop
-		- nunca vai dar um push no master
+		
 ````
 
 

@@ -422,3 +422,6 @@ Traceback (most recent call last):
 [Api-nodejs-express-socket](https://github.com/FranciscoWallison/nlw-05-nodejs)
 	
 [Api-nodejs-express-jwt](https://github.com/FranciscoWallison/nlw-06-nodejs)
+
+[Word-Cloud-Spotify](https://github.com/FranciscoWallison/wordCloudSpotify)
+	

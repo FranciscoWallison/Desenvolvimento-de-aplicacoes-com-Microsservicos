@@ -69,10 +69,6 @@ métricas de controle e sua aplicação normalmente é realizada em processos j�
 #### "Aprenda a martelar do que simplesmente à usar o martelo!"
 ----
 
-# Mobile First
-#### - 
-
-
 # Microsserviços
 
 #### O que é um serviço?

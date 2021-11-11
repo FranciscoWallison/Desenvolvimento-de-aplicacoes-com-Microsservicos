@@ -3,9 +3,7 @@
 
 Historia
 
-ideal 
-
-porque usar
+quando usar
 
 service worker
 

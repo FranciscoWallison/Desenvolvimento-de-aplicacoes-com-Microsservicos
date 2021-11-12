@@ -4,7 +4,6 @@
 Historia
 
 quando usar
-
 service worker
 
 quando não usar 
@@ -18,5 +17,4 @@ o que o mercado fala
 cursos, livros
 
 TWA
-
 referencias e links

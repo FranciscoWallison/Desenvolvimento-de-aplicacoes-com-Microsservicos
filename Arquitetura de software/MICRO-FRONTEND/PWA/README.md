@@ -3,18 +3,20 @@
 
 Historia
 
-quando usar
-service worker
+Quando usar
 
-quando não usar 
+Service worker
 
-vantagem 
+Quando não usar 
 
-desvantagens 
+Vantagem 
 
-o que o mercado fala
+Desvantagens 
 
-cursos, livros
+O que o mercado fala
+
+Cursos, livros
 
 TWA
-referencias e links
+
+Referencias e links

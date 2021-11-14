@@ -15,7 +15,7 @@ Desvantagens
 
 O que o mercado fala
 
-Cursos, livros
+Conteúdo
 
 TWA
 

@@ -111,7 +111,7 @@ métricas de controle e sua aplicação normalmente é realizada em processos j�
 	- Monitoramento complexo
 
 
-## [Motivos para usar Microserviços](https://github.com/FranciscoWallison/DESENVOLVIMENTO-DE-SISTEMAS-WEB) :heavy_check_mark:
+## [Motivos para usar Microservices](https://github.com/FranciscoWallison/DESENVOLVIMENTO-DE-SISTEMAS-WEB) :heavy_check_mark:
 
 	- Aplicação descentralizada
 	- Equipes trabalhando simultaneamente
@@ -133,7 +133,7 @@ métricas de controle e sua aplicação normalmente é realizada em processos j�
 	- Desenhado para Falhar
 	- Design evolutivo 
 
-# Microsserviços: Componentização via serviçõs
+# Microservices: Componentização via serviçõs
 Componentização
 ____
 	- "Componente é uma unidade de software independente que pode ser substituída ou atualizada"

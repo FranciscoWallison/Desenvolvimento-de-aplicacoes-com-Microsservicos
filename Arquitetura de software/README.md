@@ -92,7 +92,7 @@ métricas de controle e sua aplicação normalmente é realizada em processos j�
  sendo utilizados como serviçõs
 
 
-## Arquitetura baseada em Microsserviços
+## Arquitetura baseada em Microservices
 
 	- Serviçõs pequenos com poucos responsabilidades
 	- Maior tolerância a falhas
@@ -101,7 +101,7 @@ métricas de controle e sua aplicação normalmente é realizada em processos j�
 	- Comunicação sícrona ou assícrona
 
 
-## Microsserviços não são para todas as situações :x:
+## Microservices não são para todas as situações :x:
 
 	- Arquitetura complexa
 	- Custo mais elevado

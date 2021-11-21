@@ -162,7 +162,7 @@ ____
 	- Cada Squad estar responsável por um área de negocio
 
 
-# Microsserviçõs: Smart endpoints & dumb pipes
+# Microservices: Smart endpoints & dumb pipes
 
 	- Exposição de APIs (ex: Rest)
 	- Comunicação entre serviços
@@ -170,31 +170,31 @@ ____
 	- Utilização de sistemas de mensageria (ex: RabitMQ)
 	- Garantia de que um serviços foi executado baseada na execução das filas
 
-## Microsserviçõs: Governança descentralizada
+## Microservices: Governança descentralizada
 	- Ferramenta certa para o trabalho certo. Tecnologia podem ser definidas baseadas na necessidade do produto
 	- Diferentes padrões entre squads
 	- Contratos de interface de forma independente
 
-## Microsserviçõs: Automação de infraestrutura
+## Microservices: Automação de infraestrutura
 	- Cloud computing
 	- Testes automatizados
 	- Continuous delivery
 	- Continuous integration
 	- Load balancer / Autoscaling
 
-## Microsserviçõs: Desenhado para falhar
+## Microservices: Desenhado para falhar
 	- Tolerância a falha
 	- Serviços que se comunicam presisam de fallback
 	- Logging
 	- Monitoramento em tempo real
 	- Alarmes
 
-## Microsserviçõs: Design evolutivo
+## Microservices: Design evolutivo
 	- Produtos bem definidos podem evoluir ou serem extintos por razões de negócio
 	- Gerenciamento de versões
 	- Replacement and upgradebility
 
-## Microsserviçõs: Comunicação assíncrona
+## Microservices: Comunicação assíncrona
 	- Sempre tratar informações
 	- Dar resposta sobre as requisições
 	- Evita que processos fiquem travados quando recebem uma solicitação

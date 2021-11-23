@@ -63,11 +63,7 @@ no produto de software, são chamadas de métricas de predição, quando em proc
 métricas de controle e sua aplicação normalmente é realizada em processos já maduros e controlados.
 ```
 [devmedia](https://www.devmedia.com.br/artigo-engenharia-de-software-21-metricas-de-software/15776)
-----
-#### "Nem tudo é bala de prata!"
-----
-#### "Aprenda a martelar do que simplesmente à usar o martelo!"
-----
+
 
 # Microservices 
 

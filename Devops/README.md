@@ -11,6 +11,6 @@ no processo.
 - Velocidade na entrega sem comprometer a qualidade
 - Melhor colaboração
 - Melhor qualidade
-- Diminunit tempo de entregas 
+- Diminuir o tempo de entregas 
 - Entregas mais seguras
 ````

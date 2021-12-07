@@ -118,10 +118,19 @@ sonarqubeScanner(
         }
     }, () => {});
 ````
+-----
+Nas linhas 
+````'sonar.login':'admin',```` e ````'sonar.password':'admin'```` 
+lembrar da senha que foi redefinida eremos utilizar aqui. 
 
-Nas linhas ````'sonar.login':'admin',```` e ````'sonar.password':'admin'```` lembrar da senha que foi redefinida eremos utilizar aqui. Na linha  ````'sonar.projectKey': 'nlw-05-nodejs',```` é  a ````Project key```` que iremos configurar na plataforma do SonarQube.
+-----
+Na linha 
+````'sonar.projectKey': 'nlw-05-nodejs',```` é  a ````Project key```` 
+que iremos configurar na plataforma do SonarQube.
 
-### Todas as informações passadas podem ser encontradas na DOC ````https://docs.sonarqube.org/latest/analysis/analysis-parameters/````
+
+#### Todas as informações passadas podem ser encontradas na [DOC](https://docs.sonarqube.org/latest/analysis/analysis-parameters/)
+
 
 Voltando para a ````HOME```` SonarQube logo de cara irar ver um botão com ````Create new project````
 

@@ -15,9 +15,7 @@ código aberto, fácil de instalar e configurar.
 ````
 
 ## Criando Ambiente JENKINS docker-compose
-Crie um arquivo chamado ````docker-compose.yml````
-
-Configurações da imagem e container
+Crie um arquivo chamado ````docker-compose.yml````, configurações da imagem 
 ````
 version: '3' # vs mais atual
 services:         

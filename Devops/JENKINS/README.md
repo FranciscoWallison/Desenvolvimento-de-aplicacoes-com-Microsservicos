@@ -29,7 +29,7 @@ services:
         container_name: jenkins
 
 ````
-Rode o comando: 
+Rode o comando para criar o container com as informações da imagens: 
 ````
 docker-compose -f docker-compose.sonar.yml up -d
 ````

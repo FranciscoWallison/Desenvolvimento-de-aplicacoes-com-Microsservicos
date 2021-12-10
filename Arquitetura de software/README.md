@@ -76,7 +76,9 @@ Referência : [devmedia](https://www.devmedia.com.br/artigo-engenharia-de-softwa
 	- Pode estabelecer comunicação com diversos "clientes"
 
 ----
-	Exemplo:
+	
+	
+Exemplo:
 
  * SOA:Arquitetura Orientada a Serviços
  	- Serviçõs normalmente maiores baseados em funcionlidade

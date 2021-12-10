@@ -62,7 +62,7 @@ Quanto ao contexto, podem ser aplicadas em produtos ou em processos. Quando as m
 no produto de software, são chamadas de métricas de predição, quando em processos de software, são comumente chamadas de 
 métricas de controle e sua aplicação normalmente é realizada em processos já maduros e controlados.
 ```
-[devmedia](https://www.devmedia.com.br/artigo-engenharia-de-software-21-metricas-de-software/15776)
+Referência : [devmedia](https://www.devmedia.com.br/artigo-engenharia-de-software-21-metricas-de-software/15776)
 
 
 # Microservices 

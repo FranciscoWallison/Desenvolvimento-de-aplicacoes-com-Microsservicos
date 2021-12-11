@@ -538,6 +538,4 @@ $ git branch hotfix/0.1.1
 
 
 ````
-
-````
 [Projeto pratico](https://github.com/FranciscoWallison/gitflow-exemplo) 

@@ -93,19 +93,18 @@ gerenciar a criações de novas features, correções de bugs e releases.
 ````
 </p>
 </details>
-#### Extensão Gitflow
+
+####Extensão Gitflow
+
 ````
-	Gitflow possui  uma extensão para facilitar todo o processo, 
+	Git possui  uma extensão para facilitar todo o processo, 
 prorém a utilização da mesma é TOTALMENTE opcional.
-
-
 ````
 
 ----
-	Para iniciar um projeto usando a extensão:
-	
-		- $ git flow init
-----
+Para iniciar um projeto usando a extensão:
+
+		$ git flow init
 
  ---- Dinamica de trabalho com Features - Release - Hotfix ----
 

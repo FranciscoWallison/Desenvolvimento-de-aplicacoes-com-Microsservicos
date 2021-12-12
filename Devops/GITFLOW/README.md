@@ -205,13 +205,9 @@ Res:
 	Lembrete
  * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'.
  * Recomendado fazer teste unitário 'nivel de Prod'.
-----
-	
 
-----
-	Criando a release
-----
 
+## Criando a release
 #### $ git flow release start 0.1.0
 
 Res:

@@ -94,7 +94,7 @@ gerenciar a criações de novas features, correções de bugs e releases.
 </p>
 </details>
 
-####Extensão Gitflow
+#### Extensão Gitflow
 
 ````
 	Git possui  uma extensão para facilitar todo o processo, 

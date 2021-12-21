@@ -14,7 +14,10 @@ gerenciar a criações de novas features, correções de bugs e releases.
 ````
 
 ## Importância de padronização do processo de desenvolvimento
-
+````
+	Tem a sua importância no gerenciamento de projeto todos da equipe falar a mesma linguá ou ter uma comunicação saudável.
+Pensando nisso criar-se uma cultura antes de iniciar uma nova metodologia.
+````
 <details><summary><b>Certo e errado</b></summary>
 <p>
 

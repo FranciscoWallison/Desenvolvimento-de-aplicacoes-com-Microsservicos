@@ -1,7 +1,7 @@
 
 ## Introcução
 ````
-Jenkins, para quem não conhece, é uma ferramenta de integração contínua de 
+Uma ferramenta de integração contínua de 
 código aberto, fácil de instalar e configurar. 
 
 ````

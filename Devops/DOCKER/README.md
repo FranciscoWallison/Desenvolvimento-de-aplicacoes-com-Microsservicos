@@ -412,8 +412,10 @@ Traceback (most recent call last):
 # Vídeo Fazendo consulta utilizando PDO/php com mariadb + docker
  <details><summary><b>Codigo utilizando</b></summary>
 <p>
+	
 ### docker-composer.yml
 ````
+	
 version: '3' # vs mais atual
 services:
   # CONFIGURAÇÕES MARIADB
@@ -428,7 +430,9 @@ services:
       - MARIADB_ROOT_PASSWORD=root
       - MARIADB_USER=root
 ````
+	
 ### teste_mariadb.php
+	
 ````
 <?php
 $user = 'root';
@@ -447,7 +451,7 @@ try {
 }
 ?>
 ````
-	
+
 </p>
 </details>
 	

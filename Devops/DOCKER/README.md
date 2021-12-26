@@ -407,7 +407,50 @@ Traceback (most recent call last):
    - docker-compose kill
    - docker rmi $(docker images -a -q)
    - docker-compose up --force-recreate
-```  
+```
+
+# Vídeo Fazendo consulta utilizando PDO/php com mariadb + docker
+ <details><summary><b>Codigo utilizando</b></summary>
+<p>
+### docker-composer.yml
+````
+version: '3' # vs mais atual
+services:
+  # CONFIGURAÇÕES MARIADB
+  db_mariadb:
+    container_name: db_mariadb
+    image: mariadb:latest
+    tty: true
+    ports:
+      - "3307:3306"
+    environment:
+      - MARIADB_DATABASE=test
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_USER=root
+````
+### teste_mariadb.php
+````
+<?php
+$user = 'root';
+$pass = 'root';
+$dsn = 'mysql:dbname=test;host=127.0.0.1;port=3307';
+
+try {
+    $dbh = new PDO($dsn, $user, $pass);
+    foreach($dbh->query('SELECT * from FOO') as $row) {
+        print_r($row);
+    }
+    $dbh = null;
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "\n";
+    die();
+}
+?>
+````
+	
+</p>
+</details>
+	
 
 # Meus projetos com docker
 

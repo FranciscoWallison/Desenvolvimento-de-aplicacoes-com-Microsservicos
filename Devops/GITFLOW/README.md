@@ -109,7 +109,7 @@ Para iniciar um projeto usando a extensão:
 
 		$ git flow init
 
- ---- Dinamica de trabalho com Features - Release - Hotfix ----
+ ## ---- Dinamica de trabalho com Features - Release - Hotfix ----
 
 #### Features
 ````

@@ -210,6 +210,14 @@ https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-n
 		de uma só vez
 
 ```
+
+#### docker image prune -a
+```
+	cmd: docker image prune -a
+		Remover imagens que não estão 
+		sendo utilizadas por nenhum contêiner
+
+```
 #### docker container prune
 ```
 	cmd: docker container prune

@@ -97,19 +97,10 @@ Pensando nisso criar-se uma cultura antes de iniciar uma nova metodologia.
 </p>
 </details>
 
-#### Extensão Gitflow
 
-````
-	Git possui  uma extensão para facilitar todo o processo, 
-prorém a utilização da mesma é TOTALMENTE opcional.
-````
 
-----
-Para iniciar um projeto usando a extensão:
 
-		$ git flow init
-
- ## Dinamica de trabalho com ( Features - Release - Hotfix )
+## Dinamica de trabalho com ( Features - Release - Hotfix )
 
 #### Features
 ````
@@ -136,6 +127,15 @@ Para iniciar um projeto usando a extensão:
 ````
 
 ## Gitflow na prática
+
+#### Extensão Gitflow
+
+````
+	Git possui  uma extensão para facilitar todo o processo, 
+prorém a utilização da mesma é TOTALMENTE opcional.
+````
+
+----
 
 #### $ git flow init 
 Res:

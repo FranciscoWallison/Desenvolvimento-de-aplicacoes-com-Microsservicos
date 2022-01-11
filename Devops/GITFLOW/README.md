@@ -136,9 +136,6 @@ Para iniciar um projeto usando a extensão:
 ````
 
 ## Gitflow na prática
---- 
-	Diretório está como exemplo e algumas traduções
----
 
 #### $ git flow init 
 Res:

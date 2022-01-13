@@ -1,5 +1,14 @@
 ## Fundamentos em COBIT 4.1
+#### Introdução  
+````
+    Com acendente crescimento da tecnologia no mundo moderno,
+o uso da Tecnologia de Informação (TI) vem se tornando crescente 
+para a implementação de novas estratégia corporativas.
+    Para alinhar o planejamento estratégico de um organização junto com a TI
+é necessário evidenciar todo o processo de forma eficiente. Tendo como base 
+o gerenciamento de forma efetiva dos recursos da TI.
 
+````
 #### O que é COBIT 4.1
 
 ````

@@ -8,7 +8,8 @@ A com crescimento na tecnologia no mundo moderno, o uso da Tecnologia de Informa
 #### Introdução  
 ````
     Qualquer empresar para funcionar de uma forma organizada precisa de um fluxo de processo 
-definido e entendido pela equipe é O processo básico de uma gestão empresarial.
+definido e entendido pela equipe, sendo isso um processo básico de uma gestão empresarial. Os processo de uma empresa tendo como objetivo
+ter uma melhor obtenção na eficiência possível e devem ser constantemente analisado. A governança corporativa 
 
 ````
 #### O que é COBIT 4.1

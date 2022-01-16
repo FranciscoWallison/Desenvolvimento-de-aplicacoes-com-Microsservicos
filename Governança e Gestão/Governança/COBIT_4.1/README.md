@@ -2,27 +2,13 @@
 
 #### Resumo  
 ````
-    Com acendente crescimento na tecnologia no mundo moderno, o uso da Tecnologia de Informação (TI)
-vem se tornando crescente para a implementação de novas estratégias corporativas.
-Neste novo contexto, a TI é vista como um diferencial, e sua integração juntamente com sua
-variada gama de ferramentas tem se tornado um desafio estratégico nas organizações de modo que
-proporcione aos gestores diferenciais de mercado. Para alinhar o planejamento estratégico de
-um organização junto com a TI é necessário evidenciar todo o processo de forma eficiente.
-Dentro desse contexto, as características dos projetos com seus resultados únicos
-tenham melhores condições de traçar novos rumos competitivos. A fim de que isso ocorra é preciso
-à utilização de processos específicos do gerenciamento, governas e fremeworks organizacionais.
-Este artigo busca apresentar fundamentos, objetivos, diretrizes de gerenciamento e auditoria tendo
-como foco na estrutura e componentes do COBIT 4.1.
+A com crescimento na tecnologia no mundo moderno, o uso da Tecnologia de Informação (TI) vem se tornando crescente para a implementação de novas estratégias corporativas.Neste novo contexto, a TI é vista como um diferencial, e sua integração juntamente com sua variada gama de ferramentas tem se tornado um desafio estratégico nas organizações de modo que proporcione aos gestores diferenciais de mercado. Para alinhar o planejamento estratégico de uma organização junto com a TI é necessário evidenciar todo o processo de forma eficiente. Dentro desse contexto, as características dos projetos com seus resultados únicos têm melhores condições de traçar novos rumos competitivos. A fim de que isso ocorra é preciso a utilização de processos específicos do gerenciamento, governança e frameworks organizacionais.Este artigo busca apresentar fundamentos, objetivos, diretrizes de gerenciamento e auditoria tendo como foco na estrutura e componentes do COBIT 4.1.
 ````
 
 #### Introdução  
 ````
-    Com acendente crescimento da tecnologia no mundo moderno,
-o uso da Tecnologia de Informação (TI) vem se tornando crescente 
-para a implementação de novas estratégia corporativas.
-    Para alinhar o planejamento estratégico de um organização junto com a TI
-é necessário evidenciar todo o processo de forma eficiente. Tendo como base 
-o gerenciamento de forma efetiva dos recursos da TI.
+    Qualquer empresar para funcionar de uma forma organizada precisa de um fluxo de processo 
+definido e entendido pela equipe é O processo básico de uma gestão empresarial.
 
 ````
 #### O que é COBIT 4.1

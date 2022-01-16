@@ -9,7 +9,8 @@ A com crescimento na tecnologia no mundo moderno, o uso da Tecnologia de Informa
 ````
     Qualquer empresar para funcionar de uma forma organizada precisa de um fluxo de processo 
 definido e entendido pela equipe, sendo isso um processo básico de uma gestão empresarial. Os processo de uma empresa tendo como objetivo
-ter uma melhor obtenção na eficiência possível e devem ser constantemente analisado. A governança corporativa 
+obtenção na eficiência, por meios de ferramentas como governança tem de pôr sua vez o objetivo de recuperar e garantir a confiabilidade em uma determinada organização. A governança pode ser definida como os mecanismos ou princípios que regem o processo decisório dentro de uma organização e um conjunto de regras que visam minimizar os problemas de uma agência, tendo os seus processos constantemente analisado. Uma organização eficiente e eficaz operacionalmente deve provir de uma  harmonia entre a estratégia do negócio e seu alinhamento com as áreas funcionais que a integram. Dentre elas, a Tecnologia da Informação (TI), que tem servido de catalisador para grandes mudanças no comportamento de uma organização em resposta as alterações do ambiente que a cerca. Todo esse movimento visa à obtenção de metas sejam elas financeiras ou participações no mercado. 
+
 
 ````
 #### O que é COBIT 4.1
@@ -37,5 +38,10 @@ de processos.
     6° - É aceito pro terceiros e órgão reguladores.
     7° - Ajuda a desenvolver e documentar estruturas, processos e ferramentas  para
 um gerenciamento  efetivo de TI.
+    8° - A área de Ti ea as áreas de negócios tém estratégias alinhadas?
+    9° - A empresa atinge um nível ótimo de uso dos recursos de TI?
+    10° - Todos os empregados da empresa conhecem e entendem os objetivos de TI?
+    11° - Os riscos de TI são entendidos e gerenciados?
+    12° - A qualidade dos serviços de TI são apropriados para as necessidades da empresa?
 ````
 

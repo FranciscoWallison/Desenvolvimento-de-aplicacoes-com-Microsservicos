@@ -9,14 +9,15 @@ A com crescimento na tecnologia no mundo moderno, o uso da Tecnologia de Informa
 ````
     Qualquer empresar para funcionar de uma forma organizada precisa de um fluxo de processo 
 definido e entendido pela equipe, sendo isso um processo básico de uma gestão empresarial. Os processo de uma empresa tendo como objetivo
-obtenção na eficiência, por meios de ferramentas como governança tem de pôr sua vez o objetivo de recuperar e garantir a confiabilidade em uma determinada organização. A governança pode ser definida como os mecanismos ou princípios que regem o processo decisório dentro de uma organização e um conjunto de regras que visam minimizar os problemas de uma agência, tendo os seus processos constantemente analisado. Uma organização eficiente e eficaz operacionalmente deve provir de uma  harmonia entre a estratégia do negócio e seu alinhamento com as áreas funcionais que a integram. Dentre elas, a Tecnologia da Informação (TI), que tem servido de catalisador para grandes mudanças no comportamento de uma organização em resposta as alterações do ambiente que a cerca. Todo esse movimento visa à obtenção de metas sejam elas financeiras ou participações no mercado. 
-
-
-````
-#### O que é COBIT 4.1
+obtenção na eficiência, por meios de ferramentas como governança tem de pôr sua vez o objetivo de recuperar e garantir a confiabilidade em uma determinada organização. A governança pode ser definida como os mecanismos ou princípios que regem o processo decisório dentro de uma organização e um conjunto de regras que visam minimizar os problemas de uma agência, tendo os seus processos constantemente analisado. Uma organização eficiente e eficaz operacionalmente deve provir de uma  harmonia entre a estratégia do negócio e seu alinhamento com as áreas funcionais que a integram. Dentre elas, a Tecnologia da Informação (TI), que tem servido de catalisador para grandes mudanças no comportamento de uma organização em resposta as alterações do ambiente que a cerca. Todo esse movimento visa à obtenção de metas sejam elas financeiras ou participações no mercado.
+    Diante deste contexto, em que a TI (Tecnologia da Informação) assume um papel decisivo e estratégico dentro das organizações, surgiram, os modelos ou frameworks
+de melhores práticas de TI. Estes frameworks são uma resposta do meio empresarial aos desafios da gestão e da governança de TI, funcionando como instrumentos para a promoção do alinhamento entre os processos de TI e os objetivos estratégicos da organização. 
 
 ````
-    É um framework tendo o foco em controle, com os objetivo em tratar os 
+#### Fundamentos COBIT 4.1
+
+````
+    O COBIT (Control Objectives for Information and Related Technologies) é um framework tendo o foco em controle, com os objetivo em tratar os 
 riscos, avaliando e mensurando o desempenho na TI. Como estrutura de
 operação em TI e gerenciamento evidenciando todo o processo, tendo como base
 em atender às necessidades do negócio.

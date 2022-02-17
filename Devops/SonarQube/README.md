@@ -22,7 +22,7 @@ yarn add -D jest-sonar-reporter
 yarn add -D supertest
 ````
 
-Configurações do ````package.json```` add esses linhas 
+Configurações do ````package.json```` adicionar esses linhas 
 ````
   ...
   "jest": {
@@ -40,7 +40,7 @@ Configurações do ````package.json```` add esses linhas
   ...
 ````
 
-Ainda em ````package.json```` add esses linhas em ````"scripts":````. (Caso já utilize desconsidere)
+Ainda em ````package.json```` adicionar esses linhas em ````"scripts":````. (Caso já utilize desconsidere)
 ````
 "scripts": {
 ...
@@ -51,7 +51,7 @@ Ainda em ````package.json```` add esses linhas em ````"scripts":````. (Caso já 
 },
 ````
 
-Ao gerar o arquivo ````jest.config.js```` modificar a linda ou add.
+Ao gerar o arquivo ````jest.config.js```` modificar a linda ou adicionar.
 ````
 ...
     testResultsProcessor: "jest-sonar-reporter",

@@ -71,7 +71,7 @@ Ao finalizar o comando espera-se gerar uma pasta na raiz do projeto com nome ```
 ## Criando docker-compose
 Crie um arquivo chamado ````docker-compose.yml````
 
-Com as configurações da imagem e container
+Com as configurações da imagem para container
 ````
 version: '3' # vs mais atual
 services:         

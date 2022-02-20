@@ -64,7 +64,7 @@ Rode o comando:
 ````
 yarn test:coverage
 ````
-Ao finalizar o comando espera-se gerar uma pasta na raiz do projeto com nome ````coverage````.
+Ao finalizar irar gerar uma pasta na raiz com o nome ````coverage````.
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/SonarQube/fotos/test-reporte.png" width="250" />
 

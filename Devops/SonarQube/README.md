@@ -121,7 +121,7 @@ sonarqubeScanner(
 -----
 Nas linhas 
 ````'sonar.login':'admin',```` e ````'sonar.password':'admin'```` 
-lembrar da senha que foi redefinida eremos utilizar aqui. 
+a senha que foi redefinida cerrar utilizar aqui.
 
 -----
 Na linha 

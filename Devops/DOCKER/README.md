@@ -127,13 +127,11 @@ no dockerfile ele irar gerar uma nova imagem com os dados já
 cadastrado.
 ``` 
 
-## Aonde ficam as imagens?
+## Repositorio de imagens, existe?
 ```
 	Image registry
 
-	Como se foce um repositorio.
-
-	Pull and Push
+	É um repositorio como Pull and Push
 ```
 
 ## Docker Host

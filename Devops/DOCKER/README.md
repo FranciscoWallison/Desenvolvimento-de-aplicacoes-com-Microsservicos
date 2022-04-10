@@ -129,9 +129,9 @@ cadastrado.
 
 ## Repositorio de imagens, existe?
 ```
-	Image registry
-
-	É um repositorio como Pull and Push
+	Image registry 
+	Explo: hub.docker
+	É um repositório que você pode publicar como Pull e usar na suma maquina com Push
 ```
 
 ## Docker Host

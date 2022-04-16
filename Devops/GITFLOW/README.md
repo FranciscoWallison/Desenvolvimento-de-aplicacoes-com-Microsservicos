@@ -104,7 +104,7 @@ Pensando nisso criar-se uma cultura antes de iniciar uma nova metodologia.
 
 #### Features
 ````
-	 - Start
+	- Start
  		° git flow feature start feature/register
  	- Finish
  		° git flow feature finish feature/register
@@ -112,7 +112,7 @@ Pensando nisso criar-se uma cultura antes de iniciar uma nova metodologia.
 
 #### Release
 ````
-	 - Start
+	- Start
  		° git flow release start 1.0.0
  	- Finish
  		° git flow release finish '1.0.0'
@@ -120,7 +120,7 @@ Pensando nisso criar-se uma cultura antes de iniciar uma nova metodologia.
 
 #### Hotfix
 ````
-	 - Start
+	- Start
  		° git flow hotfix start hotfix/register
  	- Finish
  		° git flow hotfix finish hotfix/register

@@ -137,7 +137,7 @@ prorém a utilização da mesma é TOTALMENTE opcional.
 
 ----
 
-#### $ git flow init 
+#### git flow init 
 Res:
 ````
 	Repositório Git vazio inicializado em C:/Users/.git/

@@ -179,7 +179,7 @@ Res:
 
 --- 
 	Lembrete
- * A apos terminar sua funcionalidade add as usas alterações na 'stage area' e o commit.  
+ * Apos terminar sua funcionalidade adicione as alterações na 'stage area' e o commit.  
  * Recomendado fazer teste unitário 'nivel de Dev'.
 ---
 

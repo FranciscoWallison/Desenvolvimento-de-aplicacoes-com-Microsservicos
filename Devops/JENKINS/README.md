@@ -56,7 +56,7 @@ No seu repositório do GitHub
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/github_hooks.png" width="450" />
 
-OBS:: Pode esta utilizando outras alternativas, mas precisamos que a aplicação do Jenkins estejá apontando em um HTTPS publico, lembrando de sempre por arrota ````SUA_URL/github-webhook/```` dando como o exemplo ````https://fuzzy-deer-73.loca.lt/github-webhook/````
+OBS:: Pode esta utilizando outras alternativas, mas precisamos que a aplicação do Jenkins este já apontando em um HTTPS publico, lembrando de sempre por arrota ````SUA_URL/github-webhook/```` dando como o exemplo ````https://fuzzy-deer-73.loca.lt/github-webhook/````
 
 ________________________________
 Precisamos fazer o login no heroku para que o Jenkins possa ter acesso e fazer o deploy. Com o comando ````docker exec -it jenkins bash````

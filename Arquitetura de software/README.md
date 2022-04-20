@@ -4,7 +4,7 @@
 #### O que é Arquitetura?
 ```
 	Organização de um sistema, contemplando seus componentes, os relacionamentos entre
-estes e com o ambiente, e os princípios que governam seu projeto e evolução
+estes e com o ambiente, e os princípios que governam seu projeto e evolução.
 ```
 
 #### Pré-requisitos

@@ -9,3 +9,15 @@
 ````pay-as-you-go````
 ______
 ````Referência:```` AWS (Amazon Web Services) 
+
+# Vantagens
+
+º Baixo investimento inicial em hardware
+
+º Menos tempo para gerenciamento de hardware
+
+º Provisionamento de recursos
+
+º Elasticidade: aumento ou redução da 
+capacidade de 
+infraestrutura a depender de demanda

@@ -213,7 +213,10 @@ ____
 
 # Service discovery
 	- Um processo que auxilia mecanismos de identificação dos serviços disponíveis e suas instâncias.
-	- O Service Discovery tem a capacidade de localizar uma rede automaticamente, fazendo com que não haja necessidade de um longo processo de definição da configuração. A descoberta de serviço funciona por dispositivos que se conectam por meio de um idioma comum na rede, permitindo que dispositivos ou serviços se conectem sem qualquer intervenção manual. (ou seja, descoberta de serviço Kubernetes, descoberta de serviço AWS) (avinetworks)
+	- O Service Discovery tem a capacidade de localizar uma rede automaticamente, fazendo com que não haja necessidade
+	de um longo processo de definição da configuração. A descoberta de serviço funciona por dispositivos que se conectam por meio
+	de um idioma comum na rede, permitindo que dispositivos ou serviços se conectem sem qualquer intervenção manual. (ou seja,
+	descoberta de serviço Kubernetes, descoberta de serviço AWS) (avinetworks)
 
 # Backend for Frontend (BFF)
 	- Garantir a performace do dispossitio que está soclicianto serviços.

@@ -3,7 +3,6 @@
 ````
 Uma ferramenta de integração contínua de 
 código aberto, fácil de instalar e configurar. 
-
 ````
 
 ## Objetivo

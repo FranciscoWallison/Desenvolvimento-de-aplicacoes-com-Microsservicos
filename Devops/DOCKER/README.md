@@ -144,7 +144,6 @@ quando container morre, tudo se perde.
 	daemon - api
 
 	pull, push - Registry
-
 ```
 
 ## Docker Client

@@ -4,7 +4,6 @@
 ````
     Tem como objetivo de encapsular as regras e politicas da tecnologia 
 dentro de uma organização.
-
 ````
 ° Gestão
 ````

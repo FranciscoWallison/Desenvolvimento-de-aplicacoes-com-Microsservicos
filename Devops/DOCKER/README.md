@@ -58,7 +58,6 @@ isolamento dos processos. Namespaces = Isola os processos
 
 	O container só ver os processo dele, isolando todos os demais
 do sistema que ele esta sendo executados.
-
 ````
 
 ## Namespaces isolando ex

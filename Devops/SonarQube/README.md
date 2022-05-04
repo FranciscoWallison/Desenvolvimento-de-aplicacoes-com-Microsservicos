@@ -91,7 +91,7 @@ Até aqui esperasse que na maquina seja criada a o acesso ````http://localhost:9
 
 Irar pedira a senha e logo depois criar uma nova senha nova.
 
-O login e Senha de primeiro acesso é:
+O Login e Senha de primeiro acesso é:
 ````
 Login: admin
 Password: admin

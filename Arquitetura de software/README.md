@@ -51,7 +51,6 @@ estes e com o ambiente, e os princípios que governam seu projeto e evolução.
 #### - Efetivo
 	- Faz o seu trabalho
 
-
 # Métricas de software
 #### 
 ```
@@ -74,7 +73,6 @@ Referência : [devmedia](https://www.devmedia.com.br/artigo-engenharia-de-softwa
 	- Resolve problemas de negócio
 	- Independente de tecnologia ou produto
 	- Pode estabelecer comunicação com diversos "clientes"
-
 ----
 	
 	

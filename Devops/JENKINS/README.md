@@ -26,7 +26,6 @@ services:
             - 8080:8080
             - 50000:50000
         container_name: jenkins
-
 ````
 Rode o comando para criar o container com as informações da imagens: 
 ````

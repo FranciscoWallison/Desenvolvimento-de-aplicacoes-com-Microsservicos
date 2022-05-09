@@ -7,6 +7,12 @@
 estes e com o ambiente, e os princípios que governam seu projeto e evolução.
 ```
 
+#### Arquitetura X Design:
+```
+Arquitetura: Visão de mais alto nível. Separação de camadas, pastas de aplicação.
+Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões aplicar.
+```
+
 #### Pré-requisitos
 	° Organização de um sistema
 		- Usabilidade

@@ -45,8 +45,7 @@ Pensando nisso criar-se uma cultura antes de iniciar uma nova metodologia.
 	º git push origin deveop
 		
 - Nunca vai dar um push no master		
-	º git checkout master && git merge deveop
-		
+	º git checkout master && git merge deveop	
 ````
 
 

@@ -1,6 +1,13 @@
 
 # Domain Driven Design
 
+````
+	Design orientado a domínio é o conceito de que a estrutura e o idioma do seu 
+código devem corresponder ao domínio comercial.
+````
+FONTE:ALURA
+
+
 #### O que é domínio?
 ````
 	Domínio é o 'commo core' o núcleo comum que representa a estrategia do negocio.

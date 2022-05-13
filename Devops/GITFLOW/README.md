@@ -29,7 +29,6 @@ Pensando nisso criar-se uma cultura antes de iniciar uma nova metodologia.
 	
  - Pegando do master
  	º git push origin master 
-
 ````
 
 #### Exemplo :heavy_check_mark:

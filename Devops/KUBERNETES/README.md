@@ -123,7 +123,6 @@ _____
         - minikube service hello-nginx
     ° Deletando todos os SERVICES
         - kubectl delete services hello-nginx
-   
 ````
 #### K8S CONFIGMAPS
 Para que serve?

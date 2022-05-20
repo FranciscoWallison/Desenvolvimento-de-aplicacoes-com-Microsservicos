@@ -37,7 +37,7 @@ Exemplo:
 	- Arquitetura complexa
 	- Custo mais elevado
 	- Necessidade de mais equipes para manter
-	- Sistema precisa ser gande o suficiente para justificar
+	- Sistema precisa ser grande o suficiente para justificar
 	- Gera problemas que normalmente você não tinha antes
 	- Monitoramento complexo
 
@@ -130,3 +130,9 @@ ____
 	- Dar resposta sobre as requisições
 	- Evita que processos fiquem travados quando recebem uma solicitação
 	- Serviços de mensageria 
+
+## Microservices: Tipos
+	- Data service
+	- Business service
+	- Translation service
+	- Edge service

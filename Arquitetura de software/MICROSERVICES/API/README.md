@@ -7,3 +7,7 @@ transmitidas através de cabeçalhos.
     º Accept
     º Acache
 ```
+
+ACL (Access control list)
+RBAC (Role-based access control)
+on behalf of

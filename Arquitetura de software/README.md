@@ -70,11 +70,11 @@ métricas de controle e sua aplicação normalmente é realizada em processos j�
 Referência : [devmedia](https://www.devmedia.com.br/artigo-engenharia-de-software-21-metricas-de-software/15776)
 
 
-# Service Mesh
-# Conhecemos a ideia de ter um Gateway por cliente com o Edge Pattern
-# CQRS
-# Eventos assíncronos
-# Agregando métricas
+### Service Mesh
+### Conhecemos a ideia de ter um Gateway por cliente com o Edge Pattern
+### CQRS
+### Eventos assíncronos
+### Agregando métricas
 
 # API Gateway
 	- Controle, monitoramento e analise dos serviços feitos para as requisições.

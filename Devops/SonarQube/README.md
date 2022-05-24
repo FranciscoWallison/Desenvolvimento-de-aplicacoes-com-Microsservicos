@@ -98,7 +98,7 @@ Password: admin
 ````
 OBS::Quando redefinir a senha lembrar da nova senha.
 
-Voltando para o projeto cria uma arquivos como exemplo ````sonar-project.js```` na raiz do seu projeto, com as seguinte configurações.
+ Na raiz do seu projeto cria uma arquivos com nome de ````sonar-project.js````, com as seguinte configurações.
 ````
 const sonarqubeScanner =  require('sonarqube-scanner');
 sonarqubeScanner(

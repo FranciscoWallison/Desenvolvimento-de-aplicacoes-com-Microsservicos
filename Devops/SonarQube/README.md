@@ -96,7 +96,6 @@ O Login e Senha de primeiro acesso é:
 Login: admin
 Password: admin
 ````
-OBS::Quando redefinir a senha lembrar da nova senha.
 
  Na raiz do seu projeto cria uma arquivos com nome de ````sonar-project.js````, com as seguinte configurações.
 ````

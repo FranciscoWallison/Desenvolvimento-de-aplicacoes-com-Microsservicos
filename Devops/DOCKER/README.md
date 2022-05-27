@@ -77,8 +77,6 @@ interfira nos recursos de outra maquina.
 	(P) PROCESSO
 		memory = 500MB
 		cpu_shares = 512
-
-
 ```` 
 
 ## File System OFS(Overlay File System)

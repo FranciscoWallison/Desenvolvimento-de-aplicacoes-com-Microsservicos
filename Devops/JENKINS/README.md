@@ -35,7 +35,7 @@ docker-compose -f docker-compose.sonar.yml up -d
 Ao finalizar o build ele irar criar uma rota em ````http://localhost:8080/````.
 
 ## Pre-configuração hook no GitHub
-Antes de iniciar começar as configurações do Jenkins, vamos iniciar o hook do GitHub.
+Antes de iniciar as configurações do Jenkins, iremos iniciar o hook do GitHub.
 Iremos criara o server utilizando.
 
 Primeiro instale 

@@ -149,9 +149,9 @@ quando container morre, tudo se perde.
 	º Volumes
 	º Network
 ```
-```
-https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-16-04-pt
-```
+[digitalocean](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-16-04-pt)
+
+
 
 ## Comandos Docker
 

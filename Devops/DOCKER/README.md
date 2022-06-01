@@ -5,7 +5,7 @@
 ## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
 
 ### linux 
-Install docker
+Install docker [Digitalocean](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-16-04-pt)
 
 ## Sobre Docker
 * - O que são Containers
@@ -149,9 +149,6 @@ quando container morre, tudo se perde.
 	º Volumes
 	º Network
 ```
-[digitalocean](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-16-04-pt)
-
-
 
 ## Comandos Docker
 

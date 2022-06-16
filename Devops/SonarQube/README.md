@@ -1,7 +1,7 @@
 ## Introcução
 ````
 SonarQube é uma ferramenta para garantir a 
-qualidade do código.
+qualidade do projeto.
 ````
 
 ## Objetivo

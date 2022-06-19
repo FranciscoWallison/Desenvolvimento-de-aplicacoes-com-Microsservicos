@@ -40,7 +40,7 @@ Configurações do ````package.json```` adicionar esses linhas
   ...
 ````
 
-Ainda em ````package.json```` adicionar esses linhas em ````"scripts":````. (Caso já utilize desconsidere)
+Ainda em ````package.json```` adicionar essas linhas em ````"scripts":````. (Caso já utilize desconsidere)
 ````
 "scripts": {
 ...

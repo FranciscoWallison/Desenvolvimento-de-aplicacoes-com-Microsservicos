@@ -89,7 +89,7 @@ docker-compose -f docker-compose.sonar.yml up -d
 ````
 Até aqui esperasse que na maquina seja criada a o acesso ````http://localhost:9000/````.
 
-Irar pedira a senha e logo depois criar uma nova senha nova.
+Pedira a senha e logo depois criar uma nova senha.
 
 O Login e Senha de primeiro acesso é:
 ````

@@ -1,6 +1,6 @@
 ## Introcução
 ````
-     - Orquestador de containers
+     - Orquestador de containers...
 ````
 
 ## Objetivo

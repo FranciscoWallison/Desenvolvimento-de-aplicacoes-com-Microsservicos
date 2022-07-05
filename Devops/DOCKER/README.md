@@ -102,7 +102,7 @@ em outas imagens.
 ## Dockerfile
 ```
 	Arquivo declarativo de como vai ser a imagem, 
-controi imagens.
+constrói a imagen.
 
 	FROM: ImageNome
 

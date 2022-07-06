@@ -138,20 +138,20 @@ prorém a utilização da mesma é TOTALMENTE opcional.
 #### git flow init 
 Res:
 ````
-	Repositório Git vazio inicializado em C:/Users/.git/
-	Nenhum branches existe ainda. As branches básicas devem ser criadas agora.
-	Nome da branches para versões de produção: [master]
-	Nome do branches para o desenvolvimento do "próximo release ": [develop]
+Repositório Git vazio inicializado em C:/Users/.git/
+Nenhum branches existe ainda. As branches básicas devem ser criadas agora.
+Nome da branches para versões de produção: [master]
+Nome do branches para o desenvolvimento do "próximo release ": [develop]
 
-	Como nomear seus prefixos de branches de suporte?
-	Branches de Feature ? [feature /]
-	Branches Bugfix? [bugfix /]
-	Release Branches? [release  /]
+Como nomear seus prefixos de branches de suporte?
+Branches de Feature ? [feature /]
+Branches Bugfix? [bugfix /]
+Release Branches? [release  /]
 
-	Branches de correcções? [hotfix /]
-	Branches de suporte? [Apoio, suporte /]
-	Prefixo na tag de versão? []
-	Diretório de ganchos e filtros? [C:/Users/.git/hooks]
+Branches de correcções? [hotfix /]
+Branches de suporte? [Apoio, suporte /]
+Prefixo na tag de versão? []
+Diretório de ganchos e filtros? [C:/Users/.git/hooks]
 ````
 
 ---- 

@@ -156,8 +156,8 @@ Diretório de ganchos e filtros? [C:/Users/.git/hooks]
 
 ---- 
 	Lembrete
- * Validar atividade
- * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'. 
+	 * Validar atividade
+	 * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'. 
 ----
 
 #### $ git flow feature start exemplo-gitflow
@@ -177,8 +177,8 @@ Res:
 
 --- 
 	Lembrete
- * Apos terminar sua funcionalidade adicione as alterações na 'stage area' e o commit.  
- * Recomendado fazer teste unitário 'nivel de Dev'.
+	 * Apos terminar sua funcionalidade adicione as alterações na 'stage area' e o commit.  
+	 * Recomendado fazer teste unitário 'nivel de Dev'.
 ---
 
 #### $ git flow finish exemplo-gitflow
@@ -201,8 +201,8 @@ Res:
 
 ---- 
 	Lembrete
- * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'.
- * Recomendado fazer teste unitário 'nivel de Prod'.
+	 * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'.
+	 * Recomendado fazer teste unitário 'nivel de Prod'.
 
 
 ## Criando a release
@@ -225,8 +225,8 @@ Res:
 ```` 
 ----
 	Lembrete
- * Aqui vocês estará na branch da sua entrega final, verifique as alteções e se tem correções na mesma.
- * Recomendado fazer teste de sistema/regressivo.
+	 * Aqui vocês estará na branch da sua entrega final, verifique as alteções e se tem correções na mesma.
+	 * Recomendado fazer teste de sistema/regressivo.
 ----
 
 #### $ git flow release finish '0.1.0'
@@ -258,7 +258,7 @@ Res:
 
 ----
 	Lembrete 
- * Depois de salvar as mensagens de 'release' e 'tag' e ira aparecera mais uma de confirmação.
+	 * Depois de salvar as mensagens de 'release' e 'tag' e ira aparecera mais uma de confirmação.
 ----
 
 	* As alterações foram feitas no MASTER e DEVELOP 
@@ -314,8 +314,8 @@ Res:
 
 ----
 	Lembrete
- * A apos terminar sua coreção add as usas alterações na 'stage area' e o commit.  
- * Recomendado fazer teste unitário 'nivel de Dev/Prod'.
+	 * A apos terminar sua coreção add as usas alterações na 'stage area' e o commit.  
+	 * Recomendado fazer teste unitário 'nivel de Dev/Prod'.
 ----
 
 
@@ -454,7 +454,8 @@ $ git branch hotfix/0.1.1
 ````
 
 ---- 
-	Lembrete - evitar de usar o finish para evitar complicações no repositorio
+	Lembrete
+	* Evitar de usar o finish para evitar complicações no repositorio
 
 
 ## Semantic Versioning

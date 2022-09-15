@@ -205,10 +205,6 @@ um projeto.
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/20_create_pipe.png" width="350" />
 
-
-Em pipe line adicione o seu ````jenkinsfile```` exemplos de arquivos [nlw-04-nodejs](https://github.com/FranciscoWallison/nlw-04-nodejs/blob/master/jenkins/jenkinsfile). [nlw-05-nodejs](https://github.com/FranciscoWallison/nlw-05-nodejs/blob/master/jenkins/jenkinsfile) e a [doc](https://www.jenkins.io/doc/).
-
-
 Ao configurar poderar monitorar todo o seu projeto.
 
 Start 
@@ -220,3 +216,8 @@ Sucesso
 
 CI/CD Sucesso
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/piple_completo.png" width="350" />
+
+
+Em pipe line adicione o seu ````jenkinsfile```` exemplos de arquivos
+[nlw-04-nodejs](https://github.com/FranciscoWallison/nlw-04-nodejs/blob/master/jenkins/jenkinsfile).
+[nlw-05-nodejs](https://github.com/FranciscoWallison/nlw-05-nodejs/blob/master/jenkins/jenkinsfile) e a [doc](https://www.jenkins.io/doc/).

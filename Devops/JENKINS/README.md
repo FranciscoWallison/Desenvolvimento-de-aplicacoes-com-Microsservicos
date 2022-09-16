@@ -205,16 +205,19 @@ um projeto.
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/20_create_pipe.png" width="350" />
 
-Ao configurar poderar monitorar todo o seu projeto.
+## Ao configurar poderar monitorar todo o seu projeto.
 
-Start 
+#### Start
+
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/start_pipe.png" width="350" />
 
-Sucesso
+#### Sucesso
+
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/start_pipe_sucesso.png" width="350" />
 
 
-CI/CD Sucesso
+#### CI/CD Sucesso
+
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/piple_completo.png" width="350" />
 
 

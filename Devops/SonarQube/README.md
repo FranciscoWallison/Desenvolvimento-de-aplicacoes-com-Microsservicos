@@ -42,19 +42,19 @@ Configurações do ````package.json```` adicionar esses linhas
 Ainda em ````package.json```` adicionar essas linhas em ````"scripts":````. (Caso já utilize desconsidere)
 ````
 "scripts": {
-...
-    "test": "NODE_ENV=test jest -i --detectOpenHandles",
-    "test:coverage": "NODE_ENV=test jest -i --coverage",
-    "sonar": "node sonar-project.js"
-...
+  ...
+      "test": "NODE_ENV=test jest -i --detectOpenHandles",
+      "test:coverage": "NODE_ENV=test jest -i --coverage",
+      "sonar": "node sonar-project.js"
+  ...
 },
 ````
 
 Ao gerar o arquivo ````jest.config.js```` modificar a linda ou adicionar.
 ````
-...
-    testResultsProcessor: "jest-sonar-reporter",
-...
+  ...
+      testResultsProcessor: "jest-sonar-reporter",
+  ...
 ````
 
 Com essas configurações em projeto já podermos esperar resultado, com a analise o ````testExecutions```` que o SonarQube necessita.

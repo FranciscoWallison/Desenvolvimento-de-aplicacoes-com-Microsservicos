@@ -222,5 +222,5 @@ um projeto.
 
 
 Em pipe line adicione o seu ````jenkinsfile```` exemplos de arquivos
-[nlw-04-nodejs](https://github.com/FranciscoWallison/nlw-04-nodejs/blob/master/jenkins/jenkinsfile).
-[nlw-05-nodejs](https://github.com/FranciscoWallison/nlw-05-nodejs/blob/master/jenkins/jenkinsfile) e a [doc](https://www.jenkins.io/doc/).
+[nlw-04-nodejs](https://github.com/FranciscoWallison/nlw-04-nodejs/blob/master/jenkins/jenkinsfile),
+[nlw-05-nodejs](https://github.com/FranciscoWallison/nlw-05-nodejs/blob/master/jenkins/jenkinsfile) e a [documentação](https://www.jenkins.io/doc/).

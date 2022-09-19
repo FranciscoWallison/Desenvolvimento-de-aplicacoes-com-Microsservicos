@@ -163,7 +163,7 @@ Diretório de ganchos e filtros? [C:/Users/.git/hooks]
 #### $ git flow feature start exemplo-gitflow
 Res:
 ````
-		Comutado para uma nova branches 'feature/exemplo-gitflow'
+	Comutado para uma nova branches 'feature/exemplo-gitflow'
 
 	Resumo das ações:
 	- Um novo branch 'feature/exemplo-gitflow' foi criado, baseado em 'develop'

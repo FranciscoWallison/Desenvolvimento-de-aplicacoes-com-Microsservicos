@@ -250,6 +250,11 @@ Destruindo os container
 Entra dentro da SO do container
 ```
 
+#### docker-compose logs <NomeComtainer>
+```
+Mostra todos os log's gerado ao criar o container
+```
+
 #### Criando imagens partir do prod
 ```
 docker build -t chico/laravel-optmized -f Dockerfile.prod .
@@ -469,4 +474,6 @@ try {
 [Api-nodejs-express-jwt](https://github.com/FranciscoWallison/nlw-06-nodejs)
 
 [Word-Cloud-Spotify](https://github.com/FranciscoWallison/wordCloudSpotify)
+
+[Sistemas_de_Pedidos](https://github.com/FranciscoWallison/SistemasPedidos)
 	

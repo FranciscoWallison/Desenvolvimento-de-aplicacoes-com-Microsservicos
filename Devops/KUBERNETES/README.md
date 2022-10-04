@@ -246,6 +246,7 @@ ____________________________
     - kubectl exec -it mysql-server bash
     - kubectl exec -it <NAME-POD> bash    
 ````
+____________________________ 
 #### K8S Criando uma publicação [Google Cloud Platform]
     1° - Defina um "Gatilho" em  "Cloud Build"
     2° - Defina seu Repositório no "GITHUB"

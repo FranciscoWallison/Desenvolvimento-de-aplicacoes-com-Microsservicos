@@ -56,12 +56,12 @@ Pensando nisso criar-se uma cultura antes de iniciar uma nova metodologia.
 <details><summary><b>Como funciona o Gitflow</b></summary>
 <p>
 	
- - Master
+ - branch ---- Master
 ````
  - Nunca comita diretamente do master
 
 ````
- - Delevop
+ -  branch ---- Delevop
 ````
  ° Features
  	-- Init

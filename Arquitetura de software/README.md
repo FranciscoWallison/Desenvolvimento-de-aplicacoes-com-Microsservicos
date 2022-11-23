@@ -141,3 +141,17 @@ _____
 	 - Lançada em 2011 pelo ISO
 	 - Mais simplificado
 	 - Formaliza os fundamentos da área de arquitetura de software.
+	 
+	 
+
+
+#### Tech Stack
+_____
+```
+	- Escolher ferramentas específicas do setor ou do processo
+	- Leia avaliações de usuários para descobrir o que seus colegas pensam
+	- Planeje a longo prazo
+	- Criar uma lista final
+	- Obter experiência prática
+	- Ver uma demostração
+```

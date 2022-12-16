@@ -1,6 +1,13 @@
-## Objetivo
+# Descomplicando ambiente de trabalho usando docker
+- Tendo dificuldade de instalar todas as bibliotecas sempre que precisa criar um novo projeto?
+- Problemas para buidar e utilizar as suas aplicações em qualquer Sistema Operacional desktop?
 
+## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
 
+### linux 
+Install docker [Digitalocean](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-16-04-pt)
+
+## Sobre Docker
 * - O que são Containers
 * - Como funcionam os Container
 * - Como o Docker funciona
@@ -17,8 +24,6 @@ que empacota código e todas as dependências de
 uma aplicação fazendo que a mesma seja executada 
 rapidamente de forma confiável de uma ambiente 
 computacional para outro.
-
-
 ```
 
 ## Como funcionam os Container
@@ -51,8 +56,7 @@ isolamento dos processos. Namespaces = Isola os processos
 		(p) filho container 2
 
 	O container só ver os processo dele, isolando todos os demais
-do sistema q ele esta sendo executados.
-
+do sistema que ele esta sendo executados.
 ````
 
 ## Namespaces isolando ex
@@ -73,8 +77,6 @@ interfira nos recursos de outra maquina.
 	(P) PROCESSO
 		memory = 500MB
 		cpu_shares = 512
-
-
 ```` 
 
 ## File System OFS(Overlay File System)
@@ -100,7 +102,7 @@ em outas imagens.
 ## Dockerfile
 ```
 	Arquivo declarativo de como vai ser a imagem, 
-controi imagens.
+constrói a imagen.
 
 	FROM: ImageNome
 
@@ -121,13 +123,11 @@ no dockerfile ele irar gerar uma nova imagem com os dados já
 cadastrado.
 ``` 
 
-## Aonde ficam as imagens?
+## Repositorio de imagens, existe?
 ```
-	Image registry
-
-	Como se foce um repositorio.
-
-	Pull and Push
+	Image registry 
+	Explo: hub.docker
+	É um repositório que você pode publicar como Pull e usar na suma maquina com Push
 ```
 
 ## Docker Host
@@ -140,7 +140,6 @@ quando container morre, tudo se perde.
 	daemon - api
 
 	pull, push - Registry
-
 ```
 
 ## Docker Client
@@ -149,15 +148,6 @@ quando container morre, tudo se perde.
 	° Run, Pull, Push
 	º Volumes
 	º Network
-```
-
-## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
-
-### linux 
-Install docker
-
-```
-https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-16-04-pt
 ```
 
 ## Comandos Docker
@@ -210,6 +200,14 @@ https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-n
 		de uma só vez
 
 ```
+
+#### docker image prune -a
+```
+	cmd: docker image prune -a
+		Remover imagens que não estão 
+		sendo utilizadas por nenhum contêiner
+
+```
 #### docker container prune
 ```
 	cmd: docker container prune
@@ -250,6 +248,11 @@ Destruindo os container
 #### docker exec -it app-exeplo bash
 ```
 Entra dentro da SO do container
+```
+
+#### docker-compose logs <NomeComtainer>
+```
+Mostra todos os log's gerado ao criar o container
 ```
 
 #### Criando imagens partir do prod
@@ -392,10 +395,85 @@ Tecnologia permite o uso de múltiplos docker hosts.
  - Configurações iniciais e atualizações frequentes do SO
  - Manter vários sistemas operacionais. 
 ````
+## Possiveis erros e soluções
+```
+Building app
+Traceback (most recent call last):
+  File "site-packages\docker\utils\build.py", line , in create_archive
+OSError: [Errno 22] Invalid argument: 'public\\storage'
 
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+```
+```
+   - docker-compose kill
+   - docker rmi $(docker images -a -q)
+   - docker-compose up --force-recreate
+```
+
+### [Vídeo Fazendo consulta utilizando PDO/php com mariadb + docker](https://www.youtube.com/watch?v=FzPgZ84lP94)
+ <details><summary><b>Codigo utilizando</b></summary>
+<p>
+	
+### docker-composer.yml
+````
+	
+version: '3' # vs mais atual
+services:
+  # CONFIGURAÇÕES MARIADB
+  db_mariadb:
+    container_name: db_mariadb
+    image: mariadb:latest
+    tty: true
+    ports:
+      - "3307:3306"
+    environment:
+      - MARIADB_DATABASE=test
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_USER=root
+````
+	
+### teste_mariadb.php
+	
+````
+<?php
+$user = 'root';
+$pass = 'root';
+$dsn = 'mysql:dbname=test;host=127.0.0.1;port=3307';
+
+try {
+    $dbh = new PDO($dsn, $user, $pass);
+    foreach($dbh->query('SELECT * from FOO') as $row) {
+        print_r($row);
+    }
+    $dbh = null;
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "\n";
+    die();
+}
+?>
+````
+
+</p>
+</details>
+	
 
 # Meus projetos com docker
 
 [Workflow-laravel](https://github.com/FranciscoWallison/laradocker-publicando-imagem)
 
 [EnvioEailsComWorkes](https://github.com/FranciscoWallison/Projeto-EnvioEailsComWorkes)
+
+[Videos-laravel](https://github.com/FranciscoWallison/laravel-microservice-docker)
+
+[Api-nodejs-express-email](https://github.com/FranciscoWallison/nlw-04-nodejs)
+
+[Api-nodejs-express-socket](https://github.com/FranciscoWallison/nlw-05-nodejs)
+	
+[Api-nodejs-express-jwt](https://github.com/FranciscoWallison/nlw-06-nodejs)
+
+[Word-Cloud-Spotify](https://github.com/FranciscoWallison/wordCloudSpotify)
+
+[Sistemas_de_Pedidos](https://github.com/FranciscoWallison/SistemasPedidos)
+	

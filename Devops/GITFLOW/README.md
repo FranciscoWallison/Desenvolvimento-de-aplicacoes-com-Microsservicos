@@ -14,7 +14,10 @@ gerenciar a criações de novas features, correções de bugs e releases.
 ````
 
 ## Importância de padronização do processo de desenvolvimento
-
+````
+	Tem a sua importância no gerenciamento de projeto todos da equipe falar a mesma linguá ou ter uma comunicação saudável.
+Pensando nisso criar-se uma cultura antes de iniciar uma nova metodologia.
+````
 <details><summary><b>Certo e errado</b></summary>
 <p>
 
@@ -26,22 +29,22 @@ gerenciar a criações de novas features, correções de bugs e releases.
 	
  - Pegando do master
  	º git push origin master 
-
 ````
 
 #### Exemplo :heavy_check_mark:
 ````
+	
+- Uma nova carecterística
 	º git checkout -b feature/registro
-		- uma nova carecterística
-		
+	
+- Corrigindo um erro na parte de registro
 	º git checkout -b hotfix/registro
-		- corrigindo um erro na parte de registro
-		
+	
+- Tudo que está no processo de desenvolvimento
 	º git push origin deveop
-		- tudo q está no processo de desenvolvimento
 		
-	º git checkout master && git merge deveop
-		- nunca vai dar um push no master
+- Nunca vai dar um push no master		
+	º git checkout master && git merge deveop	
 ````
 
 
@@ -50,16 +53,15 @@ gerenciar a criações de novas features, correções de bugs e releases.
 
 ---
 
-
 <details><summary><b>Como funciona o Gitflow</b></summary>
 <p>
 	
- - Master
+ - branch ---- Master
 ````
  - Nunca comita diretamente do master
 
 ````
- - Delevop
+ -  branch ---- Delevop
 ````
  ° Features
  	-- Init
@@ -92,25 +94,15 @@ gerenciar a criações de novas features, correções de bugs e releases.
 ````
 </p>
 </details>
-#### Extensão Gitflow
-````
-	Gitflow possui  uma extensão para facilitar todo o processo, 
-prorém a utilização da mesma é TOTALMENTE opcional.
 
 
-````
 
-----
-	Para iniciar um projeto usando a extensão:
-	
-		- $ git flow init
-----
 
- ---- Dinamica de trabalho com Features - Release - Hotfix ----
+## Dinamica de trabalho com ( Features - Release - Hotfix )
 
 #### Features
 ````
-	 - Start
+	- Start
  		° git flow feature start feature/register
  	- Finish
  		° git flow feature finish feature/register
@@ -118,7 +110,7 @@ prorém a utilização da mesma é TOTALMENTE opcional.
 
 #### Release
 ````
-	 - Start
+	- Start
  		° git flow release start 1.0.0
  	- Finish
  		° git flow release finish '1.0.0'
@@ -126,46 +118,52 @@ prorém a utilização da mesma é TOTALMENTE opcional.
 
 #### Hotfix
 ````
-	 - Start
+	- Start
  		° git flow hotfix start hotfix/register
  	- Finish
  		° git flow hotfix finish hotfix/register
 ````
 
 ## Gitflow na prática
---- 
-	Diretório está como exemplo e algumas traduções
----
 
-#### $ git flow init 
+#### Extensão Gitflow
+
+````
+	Git possui  uma extensão para facilitar todo o processo, 
+prorém a utilização da mesma é TOTALMENTE opcional.
+````
+
+----
+
+#### git flow init 
 Res:
 ````
-	Repositório Git vazio inicializado em C:/Users/.git/
-	Nenhum branches existe ainda. As branches básicas devem ser criadas agora.
-	Nome da branches para versões de produção: [master]
-	Nome do branches para o desenvolvimento do "próximo release ": [develop]
+Repositório Git vazio inicializado em C:/Users/.git/
+Nenhum branches existe ainda. As branches básicas devem ser criadas agora.
+Nome da branches para versões de produção: [master]
+Nome do branches para o desenvolvimento do "próximo release ": [develop]
 
-	Como nomear seus prefixos de branches de suporte?
-	Branches de Feature ? [feature /]
-	Branches Bugfix? [bugfix /]
-	Release Branches? [release  /]
+Como nomear seus prefixos de branches de suporte?
+Branches de Feature ? [feature /]
+Branches Bugfix? [bugfix /]
+Release Branches? [release  /]
 
-	Branches de correcções? [hotfix /]
-	Branches de suporte? [Apoio, suporte /]
-	Prefixo na tag de versão? []
-	Diretório de ganchos e filtros? [C:/Users/.git/hooks]
+Branches de correcções? [hotfix /]
+Branches de suporte? [Apoio, suporte /]
+Prefixo na tag de versão? []
+Diretório de ganchos e filtros? [C:/Users/.git/hooks]
 ````
 
 ---- 
 	Lembrete
- * Validar atividade
- * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'. 
+	 * Validar atividade
+	 * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'. 
 ----
 
 #### $ git flow feature start exemplo-gitflow
 Res:
 ````
-		Comutado para uma nova branches 'feature/exemplo-gitflow'
+	Comutado para uma nova branches 'feature/exemplo-gitflow'
 
 	Resumo das ações:
 	- Um novo branch 'feature/exemplo-gitflow' foi criado, baseado em 'develop'
@@ -179,8 +177,8 @@ Res:
 
 --- 
 	Lembrete
- * A apos terminar sua funcionalidade add as usas alterações na 'stage area' e o commit.  
- * Recomendado fazer teste unitário 'nivel de Dev'.
+	 * Apos terminar sua funcionalidade adicione as alterações na 'stage area' e o commit.  
+	 * Recomendado fazer teste unitário 'nivel de Dev'.
 ---
 
 #### $ git flow finish exemplo-gitflow
@@ -203,15 +201,11 @@ Res:
 
 ---- 
 	Lembrete
- * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'.
- * Recomendado fazer teste unitário 'nivel de Prod'.
-----
-	
+	 * Ao dar "$ git branch" irar mostra as bransh do 'master' e 'develop'.
+	 * Recomendado fazer teste unitário 'nivel de Prod'.
 
-----
-	Criando a release
-----
 
+## Criando a release
 #### $ git flow release start 0.1.0
 
 Res:
@@ -231,8 +225,8 @@ Res:
 ```` 
 ----
 	Lembrete
- * Aqui vocês estará na branch da sua entrega final, verifique as alteções e se tem correções na mesma.
- * Recomendado fazer teste de sistema/regressivo.
+	 * Aqui vocês estará na branch da sua entrega final, verifique as alteções e se tem correções na mesma.
+	 * Recomendado fazer teste de sistema/regressivo.
 ----
 
 #### $ git flow release finish '0.1.0'
@@ -264,7 +258,7 @@ Res:
 
 ----
 	Lembrete 
- * Depois de salvar as mensagens de 'release' e 'tag' e ira aparecera mais uma de confirmação.
+	 * Depois de salvar as mensagens de 'release' e 'tag' e ira aparecera mais uma de confirmação.
 ----
 
 	* As alterações foram feitas no MASTER e DEVELOP 
@@ -320,8 +314,8 @@ Res:
 
 ----
 	Lembrete
- * A apos terminar sua coreção add as usas alterações na 'stage area' e o commit.  
- * Recomendado fazer teste unitário 'nivel de Dev/Prod'.
+	 * A apos terminar sua coreção add as usas alterações na 'stage area' e o commit.  
+	 * Recomendado fazer teste unitário 'nivel de Dev/Prod'.
 ----
 
 
@@ -460,7 +454,8 @@ $ git branch hotfix/0.1.1
 ````
 
 ---- 
-	Lembrete - evitar de usar o finish para evitar complicações no repositorio
+	Lembrete
+	* Evitar de usar o finish para evitar complicações no repositorio
 
 
 ## Semantic Versioning
@@ -538,6 +533,4 @@ $ git branch hotfix/0.1.1
 
 
 ````
-
-
 [Projeto pratico](https://github.com/FranciscoWallison/gitflow-exemplo) 

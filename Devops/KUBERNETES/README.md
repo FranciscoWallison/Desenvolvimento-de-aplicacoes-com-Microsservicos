@@ -1,7 +1,8 @@
+# k8s - commandos rapidos
+
 ## Introcução
 ````
-     - 
-
+     - Orquestador de containers...
 ````
 
 ## Objetivo
@@ -14,7 +15,7 @@
 ##### K8S
 ````
       - sudo apt-get install curl -y
-      - curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes             release/release/stable.txt)/bin/linux/amd64/kubectl"
+      - curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes release/release/stable.txt)/bin/linux/amd64/kubectl"
       - chmod +x ./kubectl
       - sudo mv ./kubectl /usr/local/bin/kubectl
 ````
@@ -124,7 +125,6 @@ _____
         - minikube service hello-nginx
     ° Deletando todos os SERVICES
         - kubectl delete services hello-nginx
-   
 ````
 #### K8S CONFIGMAPS
 Para que serve?
@@ -140,6 +140,7 @@ Comandos:
 Para que serve?
 _____
     ° Administra todas os POD's criados, criando redundâncias para cada imagem.
+    ° Quando criados, Deployments auxiliam com controle de versionamento e criam um ReplicaSet automaticamente.(Font: Alura)
 ----------------------------------------------------
 Comandos:
 _____
@@ -164,6 +165,8 @@ _____
     ° Podendo ver histórico de versões Deployments com o comando "rollout history"
         - kubectl rollout history deployments nginx-deployment
         - kubectl rollout history deployments <NAME_METADATA>
+     ° Podendo voltar Deployments com o comando "rollout undo deployment" (Font: Alura)
+        - kubectl rollout undo deployment <nome do deployment> --to-revision=<versão a ser retornada>
 ----------------------------------------------------
 Comandos:
 _____
@@ -245,6 +248,7 @@ ____________________________
     - kubectl exec -it mysql-server bash
     - kubectl exec -it <NAME-POD> bash    
 ````
+____________________________ 
 #### K8S Criando uma publicação [Google Cloud Platform]
     1° - Defina um "Gatilho" em  "Cloud Build"
     2° - Defina seu Repositório no "GITHUB"

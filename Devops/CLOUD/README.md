@@ -9,7 +9,6 @@ definição de preço conforme o uso. ````pay-as-you-go````
 ````Referência:```` AWS (Amazon Web Services) 
 ______
 
-
 # Vantagens
 
 º Baixo investimento inicial em hardware

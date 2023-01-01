@@ -124,7 +124,6 @@ Logo em seguida teremos essa tela, pode demorar um pouco ...
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/4_getting_started.png" width="450" />
 
-
 Ao finaliza a instalação dos plug-ins irar pedir para criar login de acesso.
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/7_getting_started_create_first_admin_user.png" width="450" />
@@ -143,7 +142,6 @@ Na home do painel do Jenkins selecione ````Novo Job```` adicione o nome do seu p
 
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/9_home.png" width="350" />  
 <img src="https://github.com/FranciscoWallison/Desenvolvimento-de-aplicacoes-com-Microsservicos/blob/master/Devops/JENKINS/imgs/10_create_new_project.png" width="350" />
-
 
 
 Ativando nodeJs ser não já estiver ativo, precisamos configurar em ````Gerenciar o Jenkins```` >  ````Global Tool Configuration```` em nome adicione o ````node```` e ````save````.

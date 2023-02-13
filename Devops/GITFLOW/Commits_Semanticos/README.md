@@ -8,3 +8,16 @@ Commits semânticos têm uma mensagem clara e concisa que descreve o que foi alt
 Uma boa prática é escrever a mensagem do commit com um verbo no tempo presente e no infinitivo, como "Adicionar recurso X" ou "Corrigir erro Y". Isto ajuda a fornecer uma visão clara e concisa do que foi feito, tornando mais fácil para os outros membros da equipe entender as alterações.
 
 Em resumo, os commits semânticos são uma boa prática para equipes de desenvolvimento que buscam manter um histórico claro e significativo das mudanças no código. Eles ajudam a melhorar a colaboração, a solução de problemas e a manutenção do código ao longo do tempo.
+
+
+# Exemplos de mensagens de commit semânticas:
+
+Adicionar funcionalidade de login: Esta mensagem descreve claramente o que foi adicionado ao código, tornando fácil para outros desenvolvedores entenderem o propósito da alteração.
+
+Corrigir erro de formatação na página de perfil: Esta mensagem especifica o que foi corrigido, tornando fácil para outros desenvolvedores entender o motivo da alteração.
+
+Atualizar documentação da API: Esta mensagem descreve uma alteração na documentação, o que pode ser importante para outros desenvolvedores que dependem da API.
+
+Refatorar código da classe X: Esta mensagem descreve uma mudança significativa no código, sem adicionar ou remover funcionalidades. A mensagem explica o que foi feito, tornando fácil para outros desenvolvedores entenderem o propósito da alteração.
+
+Lembre-se de que as mensagens de commit devem ser claras e concisas, mas ainda fornecer suficientes informações para que outros desenvolvedores entendam o que foi feito. Isso ajuda a garantir que o código seja mantido de forma eficiente e confiável ao longo do tempo.

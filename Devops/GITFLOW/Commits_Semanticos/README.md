@@ -23,3 +23,37 @@ Refatorar código da classe X: Esta mensagem descreve uma mudança significativa
 Lembre-se de que as mensagens de commit devem ser claras e concisas, mas ainda fornecer suficientes informações para que outros desenvolvedores entendam o que foi feito. Isso ajuda a garantir que o código seja mantido de forma eficiente e confiável ao longo do tempo.
 
 
+## Ná pratica
+````
+"feat: [...]": Usado para criação de novas features, endpoints, services e etc
+feat: create user service
+````
+
+````
+"fix: [...]": Solução de erros, bugs e afins
+fix: error on create user without profile picture
+````
+````
+"refactor: [...]": Quando for refatorar um trecho de código
+refactor: refactor create user service
+````
+
+````
+"chore: [...]": Alterações que não o funcionamento do sistema nem em testes automatizados, como alterações no .gitignore, eslint, README.md e etc
+chore: use prettier on eslint rules
+````
+
+````
+"style: [...]": Alterações de estilo que não influenciam no sistema
+style: change background color
+````
+
+````
+"build: [...]": Alterações que impactam apenas o build do projeto
+build: create deploy config file
+````
+
+````
+"test: [...]": Criação ou modificação de testes automatizados
+test: testing create user service
+````

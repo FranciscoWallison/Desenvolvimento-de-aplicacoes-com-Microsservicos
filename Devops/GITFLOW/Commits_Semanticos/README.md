@@ -21,3 +21,5 @@ Atualizar documentação da API: Esta mensagem descreve uma alteração na docum
 Refatorar código da classe X: Esta mensagem descreve uma mudança significativa no código, sem adicionar ou remover funcionalidades. A mensagem explica o que foi feito, tornando fácil para outros desenvolvedores entenderem o propósito da alteração.
 
 Lembre-se de que as mensagens de commit devem ser claras e concisas, mas ainda fornecer suficientes informações para que outros desenvolvedores entendam o que foi feito. Isso ajuda a garantir que o código seja mantido de forma eficiente e confiável ao longo do tempo.
+
+

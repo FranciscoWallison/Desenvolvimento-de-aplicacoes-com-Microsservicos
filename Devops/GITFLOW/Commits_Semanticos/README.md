@@ -39,7 +39,8 @@ refactor: refactor create user service
 ````
 
 ````
-"chore: [...]": Alterações que não o funcionamento do sistema nem em testes automatizados, como alterações no .gitignore, eslint, README.md e etc
+"chore: [...]": Alterações que não o funcionamento do sistema nem em testes automatizados,
+como alterações no .gitignore, eslint, README.md e etc
 chore: use prettier on eslint rules
 ````
 

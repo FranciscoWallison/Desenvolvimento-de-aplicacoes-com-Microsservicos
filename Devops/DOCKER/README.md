@@ -1,6 +1,6 @@
 # Descomplicando ambiente de trabalho usando docker
 - Tendo dificuldade de instalar todas as bibliotecas sempre que precisa criar um novo projeto?
-- Problemas para buidar e utilizar as suas aplicações em qualquer Sistema Operacional desktop?
+- Problemas para buildar e utilizar as suas aplicações em qualquer Sistema Operacional desktop?
 
 ## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
 
@@ -15,6 +15,15 @@ Install docker [Digitalocean](https://www.digitalocean.com/community/tutorials/c
 * - Dockerfile
 * - Trabalhando com imagens Docker
 
+## [O que Docker?](https://blog.geekhunter.com.br/docker-na-pratica-como-construir-uma-aplicacao/#O_que_e_Docker)
+```
+	O Docker é um programa open source desenvolvido
+pela Docker Inc. com a linguagem de programação GO.
+Podemos dizer que as palavras chaves para o Docker são:
+construir, entregar e rodar em qualquer ambiente (build, ship and run anywhere).
+
+- blog.geekhunter.com.br
+```
 
 ## O que são containers?
 

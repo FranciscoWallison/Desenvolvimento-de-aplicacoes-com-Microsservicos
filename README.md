@@ -1,5 +1,5 @@
 # Desenvolvimento de aplicações com Microsserviços
-Serie com objetivo de melhorar o conhecimento de desenvolvimento, trabalhando com Microsserviços, levantamento de requisitos, manutenção, arquitetura e agilidade em entrega de projetos. 
+Com o objetivo de melhorar o conhecimento de desenvolvimento, Microsserviços, levantamento de requisitos, manutenção, arquitetura e agilidade em entrega de projetos. 
 
 
 ````

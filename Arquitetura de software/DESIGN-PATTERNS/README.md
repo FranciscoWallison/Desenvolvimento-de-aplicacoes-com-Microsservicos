@@ -59,6 +59,7 @@
 ## CQRS (Command Query Responsibility Segregation)
 - Separar Command Stack e Query Stack
 - Com objetivo de separar evento de ação e consulta
+- Alternativa CQS
 
 ## Caching 
 - Tem como armazenar eventos predefinidos para diminuir o tempo de consumo

@@ -74,6 +74,7 @@
 - Least Frequently Used (LFU)
    - Remove o que teve menos frequência de acesso
 - TTL-based invalidation
+   - Ao criar o registro com um tempo ele permanecerá válido (isto é, qual o TTL dele). Após esse tempo ele é invalidado automaticamente.
 - Write-through invalidation
    - Para sistema que não tem muita gravação 
    - Sempre quando há alteração no disco, o cache é atualizado.

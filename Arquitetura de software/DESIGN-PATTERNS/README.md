@@ -25,7 +25,7 @@
 
 ## Stateless vs Stateful
 
-- Aplicação que sobe ou é removido sem preder um dados.
+- Stateless e Stateful reflete a maturidade de uma aplicação.
 
 - Stateless:A diferença mais importante é que o stateless é um widget estático, ou seja, não temos como gerenciar o estado dele.
 

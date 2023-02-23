@@ -35,6 +35,37 @@ rapidamente de forma confiável de uma ambiente
 computacional para outro.
 ```
 
+## Analogia com comida 
+````
+Imagine que você é um cozinheiro e está preparando uma receita.
+Para preparar a receita, você precisa de vários ingredientes,
+como carne, legumes, temperos, etc. Além disso, você também precisa
+de utensílios de cozinha, como panelas, facas, etc.
+
+Agora, imagine que cada vez que você precisasse preparar essa receita,
+você precisasse ir ao supermercado comprar todos os ingredientes e utensílios
+novamente. Isso seria demorado e trabalhoso, certo?
+
+Agora, imagine que você pudesse armazenar todos os ingredientes e utensílios 
+em um conjunto de caixas, cada uma contendo todos os itens necessários para
+preparar a receita. Sempre que você quisesse preparar a receita, bastaria abrir
+a caixa correspondente e todos os ingredientes e utensílios necessários estariam
+prontos para serem usados.
+
+O Docker funciona de maneira semelhante. Em vez de ter que instalar todas as
+dependências e configurações necessárias para executar um aplicativo em seu
+computador, você pode empacotar todas essas dependências em um contêiner, que
+é como uma caixa que contém todos os itens necessários para executar o aplicativo.
+Quando você precisa executar o aplicativo, basta executar o contêiner e todas as
+dependências e configurações necessárias já estarão lá, prontas para serem usadas.
+
+Assim como as caixas que você usou para armazenar seus ingredientes e utensílios de
+cozinha, você pode compartilhar seus contêineres com outras pessoas, permitindo que
+elas executem o mesmo aplicativo em seus próprios computadores sem precisar instalar
+todas as dependências e configurações novamente.
+
+````
+
 ## Como funcionam os Container
 ```
 	Existe processo para cada atividade que ele irar

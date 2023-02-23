@@ -81,4 +81,11 @@
    - Esse estratégia funciona bem com sistema que não possuem um alto índice de escrita.
 - Write-back invalidation
    - Guarda primeiro no cache depois no banco de dados.
-   - Quando há alteração, o cache primeiramente é alterado e depois o dado em disco é atualizado. Muitas vezes o dado em disco é atualizado quando o cache já está para expirar de alguma forma. 
+   - Quando há alteração, o cache primeiramente é alterado e depois o dado em disco é atualizado. Muitas vezes o dado em disco é atualizado quando o cache já está para expirar de alguma forma.
+
+## Distributed Locking
+ - Consistência de dados
+ - Contenção de recursos
+ - Evita dead locks
+ - Garante mais eficiências de recursos
+ - Ferramentas: Apache Zookeeper, ETCD, Redis, Consul

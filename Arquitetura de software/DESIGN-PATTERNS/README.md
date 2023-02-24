@@ -89,3 +89,14 @@
  - Evita dead locks
  - Garante mais eficiências de recursos
  - Ferramentas: Apache Zookeeper, ETCD, Redis, Consul
+
+## Configuration 
+ - Configurações de uma aplicação mudam a qualquer momento
+ - Como mudar uma senha de banco de dados, credenciais de email,
+etc... Sem ter que reiniciar totalmente a aplicação ou refazer o deploy?
+ 
+````
+ Tem como principal objetivo de não precisar reiniciar, iniciar um novo deploy
+ou dar um novo boot na aplicação toda para receber as configurações.
+````
+

@@ -110,3 +110,9 @@ ou dar um novo boot na aplicação toda para receber as configurações.
       - Armazenamento de secrets 
       - Rotacionamento automáticos de secrets nos serviços como RDS.
       - SDK para recuperação dos secrets em tempo de execução
+
+## Circuit breaker
+````
+Tem como objetivo de administrar falhas em cascatas utilizando como exemplo microservices.
+Auxiliando quando acontece um ou mais serviços ficam indisponíveis ou respondem com alta latência.
+````

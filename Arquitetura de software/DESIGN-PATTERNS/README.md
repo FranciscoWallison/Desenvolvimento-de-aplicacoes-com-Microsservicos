@@ -100,3 +100,13 @@ etc... Sem ter que reiniciar totalmente a aplicação ou refazer o deploy?
 ou dar um novo boot na aplicação toda para receber as configurações.
 ````
 
+## Secret Management
+
+- Credenciais não podem ficar "voando" na empresa
+- Processos para rotacional credenciais são importantes
+- Serviços gerenciados e soluções ajudam nessa tarefa
+    - HashiCorp Vault
+    - AWS Secret Manager
+      - Armazenamento de secrets 
+      - Rotacionamento automáticos de secrets nos serviços como RDS.
+      - SDK para recuperação dos secrets em tempo de execução

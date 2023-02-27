@@ -60,6 +60,7 @@
 - Separar Command Stack e Query Stack
 - Com objetivo de separar evento de ação e consulta
 - Alternativa CQS
+- Separar a leitura e a gravação de dados em áreas distintas em uma aplicação
 
 ## Caching 
 - Tem como armazenar eventos predefinidos para diminuir o tempo de consumo
@@ -69,6 +70,7 @@
   - Caching vai ter um tempo predeterminado.
 - Last Recently Used (LRU)
   - Vai limitar a quantidade de Caching armazenado e remove os cache em formato de fila
+  - Os dados que tiveram acesso mais recentemente
 - Most Recently Used (MRU)
    - 
 - Least Frequently Used (LFU)
@@ -89,6 +91,7 @@
  - Evita dead locks
  - Garante mais eficiências de recursos
  - Ferramentas: Apache Zookeeper, ETCD, Redis, Consul
+ - Garantir a consistência dos dados em um ambiente distribuído
 
 ## Configuration 
  - Configurações de uma aplicação mudam a qualquer momento
@@ -112,7 +115,64 @@ ou dar um novo boot na aplicação toda para receber as configurações.
       - SDK para recuperação dos secrets em tempo de execução
 
 ## Circuit breaker
+- Evitar a falha geral do sistema em caso de erros recorrentes
 ````
 Tem como objetivo de administrar falhas em cascatas utilizando como exemplo microservices.
 Auxiliando quando acontece um ou mais serviços ficam indisponíveis ou respondem com alta latência.
+````
+
+## Sequencing
+````
+Ele retorna UUI para os sistemas como Microsserviços 
+````
+
+## API Gateway
+- Centralizador de requisições
+- Roteamento
+- Autenticação
+- Conversão de dados
+   - Exemplo: api converte para xml e roteia para o sistema que utiliza.
+- Cabeçalhos
+- Throttling
+- Rate Limit
+
+## Event Drive Architecture
+- Evento acontecem no passado
+   - Event Notification
+     - O Event Notification possui apenas as informações necessárias mudando o estado de um sistema
+   - Event Carried State Transfer
+     - Possui todos os dados do evento ocorrido
+   - Event Sourcing
+      - Tem como objetivo de capturar todos os eventos dentro de um banco
+
+- Um evento emitido pode ser o gatilho de entrada para um outro sistema
+- Coreografia VS Orquestração 
+
+## Publish-Subscribe
+
+## Backend for Frontend
+- Trabalhar somente com dados necessário 
+
+## Sidecars Applications
+- Aplicações auxiliares na aplicação principal
+- Coleta de logs
+- mTLS
+- Controle de tráfego
+````
+Uma aplicação ficar se comunicando com as demais serviços que se utiliza.
+Um componente independente que roda em conjunto com a aplicação principal.
+````
+
+## Service Mash
+- Gerenciamento de tráfego
+- Segurança
+- Policy enforcement
+- Observabilidade
+- Extensibilidade
+- Istio
+  - O Istio é um sistema de Service Mesh
+- Envoy
+  - Proxy
+````
+Uma malha de serviço é uma camada de infraestrutura dedicada que você pode adicionar as suas aplicações. Ele permite adicionar recursos de forma transparente, com observabilidade, gerenciamento de tráfego e segurança, sem adicioná-los ao seus próprio código. 
 ````

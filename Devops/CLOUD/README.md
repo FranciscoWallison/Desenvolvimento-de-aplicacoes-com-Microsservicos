@@ -20,3 +20,101 @@ ______
 º Elasticidade: aumento ou redução da 
 capacidade de 
 infraestrutura a depender de demanda
+
+
+## Arquitetura de Solução para Cloud
+- [AWS Well-Architected](https://aws.amazon.com/pt/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc&wa-guidance-whitepapers.sort-by=item.additionalFields.sortDate&wa-guidance-whitepapers.sort-order=desc)
+- Frameworks de boas práticas
+  - Excelências Operacional
+  - Segurança
+  - Confiabilidade
+  - Eficiência e performance
+  - Otimização de custos
+  - Sustentabilidade
+
+## Excelência Operacional
+- Princípios
+  - Execute operação como código (IaC)
+  - Faço mudanças frequentes, pequenas e reversíveis
+  - Refine os procedimentos de operações com frequência
+  - Antecipe falhas
+  - Aprenda como todas as falhas operacionais
+````
+   A capacidade de oferecer suporte ao desenvolvimento e executar cargas de trabalho com eficiências, obter informações sobre suas operações e melhorar continuamente os processos e procedimentos de suporte para agregar valor aos negócios. 
+````
+
+## Segurança
+- O pilar de segurança descreve como aproveitar as vantagens das tecnologias de nuvem para proteger dados, sistemas e ativos de uma forma que possa melhorar sua postura de segurança.
+- Princípios
+  - Implemente uma base de "identity" forte
+  - Rastreabilidade
+  - Ative todos os layers de segurança
+  - Proteja os dados em trânsito e os armazenados
+  - Mantenha pessoas longe dos dados
+  - Prepare-se para eventos de segurança
+
+## Confiabilidade
+- O pilar de confiabilidade abrange a capacidade de uma carga de trabalho d executar sua função pretendida de forma correta e consistente quando é esperado. Isso inclui a capacidade de operar e testar a carga de trabalho durante todo o seu ciclo de vida.
+
+- Princípios
+  - Recupere-se automaticamente de falhas
+  - Teste procedimentos de recuperação
+  - Escale horizontalmente para aumentar a disponibilidade de carga de trabalho agregado
+  - Pare de adivinhar a capacidade
+  - Gerencie a mudança de forma automatizada
+
+## Eficiência e performance
+- A capacidade de usar recursos de computação com eficiência para atender aos requisitos do sistema e manter essa eficiências à medida que a demanda muda e as tecnologias evoluem.
+- Ferramenta certa para trabalho certo
+- Eficiência 
+  - Fazer mais com menos
+
+
+- Democratizar tecnologia avançadas
+- Torne-se global em minutos 
+- Use arquitetura serverless
+- Experimente como mais frequência
+- "Consider mechanical sympathy" 
+
+## Otimização de custos 
+- A capacidade de executar sistemas para fornecer valor de negócios ao preço mais baixo.
+- Princípios
+  - Implemente o Cloud Finance Management
+  - Adote um modelo de consumo
+  - Meça a eficiência geral
+  - Pare de gastos dinheiro em trabalhos que não gerem diférencias compeitivos
+  - Analise e atribua despesas
+  - Saber o valor de custo e retorno
+
+## Sustentabilidade
+- A capacidade de melhorar continuamente os impactos da sustentabilidade, reduzindo o consumo de energia e aumentando a eficiência em todos os componentes de uma carga de trabalho, maximizando os benefícios dos recursos provisionados e minimizando total de recursos necessários.
+- Princípios
+  - Entenda seu impacto
+  - Estabeleça metas de sustentabilidade
+  - Maximizar a utilização
+  - Antecipe e adote novos ofertas de hardware e software mais eficientes
+  - Use serviços gerenciados
+
+## Princípios
+- Pare de adivinhar suas necessidades de capacidade
+- Sistemas de teste em escala de produção
+- Automatize a experimentação arquitetônica
+- Permitir arquitetura evolutivas
+- Guie sua arquitetura usando dados
+- Atualização continua
+
+## Princípios para aplicações Azure
+- Design for self healing
+- Deixar as coisas redundantes
+- Minimize a coordenação
+- Desenhe para escalar
+- Particionamento
+- Design for Operations
+- Use serviços gerenciados
+- Use melhor data storage para melhor trabalho
+- Design for evolution
+
+## Arquitetura de Solução
+- Arquitetura focada no Negócio (Nível 0)
+- Arquitetura focada na área técnica (Nível 1)
+- Arquitetura focada no deployment (Nível 2)

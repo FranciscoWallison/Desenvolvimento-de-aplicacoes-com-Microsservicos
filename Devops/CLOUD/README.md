@@ -32,6 +32,13 @@ infraestrutura a depender de demanda
   - Otimização de custos
   - Sustentabilidade
 
+- Os 6 pilares do AWS Well-Architected são:
+````
+Excelência operacional, Segurança, Confiabilidade, Eficiência e performance, Otimização de custos, sustentabilidade.
+````
+- Use várias zonas de disponibilidade para garantir alta disponibilidade e tolerância a falhas
+- Ele fornece uma abordagem padronizada para avaliar cargas de trabalho para melhores práticas
+
 ## Excelência Operacional
 - Princípios
   - Execute operação como código (IaC)
@@ -39,9 +46,13 @@ infraestrutura a depender de demanda
   - Refine os procedimentos de operações com frequência
   - Antecipe falhas
   - Aprenda como todas as falhas operacionais
+  - Focar na execução e gerenciamento de sistemas para agregar valor aos negócios
 ````
    A capacidade de oferecer suporte ao desenvolvimento e executar cargas de trabalho com eficiências, obter informações sobre suas operações e melhorar continuamente os processos e procedimentos de suporte para agregar valor aos negócios. 
 ````
+
+## Eficiência e Desempenho
+- Focar no uso eficiente de recursos para atender aos requisitos de carga de trabalho 
 
 ## Segurança
 - O pilar de segurança descreve como aproveitar as vantagens das tecnologias de nuvem para proteger dados, sistemas e ativos de uma forma que possa melhorar sua postura de segurança.
@@ -54,8 +65,9 @@ infraestrutura a depender de demanda
   - Prepare-se para eventos de segurança
 
 ## Confiabilidade
-- O pilar de confiabilidade abrange a capacidade de uma carga de trabalho d executar sua função pretendida de forma correta e consistente quando é esperado. Isso inclui a capacidade de operar e testar a carga de trabalho durante todo o seu ciclo de vida.
+- O pilar de confiabilidade abrange a capacidade de uma carga de trabalho de executar sua função pretendida de forma correta e consistente quando é esperado. Isso inclui a capacidade de operar e testar a carga de trabalho durante todo o seu ciclo de vida.
 
+- Garantir que os sistemas possam se recuperar automaticamente de falhas
 - Princípios
   - Recupere-se automaticamente de falhas
   - Teste procedimentos de recuperação

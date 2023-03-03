@@ -130,3 +130,13 @@ Excelência operacional, Segurança, Confiabilidade, Eficiência e performance, 
 - Arquitetura focada no Negócio (Nível 0)
 - Arquitetura focada na área técnica (Nível 1)
 - Arquitetura focada no deployment (Nível 2)
+
+## Modelo On-Premise
+- Softwares são instalado localmente na empresa ou em um datacenter
+- Custo inicial é alto
+- Hardware possui depreciação
+- Hardware exige manutenção
+- Precisa de profissionais qualificados em hardware, rede, software,
+ virtualização, etc.
+- Escalabilidade complexa
+- Alta disponibilidade complexa (rodar em datacenters, fisicamente distantes, ao mesmo tempo)

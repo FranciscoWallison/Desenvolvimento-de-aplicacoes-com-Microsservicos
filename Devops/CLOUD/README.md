@@ -140,3 +140,41 @@ Excelência operacional, Segurança, Confiabilidade, Eficiência e performance, 
  virtualização, etc.
 - Escalabilidade complexa
 - Alta disponibilidade complexa (rodar em datacenters, fisicamente distantes, ao mesmo tempo)
+- Alto controle sobre software, hardware, protocolos de segurança, etc.
+- Altamente customizável
+- Acesso físico por profissionais da empresa
+- Hardware normalmente é mais barato e poderoso do que máquinas padrão que rodam na cloud
+- Controle dos dados
+- Integração com sistemas legados
+- Compliance e regulações (Armazenamento, PCI DSS, HIPPA, (Health Care))
+- Custos previsíveis
+- Sem lock-in
+- Se bem dimensionado, o custo inicial se paga ao longo dos anos
+- Ao longo prazo, se bem dimensionado, o custo pode ser menor do que soluções em Cloud
+
+## Modelo Cloud Computing
+- Custo alto ao longo do tempo para determinados serviços
+- Alto custo para transferência de dados
+- Previsibilidade de custos mais complexa
+- Vendor lock-in
+- Riscos adicionais de segurança*
+- Controle limitado para fazer upgrades
+- Compliance*
+- Integração pode ser mais complexa com sistema legados
+- Baixo custo inicial
+- Escalabilidade de forma simplificada
+- Acessibilidade
+- Alta disponibilidade (Regions e AZs)
+- Custo com profissionais especializados em datacenter, rede, hardware, etc
+- "Pay-as-you-go": Pague conforme o uso
+- Hardware exige manutenção
+- Backups automatizados
+- Serviços gerenciados
+- Recuperação rápida em casos de desastres
+- Amplitude de serviços
+
+## Modelo Cloud Híbrido
+- Pode ser considerado um modelo de transição
+- Modelo alternativo para ter mais controle de dados específicos, porém com as vantagens de nuvem
+- Redução de custos para grande utilizações sazonal
+- Integração de serviços pode complexa

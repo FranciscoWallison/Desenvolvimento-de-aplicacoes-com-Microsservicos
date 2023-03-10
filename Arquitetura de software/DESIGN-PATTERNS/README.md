@@ -165,9 +165,18 @@ Um componente independente que roda em conjunto com a aplicação principal.
 
 ## Service Mash
 - Gerenciamento de tráfego
+  - Dados de Log's
+    - Um registro de erros do sistema
 - Segurança
 - Policy enforcement
 - Observabilidade
+  - A observabilidade ajuda a identificar a causa raiz de problemas no sistema.
+  - Rastreamento distribuído (tracing)
+    - Rastrear a interação de componentes do sistema em um ambiente distribuído
+  - Mecanismo de push e pull para coletar métricas
+    - Servidor de coleta, enquanto no mecanismo de pull, o servidor de coleta é responsável por solicitar as métricas do sistema alvo.
+  - Métricas e Logs
+    - Métricas são informações sobre o desempenho do sistema, enquanto logs são informações sobre a atividade e eventos relevantes em um sistema ou aplicativo.
 - Extensibilidade
 - Istio
   - O Istio é um sistema de Service Mesh

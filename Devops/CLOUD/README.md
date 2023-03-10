@@ -132,6 +132,9 @@ Excelência operacional, Segurança, Confiabilidade, Eficiência e performance, 
 - Arquitetura focada no deployment (Nível 2)
 
 ## Modelo On-Premise
+
+### On-Premise - Um ambiente de computação local onde os recursos são gerenciados internamente pela organização.
+
 - Softwares são instalado localmente na empresa ou em um datacenter
 - Custo inicial é alto
 - Hardware possui depreciação
@@ -151,6 +154,8 @@ Excelência operacional, Segurança, Confiabilidade, Eficiência e performance, 
 - Sem lock-in
 - Se bem dimensionado, o custo inicial se paga ao longo dos anos
 - Ao longo prazo, se bem dimensionado, o custo pode ser menor do que soluções em Cloud
+- Desvantagens
+  - Maior custo inicial para adquirir e implantar os recursos de infraestrutura.
 
 ## Modelo Cloud Computing
 - Custo alto ao longo do tempo para determinados serviços
@@ -172,9 +177,52 @@ Excelência operacional, Segurança, Confiabilidade, Eficiência e performance, 
 - Serviços gerenciados
 - Recuperação rápida em casos de desastres
 - Amplitude de serviços
+- Pública
+  - Um ambiente de computação em nuvem que utiliza recursos exclusivamente de um provedor de serviços em nuvem.
 
 ## Modelo Cloud Híbrido
 - Pode ser considerado um modelo de transição
 - Modelo alternativo para ter mais controle de dados específicos, porém com as vantagens de nuvem
 - Redução de custos para grande utilizações sazonal
 - Integração de serviços pode complexa
+
+## Soluções Cloud Native
+- Soluções desenhadas para rodar em ambientes de Cloud Computing
+- São desenhados tira vantagem desses ambientes
+- Modulares
+- Prontas para rodar de forma distribuída
+- EX: 
+    - Docker
+    - Kubernetes, Helm, Istio, Linkerd, Envoy
+    - Apache kafka
+    - Prometheus
+      - Um sistema de monitoramento e alerta de métricas.
+    - OpenTelemetry
+      - Padronizar a coleta de dados de telemetria em ambientes distribuídos.
+    - AWS Lambda
+    - ArgoCD
+    - Produtos HashinCorp (Vault, Consul, Terraform)
+
+## CNCF (Cloud native Computing Foundation)
+````
+  We bring together the world's  top developers, end users, and vendors and run the largest open source developer conferences. CNCF is part of the nonoprofit Linux Foundation.
+````
+#### CNCF - Uma organização sem fins lucrativos que promove a adoção de tecnologias de código aberto para aplicativos nativos da nuvem.
+#### A CNCF promove a padronização de tecnologias de nuvem, o que aumenta a interoperabilidade entre as plataformas de nuvem.
+
+- Organização sem fins lucrativos
+- Tem varios projetos
+- Criado 2015
+- Parte da Linux Foundation
+- Responsável por famosos projetos:
+  - Kubernetes, Prometheus, OTEL, Envoy, Jaeger
+- Programas de certificação
+  - CKDA
+  - CKD
+  - CKS
+  - KCNA
+  - PCA
+- Quatro estágios de projetos
+  - Graduated, Incubating, Sandbox, and Archived.
+- Graduated e Incubating
+  - Os projetos no estágio de Graduated são considerados mais maduros e têm uma base de usuários maior do que os projetos no estágio de Incubating.

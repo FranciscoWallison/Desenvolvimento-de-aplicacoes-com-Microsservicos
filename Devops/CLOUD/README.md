@@ -209,6 +209,7 @@ Excelência operacional, Segurança, Confiabilidade, Eficiência e performance, 
 ````
 #### CNCF - Uma organização sem fins lucrativos que promove a adoção de tecnologias de código aberto para aplicativos nativos da nuvem.
 #### A CNCF promove a padronização de tecnologias de nuvem, o que aumenta a interoperabilidade entre as plataformas de nuvem.
+#### Qualquer pessoa pode submeter uma proposta de projeto para a CNCF, que será avaliada por um comitê técnico antes de ser aprovada ou rejeitada.
 
 - Organização sem fins lucrativos
 - Tem varios projetos

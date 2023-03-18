@@ -34,3 +34,20 @@
    - Diagramas detalhados bem como sua descrição
    - Tecnologia a serem utilizadas
    - Integração entre sistemas
+   - Integrações entre sistemas
+
+- Implementação
+   - Metodologias de desenvolvimento e ferramentas
+   - Processos de deployment e infraestrutura
+   - Processos de teste e qualidade
+
+- Operação e Manutenção
+   - Monitoramento
+   - Processos de manutenção
+   - Disaster recovery
+   - Processo de gerenciamento de mudanças
+
+- Riscos e estratégias de mitigação
+   - Riscos potencias
+   - Riscos de grande impacto
+   - Planos de contingências

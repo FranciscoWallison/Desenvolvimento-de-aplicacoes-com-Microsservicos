@@ -51,3 +51,7 @@
    - Riscos potencias
    - Riscos de grande impacto
    - Planos de contingências
+   
+- Próximos passos
+   - Sugestão de ordem de eecução
+   - Observações gerais

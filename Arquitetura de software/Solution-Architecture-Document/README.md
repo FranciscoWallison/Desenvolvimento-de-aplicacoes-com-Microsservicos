@@ -1,4 +1,4 @@
-# SAD SOLUTION ARCHITECTURE DOCUMENT
+# [SAD SOLUTION ARCHITECTURE DOCUMENT](https://www.sap.com/cxworks/article/2589632501/solution_architecture_definition_sad_template_download)
 
 - Documento que descreve a arquitetura de uma solução
 - Trata-se normalmente de:
@@ -51,3 +51,7 @@
    - Riscos potencias
    - Riscos de grande impacto
    - Planos de contingências
+   
+- Próximos passos
+   - Sugestão de ordem de eecução
+   - Observações gerais

@@ -1,5 +1,7 @@
 # System Design: Importância
 
+- System design é o processo de definição de arquitetura, componentes, módulos, interfaces e dados para atender os requisitos especificados.
+
 - Pensar na arquitetura de forma intencional
 - Racionaliza as definições que realmente importam
 - Explorar possíveis soluções

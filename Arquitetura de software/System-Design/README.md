@@ -7,3 +7,12 @@
 - Explorar possíveis soluções
 - Nos ajuda a ter uma visão de presente e futuro do software
 - Exercita a forma de pensar e planejar diferentes tipos de soluções de software
+
+## System Design VS Big Techs
+
+- Normalmente faz parte da maioria dos processos seletivos de Big Techs
+- Formas do candidato pensar
+- Repertório eo nível do profundidade nas tecnologias
+- Capacidade de dedução
+- Capacidade de comunicação
+- Capacidade de ser confrontado

@@ -16,3 +16,11 @@
 - Capacidade de dedução
 - Capacidade de comunicação
 - Capacidade de ser confrontado
+
+# System Design no Mundo Real
+
+- System design é uma ferramenta na mão do arquiteto de solução
+- É um forma do arquiteto se expressar
+- Gerar convicção
+- Vender
+- Especificar e documentar

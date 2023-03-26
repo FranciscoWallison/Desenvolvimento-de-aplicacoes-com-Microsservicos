@@ -24,3 +24,155 @@
 - Gerar convicção
 - Vender
 - Especificar e documentar
+
+```
+Basta fazer desenhos da arquitetura?
+NÃO!!
+```
+
+# Técnica e metodologia
+- 6 Elementos
+  - Requisitos 
+  - Estimativa de capacidade
+  - Modelagem de dados
+  - API Design
+  - System Design
+  - Exploração (confronto, analisar, justificar a sua criação)
+
+
+___________________________________________________________________________________
+
+# Requisitos
+
+- Core Features e domínio
+   - Entendimento do domínio da aplicação e suas principais funcionalidades
+
+- Support features
+   - Funcionalidades que auxiliares que farão com que as funcionalidades principais sejam atendidas
+
+# Na prática
+
+````
+Requisitos dos sistema
+
+Requisitos funcionais
+    Funcionalidades Core
+       - Compra de ingressos
+       - Apresentar o ingresso comprado
+       - Parceiros para gerenciar os eventos
+
+    Funcionalidades de suporte
+        - Busca dos eventos 
+        - Exibição gráficas dos lugares disponíveis 
+        - Comprar de ingressos
+        - Apresentar o ingresso comprado para entrar no evento
+        - Parceiros para gerenciar os eventos
+        - Garantia que em horários de picos, um ingresso não seja vendido para mais de um pessoa
+
+Requisitos não funcionais
+    Características
+        - Baixa latência
+        - Escalável
+        - Alta disponibilidade
+        - Consistência dos dados
+    Dados Importantes
+        - 1M DAU (Daily Active Users)
+        - Cada usuários faz 5 requeste
+        - Cada request resulta em 50KB
+        - 5% dos usuários compra 1 ingresso
+        - Reads VS writes: 9:1
+        - Pode ter picos de acesso
+
+Requisitos de Sistema
+    Notação Científica
+        - 1.000     = 10^3
+        - 10.000    = 10^4
+        - 100.000   = 10^5
+        - 1000.000  = 10^6
+        - Multiplicação
+          - 10^5 * 10^3 = 10^(5+3) = 10^8
+        - Divisão
+          - 10^5 / 10^3 = 10^(5-3) = 10^2 
+        Ex:
+            - 7.000     = 7*10^4
+            - 95.000    = 95*10^3 ou 9.5*10^4
+            - 10^(-1)   = 0.1
+        -
+            MB para GB = 10^3
+            GB para TB = 10^3
+            MB para TB = 10^6
+    Requeste
+        Qual é a capacidade de requests?
+        - 10 rps
+        rps (Requisições por segundos)
+        Ex: 
+            rps = req por dia / segundos por dia
+            segundos por dia = 24H* 60 * 60 segundos = 86.400 segundos
+
+            Arredondando: 1 dia = 100.000 segundos ou 10^5 
+
+        - 1.000,000 * 5 = 5.000,000 por dia
+        - 5000,000 / 100.000 = 50 rps
+        ou 
+        - 5*10^6 / 10^5 = 5*10^(6-5)
+          -> 5*10^1 = 50rps
+        
+        Writes:
+        - 50 rps / 10 = 5 rps
+        Reads:
+        - 45 rps
+
+        Compras
+            - 5% de 1Mi = 50.000 por dia
+            - 5% de 10^6 = 5*10^4
+
+            - 5*10^4 / 10^5 (qtd de segundos)
+            -> 5*10^(4-5) = 5*10^(-1) 
+            -> 0.5 compras por segundos
+    Bandwidth
+        Qual o bandwidth necessário?
+            - 0.2 MB/s
+        - 50rps * 50kb = 2500kb/s
+        ou
+            2.5/1000 = 2.5MB/s
+        ou
+            2.5*10^3 / 10^3 = 2.5*10^(3-3) = 2.5MB/s 
+
+    Storage
+        Storage por segundo:
+            - 0.06 MB
+        Storage por dia:
+            - 6 GB
+        Storage por ano:
+            - 2.19 TB
+        Storage em 5 ano:
+            - 12 TB
+        writes per sec * request size
+        - 5rps * 50KB * 3
+          -> 250KB * 3 = 750KB/s = 0.75MB/s
+
+        Storage por dia:
+            storage por sec * 10^5 (1 dia -> 100K segundos)
+        Storage por ano:
+            storage por sec * 10^5 * 3.65^2 = 3.65*10^7
+        Storage por 5 anos:
+            storage por sec * 3.65*10^6 * 5 = 18.25*10^7
+              -> 1.8*10^8 -> 2*10^8
+
+        Storage por dia:
+            - 0.75MB/s * 10^5 = 0.75*10^5MB
+              -> 0.75*10^5 / 10^3 = 0.75*10^2 = 75GB
+        Storage por ano:
+            - 0.75MB/s * 3.65*10^7 = 2.7*10^7MB
+              -> 2.7*10^7 / 10^6 = 2.7*10^1 = 27TB
+        Storage por 5 anos:
+            - 0.75MB/s * 2.7*10^8 = 1.5*10^8MB
+              -> 7.5*10^8 / 10^6 = 1.5*10^2  = 150TB
+````
+### Teorema CAP
+- Consistência ( Consistency )
+- Disponibilidade ( Availability )
+- Tolerância de partição ( Partition Tolerance )
+````
+Só pode escolher dois CA, CP e AP
+````

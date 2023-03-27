@@ -72,7 +72,7 @@
   - Vai limitar a quantidade de Caching armazenado e remove os cache em formato de fila
   - Os dados que tiveram acesso mais recentemente
 - Most Recently Used (MRU)
-   - 
+   - Esta estratégia invalida os itens que foram acessados mais recentemente. Ou seja, se um item no cache foi acessado recentemente, ele será removido da cache primeiro.
 - Least Frequently Used (LFU)
    - Remove o que teve menos frequência de acesso
 - TTL-based invalidation

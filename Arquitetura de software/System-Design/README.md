@@ -168,6 +168,14 @@ Requisitos de Sistema
         Storage por 5 anos:
             - 0.75MB/s * 2.7*10^8 = 1.5*10^8MB
               -> 7.5*10^8 / 10^6 = 1.5*10^2  = 150TB
+
+Premissas
+Compra de ingressos e apresentação de QRCODE.
+- Aceitar apenas cartão de crédito
+- Compra precisa ser confirmada imediatamente
+- Consistência ao invés de alta disponibilidade no PROCESSO DE COMPRA
+- Concorrência
+- Código do ingresso não é sequencial nas precisa ser CURTO.
 ````
 ### Teorema CAP
 - Consistência ( Consistency )

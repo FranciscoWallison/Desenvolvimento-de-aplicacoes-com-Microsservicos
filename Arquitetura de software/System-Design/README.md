@@ -176,6 +176,32 @@ Compra de ingressos e apresentação de QRCODE.
 - Consistência ao invés de alta disponibilidade no PROCESSO DE COMPRA
 - Concorrência
 - Código do ingresso não é sequencial nas precisa ser CURTO.
+
+Opção 1:
+    - Usario 1: 
+    - Usario 2:
+    - Usario 3:
+        - Compra de ingressos (1)
+            - Verificar a disponibilidade
+            - Gerar ordem de serviço
+            - Envio a request gateway
+        - Gateway de pagamento (2)
+            - Dar baixa na ordem 
+            - Gerar código único de ingresso
+            - Gera o QRCode
+            - Envio email de confirmação
+        - Email service (3)
+            - Email queue 
+            - Recebe a mensagem de (1), deforma assíncrono
+    - Ponto único de falha (fora do nosso controle)
+        - Instabilidade na gateway
+    - Pontos de possível lentidão:
+        - Geração de código do ingresso
+        - Geração do QRCode
+        - Envio de email de confirmação
+    - Efetua o pagamento
+    - Informa compra aprovada
+
 ````
 ### Teorema CAP
 - Consistência ( Consistency )

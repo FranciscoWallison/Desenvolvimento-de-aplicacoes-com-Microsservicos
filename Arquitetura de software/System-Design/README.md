@@ -194,6 +194,7 @@ Opção 1:
             - Email queue 
             - Recebe a mensagem de (1), deforma assíncrono
         - Gerador de códigos de QRCode (4)
+            - Pode ser um Design Patterns de Sequencing
             - É chamado pelo sistema (1) para associar ao ingresso
                 - Gera um Storage com as informações do ingresso/QRCode
     - Ponto único de falha (fora do nosso controle)

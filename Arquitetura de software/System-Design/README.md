@@ -209,6 +209,19 @@ Opção 1:
     - Efetua o pagamento
     - Informa compra aprovada
 
+Data Model
+    Relacional Database
+    Compra de Ingressos
+        tabelas
+            client      - id, nome, email 
+                has many    ()
+            order       - id, client id, total, ticket id 
+                            ()  has many
+            event       - id, nome, data,  qtd de spots
+                            ()  belong
+            event spots - id, event id, spot number
+
+
 ````
 ### Teorema CAP
 - Consistência ( Consistency )

@@ -231,7 +231,53 @@ Data Model
         tabelas
             email       - order Id, sent (0-1)
 
+````    
+#### Resumo
+
+
+### API Design
+Comprar ingresso
+    placeOrder(userId, eventID, spotID)
+    response:
+        - OrderID
+        - TicketID
+
+Visualizar ingresso
+    viewTicket(ticketID)
+    response:
+        - OrderID
+        - UserID
+        - User Name
+        - Event Name
+        - Event Data
+        - Spot
+        - Total
+
+###  Serverless
 ````
+AWS:
+    - Usario 1: 
+    - Usario 2:
+    - Usario 2:
+        API Gateway
+            Place Order Y
+                - DB: Order
+            Comunica com:
+                - GetTicketID Y
+                   -  DB: TicketsID
+                        - Generate TicketsID (uma CRON)
+                            - QRCode (bucket)
+                - Make Payment Y
+                - Email Topic
+                    - Send Email
+                        - DB: Email
+
+            Get Ticket Y
+                Comunica com:
+                    - QRCode (bucket)
+
+````
+
 ### Teorema CAP
 - Consistência ( Consistency )
 - Disponibilidade ( Availability )

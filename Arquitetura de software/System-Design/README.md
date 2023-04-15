@@ -221,6 +221,15 @@ Data Model
                             ()  belong
             event spots - id, event id, spot number
 
+    Relacional Database
+    Gerador de código e QRCode
+        tabelas 
+            ticket      - ticket id, assigned (0 - 1), order id
+
+   Key-value Store
+    Email service
+        tabelas
+            email       - order Id, sent (0-1)
 
 ````
 ### Teorema CAP

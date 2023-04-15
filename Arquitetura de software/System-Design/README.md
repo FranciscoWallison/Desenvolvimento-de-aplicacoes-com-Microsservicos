@@ -185,11 +185,14 @@ Opção 1:
             - Verificar a disponibilidade
             - Gerar ordem de serviço
             - Envio a request gateway
-        - Gateway de pagamento (2)
-            - Dar baixa na ordem 
-            - Gerar código único de ingresso
-            - Gera o QRCode
-            - Envio email de confirmação
+        - Gateway de ACL (2)
+            Gateway de pagamento (2.1):
+            Gateway de pagamento (2.2):
+            Gateway de pagamento (2.3):
+                - Dar baixa na ordem 
+                - Gerar código único de ingresso
+                - Gera o QRCode
+                - Envio email de confirmação
         - Email service (3)
             - Email queue 
             - Recebe a mensagem de (1), deforma assíncrono
@@ -206,7 +209,75 @@ Opção 1:
     - Efetua o pagamento
     - Informa compra aprovada
 
+Data Model
+    Relacional Database
+    Compra de Ingressos
+        tabelas
+            client      - id, nome, email 
+                has many    ()
+            order       - id, client id, total, ticket id 
+                            ()  has many
+            event       - id, nome, data,  qtd de spots
+                            ()  belong
+            event spots - id, event id, spot number
+
+    Relacional Database
+    Gerador de código e QRCode
+        tabelas 
+            ticket      - ticket id, assigned (0 - 1), order id
+
+   Key-value Store
+    Email service
+        tabelas
+            email       - order Id, sent (0-1)
+
+````    
+#### Resumo
+
+
+### API Design
+Comprar ingresso
+    placeOrder(userId, eventID, spotID)
+    response:
+        - OrderID
+        - TicketID
+
+Visualizar ingresso
+    viewTicket(ticketID)
+    response:
+        - OrderID
+        - UserID
+        - User Name
+        - Event Name
+        - Event Data
+        - Spot
+        - Total
+
+###  Serverless
 ````
+AWS:
+    - Usario 1: 
+    - Usario 2:
+    - Usario 2:
+        API Gateway
+            Place Order Y
+                - DB: Order
+            Comunica com:
+                - GetTicketID Y
+                   -  DB: TicketsID
+                        - Generate TicketsID (uma CRON)
+                            - QRCode (bucket)
+                - Make Payment Y
+                - Email Topic
+                    - Send Email
+                        - DB: Email
+
+            Get Ticket Y
+                Comunica com:
+                    - QRCode (bucket)
+
+````
+
 ### Teorema CAP
 - Consistência ( Consistency )
 - Disponibilidade ( Availability )

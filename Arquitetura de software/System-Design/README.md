@@ -185,11 +185,14 @@ Opção 1:
             - Verificar a disponibilidade
             - Gerar ordem de serviço
             - Envio a request gateway
-        - Gateway de pagamento (2)
-            - Dar baixa na ordem 
-            - Gerar código único de ingresso
-            - Gera o QRCode
-            - Envio email de confirmação
+        - Gateway de ACL (2)
+            Gateway de pagamento (2.1):
+            Gateway de pagamento (2.2):
+            Gateway de pagamento (2.3):
+                - Dar baixa na ordem 
+                - Gerar código único de ingresso
+                - Gera o QRCode
+                - Envio email de confirmação
         - Email service (3)
             - Email queue 
             - Recebe a mensagem de (1), deforma assíncrono

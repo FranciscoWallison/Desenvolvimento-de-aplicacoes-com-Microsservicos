@@ -278,6 +278,19 @@ AWS:
 
 ````
 
+# Métrica de Monitoramento
+- Order por segundo
+- Latência e disponibilidade das gateways de pagamento
+- Compras aprovadas VS rejeitadas
+- Compras VS Emails enviados
+- Tickets exibidos / Latência
+- ID's Disponíveis 
+
+## Perguntas Provocativas
+- A aplicação realmente está escalável?
+- Aplicação é resiliente?
+- Onde está o maior risco dessa arquitetura?
+
 ### Teorema CAP
 - Consistência ( Consistency )
 - Disponibilidade ( Availability )

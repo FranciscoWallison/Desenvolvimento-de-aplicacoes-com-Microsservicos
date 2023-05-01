@@ -13,6 +13,16 @@ Arquitetura: Visão de mais alto nível. Separação de camadas, pastas de aplic
 Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões aplicar.
 ```
 
+#### Tipos de arquitetura
+	Software
+		Tem o foco maior no codigo, tendo como objetivo de escalar
+	Solução	
+		Ficar mais próximo do cliente, entender o processo como um todo.
+	Tecnológica
+		Ferramentas especificas como banco, linguagem ou 'ferramentas'
+	Corporativa
+		Como a empresas va ise comportar com as tecnologia com um foco em governança 
+
 #### Pré-requisitos
 	° Organização de um sistema
 		- Usabilidade
@@ -107,7 +117,7 @@ Referência : [devmedia](https://www.devmedia.com.br/artigo-engenharia-de-softwa
 	° Utilizado para aplicações complexas
 	° Fácil de entender
 	° Difícil de aplicar
-	° Utilização de diversos padões de projetos
+	° Utilização de diversos padrões de projetos
 ````
 ## Entendendo (DDD)
 -------

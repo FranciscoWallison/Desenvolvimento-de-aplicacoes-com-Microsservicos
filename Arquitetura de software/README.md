@@ -21,7 +21,7 @@ Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões a
 	Tecnológica
 		Ferramentas especificas como banco, linguagem ou 'ferramentas'
 	Corporativa
-		Como a empresas va ise comportar com as tecnologia com um foco em governança 
+		Como a empresas vai se comportar com as tecnologias, com maior foco em governança 
 
 #### Pré-requisitos
 	° Organização de um sistema

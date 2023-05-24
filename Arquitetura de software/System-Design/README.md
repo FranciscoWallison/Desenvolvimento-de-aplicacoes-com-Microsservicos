@@ -7,6 +7,11 @@
 - Explorar possíveis soluções
 - Nos ajuda a ter uma visão de presente e futuro do software
 - Exercita a forma de pensar e planejar diferentes tipos de soluções de software
+- É importante realizar o design usando a abordagem de middle-out, buscando o cerne da arquitetura,
+considerando o tempo, dinheiro e pessoas disponíveis.
+
+#### Premissas de System Design
+- Ter qualidade de experiência para o usuário; em grande escala, tudo vai falhar; não armazenar nada desnecessário.
 
 ## System Design VS Big Techs
 
@@ -49,6 +54,19 @@ ________________________________________________________________________________
 
 - Support features
    - Funcionalidades que auxiliares que farão com que as funcionalidades principais sejam atendidas
+
+- Premissas estabelecidas no caso apresentado
+    Aceitar apenas cartão de crédito, com confirmação imediata, focando em
+consistência em relação à alta disponibilidade e gerar o ingresso com
+um código curto e não-sequencial.
+
+- Pontos críticos do sistema
+    Instabilidade da gateway, geração de código do ingresso, geração do QRCode,
+envio de email de confirmação.
+
+- Para a criação de códigos dos ingressos e do QRCode:
+    Separar as criações de código e QRCode do serviço de compra de ingressos melhora o desempenho do último.
+
 
 # Na prática
 
@@ -254,6 +272,14 @@ Visualizar ingresso
         - Total
 
 ###  Serverless
+- Processamento das requisições na compra de ingressos iremos utilizar - AWS Serverless
+
+- A Lentidão no disparo de emails é manter o email service no mesmo microsserviço de compra de ingressos, 
+tem separar os serviços e mantendo-o síncrono.
+
+- Pontos críticos para métricas e monitoramento: Orders por segundo, latência e disponibilidade das
+gateways de pagamento e compras aprovadas vs rejeitadas.
+
 ````
 AWS:
     - Usario 1: 
@@ -297,4 +323,25 @@ AWS:
 - Tolerância de partição ( Partition Tolerance )
 ````
 Só pode escolher dois CA, CP e AP
+
+É impossível obter simultaneamente mais de duas das três garantias.
+````
+
+
+#### Dicas
+````
+    Armazenar dados tem um custo baixo, mas a consulta tende a ter um custo maior porque o
+data transfer out precisa ter um baixo tempo de resposta. 
+
+---------------------------------------------
+
+    As estimativas dos recursos necessários para o desenvolvimento de um sistema não precisam ser precisos.
+Porem, quanto mais proximo da realidade evita-se aumentos de custo e tempo durante o desenvolvimento do projeto.
+
+
+---------------------------------------------
+O aumento da consistência e da disponibilidade implica num aumento de custo. 
+
+---------------------------------------------
+O Critical User Journey (CUJ) são as interações mais importantes entre o usuário e o produto.
 ````

@@ -107,6 +107,8 @@ pessoas, processos e tecnologia.
  A lei de Conway é um princípio que afirma que o design de um sistema é influenciado pela estrutura organizacional do grupo que o produz. Isso significa que a estrutura de comunicação de um grupo será refletida na estrutura dos sistemas que eles criam. A arquitetura de um sistema reflete os limites sociais do grupo que o criou.
 
  A estrutura de uma solução de software espelhará a estrutura de comunicação da organização que a construiu.
+ 
+ A estrutura de uma solução de sistema são espelhos das estruturas das organizações e comunicação das organizações que a construiu.
 ````
 
 ### View e Viewpoints

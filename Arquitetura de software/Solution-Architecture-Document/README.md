@@ -73,7 +73,8 @@ O SAD é um documento abrangente que fornece diretrizes e informações importan
 
 - Recuperação de desastres
 ````
-   O plano de contingência, riscos potenciais e risco de grande impacto são aspectos da etapa de
+Plano de contingência, riscos potenciais e risco de grande impacto. São aspectos de qual etapa do SAD?
+O plano de contingência, riscos potenciais e risco de grande impacto são aspectos da etapa de.
 "Recuperação de desastres" do Solution Architecture Document.
 
    Nessa etapa, são identificados os possíveis riscos e ameaças que podem afetar o sistema, bem

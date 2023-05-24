@@ -36,6 +36,12 @@ infraestrutura a depender de demanda
 ````
 Excelência operacional, Segurança, Confiabilidade, Eficiência e performance, Otimização de custos, sustentabilidade.
 ````
+
+# São princípios que envolvem AWS Well-Architected:
+
+Excelência operacional, Segurança, Confiabilidade, Eficiência de performance, Otimização de custos, Sustentabilidade.
+
+
 - Use várias zonas de disponibilidade para garantir alta disponibilidade e tolerância a falhas
 - Ele fornece uma abordagem padronizada para avaliar cargas de trabalho para melhores práticas
 

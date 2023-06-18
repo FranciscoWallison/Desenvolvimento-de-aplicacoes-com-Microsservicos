@@ -333,15 +333,27 @@ Só pode escolher dois CA, CP e AP
     Armazenar dados tem um custo baixo, mas a consulta tende a ter um custo maior porque o
 data transfer out precisa ter um baixo tempo de resposta. 
 
----------------------------------------------
-
     As estimativas dos recursos necessários para o desenvolvimento de um sistema não precisam ser precisos.
 Porem, quanto mais proximo da realidade evita-se aumentos de custo e tempo durante o desenvolvimento do projeto.
 
-
----------------------------------------------
 O aumento da consistência e da disponibilidade implica num aumento de custo. 
 
----------------------------------------------
 O Critical User Journey (CUJ) são as interações mais importantes entre o usuário e o produto.
+
+Com relação à modelagem de dados, é importante incluir tanto banco de dados SQL e no-SQL para
+demonstrar o domínio sobre este tema ao entrevistador.
+
+A probabilidade de passar por uma entrevista de System Design é maior quando:
+A vaga é para desenvolvedor senior ou níveis maiores e a empresa tem maior porte.
+
+Dentre os principais pontos que poderão ser abordados na entrevista de System Design, algumas delas são:
+Requerimentos do sistema, estimativa de capacidade, modelagem de dados e api design.
+
+Algumas das estratégias para melhor responder ao entrevistador é:
+Explicar o link entre os endpoints da API e as chamadas do banco de dados.
+Usar números fáceis para calcular a escala do sistema e explicar estes números.
+Incluir a estimativa de capacidade de armazenamento de dados.
+
+O entrevistador pode pedir para realizar o System Design de diversos tipos de sistemas,
+sejam genéricos ou realísticos.
 ````

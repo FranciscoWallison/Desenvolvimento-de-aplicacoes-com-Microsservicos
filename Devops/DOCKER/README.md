@@ -169,6 +169,7 @@ cadastrado.
 	Explo: hub.docker
 	É um repositório que você pode publicar como Pull e usar na suma maquina com Push
 ```
+### [Projeto com exemplos de publicação de imagens](https://github.com/FranciscoWallison/laradocker-publicando-imagem)
 
 ## Docker Host
 ```

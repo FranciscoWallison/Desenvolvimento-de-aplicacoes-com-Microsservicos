@@ -6,6 +6,7 @@
 	Organização de um sistema, contemplando seus componentes, os relacionamentos entre
 estes e com o ambiente, e os princípios que governam seu projeto e evolução.
 ```
+ - 1 - É uma "disciplina" da engenharia de software
 
 #### Arquitetura X Design:
 ```
@@ -15,7 +16,7 @@ Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões a
 
 #### Tipos de arquitetura
 	Software
-		Tem o foco maior no codigo, tendo como objetivo de escalar
+		Tem o foco maior no código, tendo como objetivo de escalar
 	Solução	
 		Ficar mais próximo do cliente, entender o processo como um todo.
 	Tecnológica

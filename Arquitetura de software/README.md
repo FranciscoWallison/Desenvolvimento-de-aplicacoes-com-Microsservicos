@@ -97,9 +97,23 @@ por "hypes" de mercado
 
 #### Arquitetura X Design:
 ```
-Arquitetura: Visão de mais alto nível. Separação de camadas, pastas de aplicação.
+	Arquitetura: Visão de mais alto nível. Separação de camadas, pastas de aplicação.
 Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões aplicar.
 ```
+ - Arquitetura: Escopo global ou alto nível
+ - Design: Escopo local
+
+```
+	Atividades relacionadas a arquitetura de software são sempre de design. Entretanto,
+nem todas atividade de design são sobre arquitetura. O objetivo primário da arquitetura
+de software é garantir que os atributos de qualidade, restrições de alto nível e os
+objetivos do negócio, sejam atendidos pelo sistema. Qualquer decisão de design que
+não tenha relação com este objetivo não é arquitetural. Todas as decisões de design
+para um componente que não sejam “visíveis” fora dele, geralmente, também não são.
+```
+Fonte: [Elemar JR.](https://eximia.co/quais-sao-as-diferencas-entre-arquitetura-e-design-de-software/#:~:text=O%20fato-,Atividades%20relacionadas%20a%20arquitetura%20de%20software%20s%C3%A3o%20sempre%20de%20design,neg%C3%B3cio%2C%20sejam%20atendidos%20pelo%20sistema.)
+
+
 # Usabilidade para STEVE KRUG
 #### - ÚTIL
 	- Faz algo que alguém precisa?

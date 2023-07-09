@@ -60,6 +60,9 @@ e escolher a melhor solução para determinado contexto
 por "hypes" de mercado
 	- Mergulho em padrões de projeto e de desenvolvimento e suas boas práticas
 
+### Estruturas de uma arquitetura:
+	- Módulos, alocação e componente conector
+	
 #### Pré-requisitos
 	° Organização de um sistema
 		- Usabilidade
@@ -114,6 +117,11 @@ para um componente que não sejam “visíveis” fora dele, geralmente, também
 Fonte: [Elemar JR.](https://eximia.co/quais-sao-as-diferencas-entre-arquitetura-e-design-de-software/#:~:text=O%20fato-,Atividades%20relacionadas%20a%20arquitetura%20de%20software%20s%C3%A3o%20sempre%20de%20design,neg%C3%B3cio%2C%20sejam%20atendidos%20pelo%20sistema.)
 
 
+## Pontos importantes
+	Todos software possui uma arquitetura.
+	Nem todas as arquiteturas são boas arquiteturas.
+	Arquitetura inclui comportamentos.
+
 # Usabilidade para STEVE KRUG
 #### - ÚTIL
 	- Faz algo que alguém precisa?
@@ -136,6 +144,12 @@ métricas de controle e sua aplicação normalmente é realizada em processos j�
 ```
 Referência : [devmedia](https://www.devmedia.com.br/artigo-engenharia-de-software-21-metricas-de-software/15776)
 
+#### API REST
+ - Payload, estrutura de responses, código de erro e sucesso.
+
+#### Pattern ACL (Anti Corruption Layer)
+ - Cria uma camada entre o seu domínio e o domínio de um sistema externo,
+fazendo a tradução entre domínios, evitando assim a corrupção entre os sistemas.
 
 #### Service Mesh
 #### Conhecemos a ideia de ter um Gateway por cliente com o Edge Pattern

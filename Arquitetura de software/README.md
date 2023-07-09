@@ -5,8 +5,25 @@
 ```
 	Organização de um sistema, contemplando seus componentes, os relacionamentos entre
 estes e com o ambiente, e os princípios que governam seu projeto e evolução.
+
+	É a relação entre os objetos de negócios e suas restrições com os componentes a serem
+criados e suas responsabilidade visando sua evolução de software.
+
+	"É a organização funcional de sistema e suas componentes, suas relações, seu
+ambientes, bem como os princípios que guiam seu design e evolução. (IEEE Standard 1471)"
+
+	O processo de arquitetar um software estabelece que o que está sedo desenvolvido faça
+parte de um conjunto maior.
+
 ```
+#### Definições 
  - 1 - É uma "disciplina" da engenharia de software
+ - 2 - Diretamente ligado ao processo de desenvolvimento de software
+ - 3 - Afeta diretamente na estrutura organizacional
+ - 4 - Formatação dos times
+ - 5 - Estrutura dos componentes do software
+ - 6 - "Organizações que desenvolvem sistemas de software tendem a produzir sistemas que são cópias
+das estruturas de comunicação dessas empresas. (Melvin Conway)"
 
 #### Arquitetura X Design:
 ```

@@ -41,6 +41,13 @@ Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões a
 	Corporativa
 		Como a empresas vai se comportar com as tecnologias, com maior foco em governança 
 
+#### Papel de Arquiteto(a) de Software
+	- Transformar requisitos de negócios em padrões arquiteturais
+	- Orquestrar pessoas desenvolvedores e experts de domínio
+	- Entender de forma profunda conceitos e modelos arquiteturais
+	- Auxilia na tomada de decisão nos momentos de crise
+	- Reforça boas práticas de desenvolvimento
+
 #### Pré-requisitos
 	° Organização de um sistema
 		- Usabilidade

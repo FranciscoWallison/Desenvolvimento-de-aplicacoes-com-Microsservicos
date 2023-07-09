@@ -25,12 +25,6 @@ parte de um conjunto maior.
  - 6 - "Organizações que desenvolvem sistemas de software tendem a produzir sistemas que são cópias
 das estruturas de comunicação dessas empresas. (Melvin Conway)"
 
-#### Arquitetura X Design:
-```
-Arquitetura: Visão de mais alto nível. Separação de camadas, pastas de aplicação.
-Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões aplicar.
-```
-
 #### Tipos de arquitetura
 	Software
 		Tem o foco maior no código, tendo como objetivo de escalar
@@ -42,6 +36,15 @@ Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões a
 		Como a empresas vai se comportar com as tecnologias, com maior foco em governança 
 
 #### Papel de Arquiteto(a) de Software
+```
+	Apesar de nem todos as organizações possuírem o cargo de arquiteto de software,
+normalmente profissionais mais experientes como desenvolvedores seniors e tech leads
+acabam realizando esse papel baseado em suas experiencias anteriores.
+
+	Há empresas que apesar de não possuírem o cargo de arquiteto(a) de software,
+possuem um departamento de arquitetura que auxilia os diversos times da organização
+com questões arquiteturais.
+```
 	- Transformar requisitos de negócios em padrões arquiteturais
 	- Orquestrar pessoas desenvolvedores e experts de domínio
 	- Entender de forma profunda conceitos e modelos arquiteturais
@@ -82,6 +85,12 @@ Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões a
 		- DevOps (Desenvolvendo e Operacional)
 ----
 
+
+#### Arquitetura X Design:
+```
+Arquitetura: Visão de mais alto nível. Separação de camadas, pastas de aplicação.
+Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões aplicar.
+```
 # Usabilidade para STEVE KRUG
 #### - ÚTIL
 	- Faz algo que alguém precisa?

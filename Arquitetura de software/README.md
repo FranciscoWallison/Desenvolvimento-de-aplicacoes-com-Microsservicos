@@ -5,14 +5,25 @@
 ```
 	Organização de um sistema, contemplando seus componentes, os relacionamentos entre
 estes e com o ambiente, e os princípios que governam seu projeto e evolução.
-```
- - 1 - É uma "disciplina" da engenharia de software
 
-#### Arquitetura X Design:
+	É a relação entre os objetos de negócios e suas restrições com os componentes a serem
+criados e suas responsabilidade visando sua evolução de software.
+
+	"É a organização funcional de sistema e suas componentes, suas relações, seu
+ambientes, bem como os princípios que guiam seu design e evolução. (IEEE Standard 1471)"
+
+	O processo de arquitetar um software estabelece que o que está sedo desenvolvido faça
+parte de um conjunto maior.
+
 ```
-Arquitetura: Visão de mais alto nível. Separação de camadas, pastas de aplicação.
-Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões aplicar.
-```
+#### Definições 
+ - 1 - É uma "disciplina" da engenharia de software
+ - 2 - Diretamente ligado ao processo de desenvolvimento de software
+ - 3 - Afeta diretamente na estrutura organizacional
+ - 4 - Formatação dos times
+ - 5 - Estrutura dos componentes do software
+ - 6 - "Organizações que desenvolvem sistemas de software tendem a produzir sistemas que são cópias
+das estruturas de comunicação dessas empresas. (Melvin Conway)"
 
 #### Tipos de arquitetura
 	Software
@@ -24,6 +35,34 @@ Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões a
 	Corporativa
 		Como a empresas vai se comportar com as tecnologias, com maior foco em governança 
 
+#### Papel de Arquiteto(a) de Software
+```
+	Apesar de nem todos as organizações possuírem o cargo de arquiteto de software,
+normalmente profissionais mais experientes como desenvolvedores seniors e tech leads
+acabam realizando esse papel baseado em suas experiencias anteriores.
+
+	Há empresas que apesar de não possuírem o cargo de arquiteto(a) de software,
+possuem um departamento de arquitetura que auxilia os diversos times da organização
+com questões arquiteturais.
+```
+	- Transformar requisitos de negócios em padrões arquiteturais
+	- Orquestrar pessoas desenvolvedores e experts de domínio
+	- Entender de forma profunda conceitos e modelos arquiteturais
+	- Auxilia na tomada de decisão nos momentos de crise
+	- Reforça boas práticas de desenvolvimento
+
+### Por que aprender arquitetura de software?
+	- Poder navegar da visão macro para visão de um ou mais softwares
+	- Entender quais são as diversas opções que temos para desenvolver a mesmas coisas
+e escolher a melhor solução para determinado contexto
+	- Pensar a longo prazo no projeto e suas sustentabilidade
+	- Tomar deciões de forma mais fria e calcular evitando assim ser influenciado(a)
+por "hypes" de mercado
+	- Mergulho em padrões de projeto e de desenvolvimento e suas boas práticas
+
+### Estruturas de uma arquitetura:
+	- Módulos, alocação e componente conector
+	
 #### Pré-requisitos
 	° Organização de um sistema
 		- Usabilidade
@@ -58,6 +97,31 @@ Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões a
 		- DevOps (Desenvolvendo e Operacional)
 ----
 
+
+#### Arquitetura X Design:
+```
+	Arquitetura: Visão de mais alto nível. Separação de camadas, pastas de aplicação.
+Design: Visão de mais baixo nível. Como escrever cada classe. Quais padrões aplicar.
+```
+ - Arquitetura: Escopo global ou alto nível
+ - Design: Escopo local
+
+```
+	Atividades relacionadas a arquitetura de software são sempre de design. Entretanto,
+nem todas atividade de design são sobre arquitetura. O objetivo primário da arquitetura
+de software é garantir que os atributos de qualidade, restrições de alto nível e os
+objetivos do negócio, sejam atendidos pelo sistema. Qualquer decisão de design que
+não tenha relação com este objetivo não é arquitetural. Todas as decisões de design
+para um componente que não sejam “visíveis” fora dele, geralmente, também não são.
+```
+Fonte: [Elemar JR.](https://eximia.co/quais-sao-as-diferencas-entre-arquitetura-e-design-de-software/#:~:text=O%20fato-,Atividades%20relacionadas%20a%20arquitetura%20de%20software%20s%C3%A3o%20sempre%20de%20design,neg%C3%B3cio%2C%20sejam%20atendidos%20pelo%20sistema.)
+
+
+## Pontos importantes
+	Todos software possui uma arquitetura.
+	Nem todas as arquiteturas são boas arquiteturas.
+	Arquitetura inclui comportamentos.
+
 # Usabilidade para STEVE KRUG
 #### - ÚTIL
 	- Faz algo que alguém precisa?
@@ -80,6 +144,12 @@ métricas de controle e sua aplicação normalmente é realizada em processos j�
 ```
 Referência : [devmedia](https://www.devmedia.com.br/artigo-engenharia-de-software-21-metricas-de-software/15776)
 
+#### API REST
+ - Payload, estrutura de responses, código de erro e sucesso.
+
+#### Pattern ACL (Anti Corruption Layer)
+ - Cria uma camada entre o seu domínio e o domínio de um sistema externo,
+fazendo a tradução entre domínios, evitando assim a corrupção entre os sistemas.
 
 #### Service Mesh
 #### Conhecemos a ideia de ter um Gateway por cliente com o Edge Pattern

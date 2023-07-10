@@ -53,11 +53,9 @@ com questões arquiteturais.
 
 ### Por que aprender arquitetura de software?
 	- Poder navegar da visão macro para visão de um ou mais softwares
-	- Entender quais são as diversas opções que temos para desenvolver a mesmas coisas
-e escolher a melhor solução para determinado contexto
+	- Entender quais são as diversas opções que temos para desenvolver a mesmas coisas e escolher a melhor solução para determinado contexto
 	- Pensar a longo prazo no projeto e suas sustentabilidade
-	- Tomar deciões de forma mais fria e calcular evitando assim ser influenciado(a)
-por "hypes" de mercado
+	- Tomar decisões de forma mais fria e calcular evitando assim ser influenciado(a) por "hypes" de mercado
 	- Mergulho em padrões de projeto e de desenvolvimento e suas boas práticas
 
 ### Estruturas de uma arquitetura:

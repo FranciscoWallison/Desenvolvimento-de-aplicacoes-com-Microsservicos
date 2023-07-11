@@ -142,6 +142,8 @@ métricas de controle e sua aplicação normalmente é realizada em processos j�
 ```
 Referência : [devmedia](https://www.devmedia.com.br/artigo-engenharia-de-software-21-metricas-de-software/15776)
 
+## Exemplo de arquiteturas 
+
 #### API REST
  - Payload, estrutura de responses, código de erro e sucesso.
 

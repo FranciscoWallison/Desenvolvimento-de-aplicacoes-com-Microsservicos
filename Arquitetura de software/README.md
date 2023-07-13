@@ -130,7 +130,28 @@ Fonte: [Elemar JR.](https://eximia.co/quais-sao-as-diferencas-entre-arquitetura-
 #### - Efetivo
 	- Faz o seu trabalho
 
-# Métricas de software
+### Decisões "erradas" para iniciar o desenvolvimento de um software
+````
+O problema esta no coração do software e não em suas extremidades.
+````
+ - Os problemas do waterfall
+ - Arquitetura de CRUD (Validar estrutura que representa a regra de negocio e escopo do produto)
+ - Começar pelas ferramentas (Validar o contexto da entrega não a ferramenta primeiro.)
+ - Começar sem testes
+ - Começar sem processo de CI
+
+## Middle-out
+````
+Foco no desenvolvimento dos componentes code e mais críticos do sistema.
+Flexibilidade: Começar pelo meio permite fazer mais mudanças e eventualmente substituir
+ou incorporar novos tecnologias sem precisar mudar o core do sistema.
+Desenvolvimento incremental.
+Facilidade na escola.
+Menor complexidade na integração com outros sistemas.
+````
+
+
+## Métricas de software
 #### 
 ```
 Existem dois tipos de métricas no contexto de desenvolvimento de produtos de software: as métricas diretas, que são realizadas 

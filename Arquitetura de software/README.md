@@ -152,7 +152,6 @@ Menor complexidade na integração com outros sistemas.
 
 
 ## Métricas de software
-#### 
 ```
 Existem dois tipos de métricas no contexto de desenvolvimento de produtos de software: as métricas diretas, que são realizadas 
 em termos de atributos observáveis, como por exemplo, esforço, tamanho e custo, e as métricas indiretas ou derivadas, que podem 

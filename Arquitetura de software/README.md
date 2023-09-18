@@ -200,25 +200,6 @@ fazendo a tradução entre domínios, evitando assim a corrupção entre os sist
 # Backend for Frontend (BFF)
 	- Garantir a performace do dispossitio que está soclicianto serviços.
 
-
-# Domain Driven Design (DDD)
-
-º É um conjunto de princípios com foco em:
-````
-	° Utilizado para aplicações complexas
-	° Fácil de entender
-	° Difícil de aplicar
-	° Utilização de diversos padrões de projetos
-````
-## Entendendo (DDD)
--------
-	1 - Domínio
-		° Domínio é o coração do negócio que você está trabalhando. É baseado em um conjunto de idéias, conhecimento e processos de negócios.
-	2 - Exploração de modelos de forma criativo
-		° DDD preza que os desenvolvedores façam parte do processo de entender o negócio e todas os seus modelos nos mais diversos ângulos ao invés de simplesmente entrevistar especialistas.
-	3 - Definir a falar a linguagem Ubígua baseada em um contexto delimitado
-		° Linguagem Ubíqua é a linguagem falada no dia a dia no contexto da empresa. É a linguagem que utiliza as terminologias da realidade do negócio.
-
 #### Frameworks
 _____
 ```

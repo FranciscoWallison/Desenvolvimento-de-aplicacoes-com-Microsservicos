@@ -176,6 +176,7 @@ Fonte: [Elemar JR.](https://eximia.co/quais-sao-as-diferencas-entre-arquitetura-
 O problema esta no coração do software e não em suas extremidades.
 ````
  - Os problemas do waterfall
+	* Com o advento das metodologias ágeis, esse problema diminuiu bastante, tendo em vista a necessidade de entregar algo de valor ao invés de apenas documentar.
  - Arquitetura de CRUD (Validar estrutura que representa a regra de negocio e escopo do produto)
  - Começar pelas ferramentas (Validar o contexto da entrega não a ferramenta primeiro.)
  - Começar sem testes

@@ -59,8 +59,46 @@ com questões arquiteturais.
 	- Mergulho em padrões de projeto e de desenvolvimento e suas boas práticas
 
 ### Estruturas de uma arquitetura:
-	- Módulos, alocação e componente conector
+	- Módulos, alocação e componente-conector
+
+
+##### Estrutura CC (Componente-Conector)
+- Interação entre elementos para garantir o funcionamento do sistema
+- Componentes -> Comportamento  
+	- services
+	- client
+	- servers
+	- pipelines
+- Interações -> Conectores
+	- Como os componentes se comunicam
+
+Exemplo
+	- Um exemplo que em arquitetura é a hexagonal em cada porta/Componente tem um adaptador/Conector.
+	- ACL = Anticorruption Layer tem a aplicação  e o ACL faz a ponte para os conectores.
+
+##### Estrutura de Módulos
+- Unidades de Software
+- Pacotes
+- Responsabilidades
+- Camadas 
+- Visão mais micro
+
+° Perguntas de forma intencional aos módulos:
+	- qual a principal responsabilidade de cada módulo?
+ 	- quais elementos de software cada módulo utiliza?
+  	- o que o software realmente faz e do que ele depende?
+   	- como cada módulo se relaciona?
+	- qual o nível de acoplamento entre módulos, class, etc?
 	
+
+##### Estrutura de Alocação
+- É a relação das estruturas componenete-conector e módulos e como elas se conectam com "não software":
+- Tipo de computação
+- Ambientes
+- Testes
+- Build
+- Deployment
+
 #### Pré-requisitos
 	° Organização de um sistema
 		- Usabilidade

@@ -14,8 +14,6 @@ ambientes, bem como os princípios que guiam seu design e evolução. (IEEE Stan
 
 	O processo de arquitetar um software estabelece que o que está sedo desenvolvido faça
 parte de um conjunto maior.
-
-	Todo software obrigatoriamente possui uma arquitetura, seja ela boa ou não.
 ```
 #### Definições 
  - 1 - É uma "disciplina" da engenharia de software
@@ -51,6 +49,8 @@ com questões arquiteturais.
 	- Entender de forma profunda conceitos e modelos arquiteturais
 	- Auxilia na tomada de decisão nos momentos de crise
 	- Reforça boas práticas de desenvolvimento
+	- Todo software obrigatoriamente possui uma arquitetura, seja ela boa ou não.
+	- O coração do software sempre terá que possuir a melhor arquitetura possível.
 
 ### Por que aprender arquitetura de software?
 	- Poder navegar da visão macro para visão de um ou mais softwares

@@ -15,6 +15,7 @@ ambientes, bem como os princípios que guiam seu design e evolução. (IEEE Stan
 	O processo de arquitetar um software estabelece que o que está sedo desenvolvido faça
 parte de um conjunto maior.
 
+	Todo software obrigatoriamente possui uma arquitetura, seja ela boa ou não.
 ```
 #### Definições 
  - 1 - É uma "disciplina" da engenharia de software

@@ -185,3 +185,8 @@ Um componente independente que roda em conjunto com a aplicação principal.
 ````
 Uma malha de serviço é uma camada de infraestrutura dedicada que você pode adicionar as suas aplicações. Ele permite adicionar recursos de forma transparente, com observabilidade, gerenciamento de tráfego e segurança, sem adicioná-los ao seus próprio código. 
 ````
+
+## Pattern ACL (Anti Corruption Layer) 
+````
+Cria uma camada entre o seu domínio e o domínio de um sistema externo, fazendo a tradução entre domínios, evitando assim a corrupção entre os sistemas.
+````

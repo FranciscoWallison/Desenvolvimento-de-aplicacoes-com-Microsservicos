@@ -43,6 +43,11 @@ acabam realizando esse papel baseado em suas experiencias anteriores.
 	Há empresas que apesar de não possuírem o cargo de arquiteto(a) de software,
 possuem um departamento de arquitetura que auxilia os diversos times da organização
 com questões arquiteturais.
+
+	É papel do arquiteto de software definir rotina de testes e/ou esteira de teste.
+	Arquiteto de software precisa pensar sempre no coração do software, ou seja, onde de fato irá gerar valor.
+	Todo arquiteto de software deve realizar provas de conceitos em ferramentas, além de estabelecer e implementar processo de CI.
+	
 ```
 	- Transformar requisitos de negócios em padrões arquiteturais
 	- Orquestrar pessoas desenvolvedores e experts de domínio

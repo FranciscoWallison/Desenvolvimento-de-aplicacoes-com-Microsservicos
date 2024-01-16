@@ -58,10 +58,12 @@ com questões arquiteturais.
 	- Tomar decisões de forma mais fria e calcular evitando assim ser influenciado(a) por "hypes" de mercado
 	- Mergulho em padrões de projeto e de desenvolvimento e suas boas práticas
 
+ ### Cudiados com o efeitos "Ivory Tower"
+	° Arquitetos tem que andar junto ao time de desenvolvimento
+	° Quando o arquiteto / time de arquitetura se isolam do dia dia do time de dev viram especialistas teóricos que pensam que estão resolvendo problemas, porém estão totalmente descolados da realidade.
+
 ### Estruturas de uma arquitetura:
 	- Módulos, alocação e componente-conector
-
-
 ##### Estrutura CC (Componente-Conector)
 - Interação entre elementos para garantir o funcionamento do sistema
 - Componentes -> Comportamento  

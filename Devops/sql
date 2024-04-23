@@ -11,4 +11,8 @@ CREATE TABLE Usuarios (
 .schema Usuarios
 ````
 
+````
+INSERT INTO Usuarios (Nome, Email) VALUES ('Francisco Wallison', 'franciscowallison@gmail.com');
+````
+
 

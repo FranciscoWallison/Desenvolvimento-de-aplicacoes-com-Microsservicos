@@ -6,3 +6,9 @@ CREATE TABLE Usuarios (
     DataDeCadastro DATE DEFAULT CURRENT_DATE
 );
 ````
+
+````
+.schema Usuarios
+````
+
+

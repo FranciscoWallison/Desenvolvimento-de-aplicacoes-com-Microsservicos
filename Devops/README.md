@@ -15,70 +15,70 @@ no processo.
 - Entregas mais seguras
 ````
 
+
+# O que estudar para se tornar DevOps?
+
+
+## Fundamentos de DevOps
 ````
-O que estudar para se tornar DevOps?
-
-
-Fundamentos de DevOps
-
 * Conceitos e princípios de DevOps
 
 * Cultura e práticas DevOps
+````
 
-
-Sistemas Operacionais
-
+## Sistemas Operacionais
+````
 * Administração de Linux (comandos básicos, shell scripting)
 
 * Administração de Windows Server
+````
 
-
-Redes e Segurança
-
+## Redes e Segurança
+````
 * Conceitos básicos de redes (TCP/IP, DNS, HTTP/HTTPS)
 
 * Práticas de segurança (firewalls, VPNs, autenticação e autorização)
+````
 
-
-Controle de Versão
-
+## Controle de Versão
+````
 * Git e GitHub/GitLab/Bitbucket
 
 * Fluxos de trabalho Git (branching, merging, pull requests)
+````
 
-
-Automação e Scripting
-
+## Automação e Scripting
+````
 * Scripting com Bash, Python, ou PowerShell
 
 * Ferramentas de automação (Ansible, Puppet, Chef)
+````
 
-
-Containers e Orquestração
-
+## Containers e Orquestração
+````
 * Docker (conceitos, comandos básicos, Dockerfile)
 
 * Kubernetes (conceitos, deployment, serviços, networking)
 
 * Docker Compose e Swarm
+````
 
-
-Integração Contínua e Entrega Contínua (CI/CD)
-
+I## ntegração Contínua e Entrega Contínua (CI/CD)
+````
 * Ferramentas CI/CD (GitLab CI, CircleCI, Travis CI, Jenkins)
 
 * Pipeline de CI/CD (build, teste, deploy)
-
+````
 
 Infraestrutura como Código (IaC)
-
+````
 * Terraform (conceitos, sintaxe, módulos)
 
 * CloudFormation (se usar AWS)
+````
 
-
-Cloud Computing
-
+## Cloud Computing
+````
 * AWS:
 
 * Serviços principais (EC2, S3, RDS, IAM, Route53, EKS)
@@ -94,31 +94,31 @@ Cloud Computing
 * Oracle Cloud Infrastructure (OCI):
 
 * Serviços principais (Compute, Object Storage, Oracle Autonomous Database, IAM, OKE)
+````
 
-
-Monitoramento e Logging
-
+## Monitoramento e Logging
+````
 * Ferramentas de monitoramento (Prometheus, Zabbix, Grafana, ELK stack, Splunk)
 
 * Logging centralizado e análise de logs
+````
 
-
-Metodologias Ágeis
-
+## Metodologias Ágeis
+````
 * Scrum, Kanban
 
 * Ferramentas de gerenciamento de projetos (JIRA, Trello)
+````
 
-
-Práticas de Teste
-
+## Práticas de Teste
+````
 * Testes automatizados (unidade, integração, funcional)
 
 * Teste de carga e performance
+````
 
-
-Soft Skills
-
+## Soft Skills
+````
 * Comunicação e colaboração em equipes multidisciplinares
 
 * Resolução de problemas e pensamento crítico

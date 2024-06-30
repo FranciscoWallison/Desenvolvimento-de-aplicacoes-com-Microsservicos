@@ -288,6 +288,7 @@ _____
 ## Load Balancer vs Gateway de API vs Backend for Frontend (BFF) simplificado.
 
 #### Load Balancer
+
 Quando você faz o check-in em um hotel, geralmente é recebido por um recepcionista.
 
 O recepcionista verifica seus documentos, insere suas informações no sistema e te guia até o seu quarto.
@@ -298,10 +299,13 @@ Os balanceadores de carga fazem um trabalho similar para a sua aplicação.
 
 É uma ferramenta que distribui as solicitações recebidas entre vários servidores.
 
-Além disso, os balanceadores de carga mantêm seu sistema disponível. Se um servidor falhar, ele direciona a solicitação para outro servidor.
+Além disso, os balanceadores de carga mantêm seu sistema disponível. Se um servidor falhar,
+ele direciona a solicitação para outro servidor.
 
 #### Gateway de API
-Imagine um cenário onde uma empresa está conduzindo entrevistas para várias posições, como Arquiteto de Tecnologia, Gerente de Engenharia e Engenheiro de Software.
+
+Imagine um cenário onde uma empresa está conduzindo entrevistas para várias posições,
+como Arquiteto de Tecnologia, Gerente de Engenharia e Engenheiro de Software.
 
 Cada posição tem um painel de entrevista dedicado.
 
@@ -311,18 +315,22 @@ Agora, você não quer que os candidatos tenham que verificar cada sala para enc
 
 Para um sistema, o Gateway de API é esse coordenador.
 
-Gateways de API também podem executar diferentes funções como autenticação, limitação de taxa, registro de logs e caching.
+Gateways de API também podem executar diferentes funções como autenticação,
+limitação de taxa, registro de logs e caching.
 
 #### Backend for Frontend (BFF)
 
 Vamos levar nosso exemplo da entrevista adiante.
 
-Para cada posição (Arquiteto, Gerente de Engenharia, Engenheiro de Software), existem rodadas específicas de discussões.
+Para cada posição (Arquiteto, Gerente de Engenharia, Engenheiro de Software),
+existem rodadas específicas de discussões.
 
-Algumas rodadas são diferentes com base na posição, mas algumas podem ser comuns para todas as posições (como a Rodada do Diretor).
+Algumas rodadas são diferentes com base na posição,
+mas algumas podem ser comuns para todas as posições (como a Rodada do Diretor).
 
 Como você coordena isso para cada posição?
 
-Backends para Frontends é o seu BFF (melhor amigo) neste cenário. É um coordenador que cuida das rodadas específicas para um tipo particular de entrevista.
+Backends para Frontends é o seu BFF (melhor amigo) neste cenário.
+É um coordenador que cuida das rodadas específicas para um tipo particular de entrevista.
 
-Em termos de sistema, BFF é o componente que pode cuidar dos diferentes requisitos de dispositivos."
+Em termos de sistema, BFF é o componente que pode cuidar dos diferentes requisitos de dispositivos.

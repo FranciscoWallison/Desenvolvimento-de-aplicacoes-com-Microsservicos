@@ -244,7 +244,7 @@ fazendo a tradução entre domínios, evitando assim a corrupção entre os sist
 	de um idioma comum na rede, permitindo que dispositivos ou serviços se conectem sem qualquer intervenção manual. (ou seja,
 	descoberta de serviço Kubernetes, descoberta de serviço AWS) (avinetworks)
 
-# Backend for Frontend (BFF) (BFF)
+# Backend for Frontend (BFF)
 	- Garantir a performace do dispossitio que está soclicianto serviços.
 
 #### Frameworks

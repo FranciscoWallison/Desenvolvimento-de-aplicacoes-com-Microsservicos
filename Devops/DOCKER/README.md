@@ -26,11 +26,28 @@ construir, entregar e rodar em qualquer ambiente (build, ship and run anywhere).
 ```
 ## Facilidade na utilização, instalação e gerenciamento (containers, images, volumes e networks)
 ```
-Docker oferece uma interface de linha de comando intuitiva e ferramentas que facilitam 
+	Docker oferece uma interface de linha de comando intuitiva e ferramentas que facilitam 
 a instalação e o gerenciamento de containers, imagens, volumes e redes. Isso permite
 que os desenvolvedores criem, executem e gerenciem facilmente ambientes isolados.
 ```
-
+```
+	Um desenvolvedor pode usar o Docker para criar um ambiente de
+desenvolvimento personalizado para cada projeto. Isso pode incluir a
+instalação de software específico, a configuração de variáveis de
+ambiente e a definição de permissões de segurança.
+```
+```
+	Uma equipe de desenvolvedores pode usar o Docker para compartilhar
+um ambiente de desenvolvimento comum. Isso pode ajudar a garantir que
+todos os desenvolvedores estejam trabalhando com a mesma versão do
+software e as mesmas configurações.
+```
+```
+	Uma empresa pode usar o Docker para criar um ambiente de
+desenvolvimento pré-configurado para novos funcionários. Isso pode
+ajudar a acelerar o processo de onboarding e reduzir o tempo necessário
+para os funcionários começarem a desenvolver.
+```
 ## O que são containers?
 
 ```

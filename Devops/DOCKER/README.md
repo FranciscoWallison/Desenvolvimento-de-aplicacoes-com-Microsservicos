@@ -356,11 +356,18 @@ Se der um "prume" os arquivos atrelado no seu local ou predefinido iram permanec
 
 #### [Criando Comandos RUN, CMD e ENTRYPOINT](https://cursos.alura.com.br/forum/topico-diferenca-entre-run-cmd-e-entrypoint-103504)
 ```
- ° O ENTRYPOINT especifica um comando que sempre será executado quando o contêiner for iniciado.
-
- ° O CMD deve ser usado como uma maneira de definir argumentos padrão para um comando ENTRYPOINT ou para executar um comando em um contêiner.
-
  ° RUN permite executar comandos dentro da sua imagem do Docker. Esses comandos são executados uma vez no tempo de compilação e gravados na imagem do Docker como uma nova camada.
+
+
+ ° O ENTRYPOINT especifica um comando que sempre será executado quando o contêiner for iniciado. Define o comando principal
+que será executado quando um container for iniciado. Ele é geralmente usado para especificar um aplicativo ou script
+que deve ser executado.
+
+ ° O CMD deve ser usado como uma maneira de definir argumentos padrão para um comando ENTRYPOINT ou para executar um comando em um contêiner.Fornece
+argumentos padrão para o ENTRYPOINT ou pode definir um comando a ser executado se ENTRYPOINT não estiver definido. Se você especificar CMD
+em um Dockerfile, isso pode sobrescrever os argumentos do ENTRYPOINT.
+
+ ° `CMD` pode sobrescrever um comando ou argumentos definidos pelo `ENTRYPOINT`.
 ```
 
 <details><summary><b>Comando rapidos Fonte Alura</b></summary>
@@ -405,6 +412,14 @@ docker inspect ID_CONTAINER - retorna diversas informações sobre o container.
 </p>
 </details>
 
+
+#### Docker Compose
+```
+	Executar múltiplos containers, facilitando assim a configuração e
+inicialização de ferramentas, linguagens de programação, banco de
+dados e outros serviços backing services.
+
+```
 #### Conf Docker-machine
 ```
 docker-machine ssh default
@@ -416,7 +431,6 @@ Exec command shell "#!/bin/bash"
 entrypoints
 
 ```
-
 
 #### Docker Engine
 ````
@@ -432,7 +446,6 @@ Tecnologia permite o uso de múltiplos docker hosts.
 ````
 
 #### Containers VS VM(Máquinas Virtuais)
-
 
 ## Vantagens dos Containers
 ````

@@ -150,8 +150,9 @@ Comandos:
 #### K8S REPLICASETS
 Para que serve?
 _____
-    ° Administra todas os POD's criados, criando redundâncias para cada imagem.
-    ° Quando criados, Deployments auxiliam com controle de versionamento e criam um ReplicaSet automaticamente.(Font: Alura)
+     ° ReplicaSets são controladores que garantem que um número especificado de réplicas de um pod esteja sempre em execução.
+     ° Administra todas os POD's criados, criando redundâncias para cada imagem.
+     ° Quando criados, Deployments auxiliam com controle de versionamento e criam um ReplicaSet automaticamente.(Font: Alura)
 ----------------------------------------------------
 Comandos:
 _____

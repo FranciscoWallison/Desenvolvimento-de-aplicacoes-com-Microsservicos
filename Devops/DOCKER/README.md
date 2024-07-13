@@ -24,6 +24,12 @@ construir, entregar e rodar em qualquer ambiente (build, ship and run anywhere).
 
 - blog.geekhunter.com.br
 ```
+## Facilidade na utilização, instalação e gerenciamento (containers, images, volumes e networks)
+```
+Docker oferece uma interface de linha de comando intuitiva e ferramentas que facilitam 
+a instalação e o gerenciamento de containers, imagens, volumes e redes. Isso permite
+que os desenvolvedores criem, executem e gerenciem facilmente ambientes isolados.
+```
 
 ## O que são containers?
 
@@ -139,6 +145,13 @@ diferente da virtualização.
 em outas imagens.
 ```
 
+### Facilidade em realizar o build; a Docker investe em otimização do build de images
+```
+Docker oferece ferramentas e práticas que ajudam a otimizar o processo
+de build de imagens. Com o uso de camadas (layers), o Docker pode reutilizar partes das
+imagens existentes, tornando o processo de construção mais rápido e eficiente.
+```
+
 ## Dockerfile
 ```
 	Arquivo declarativo de como vai ser a imagem, 
@@ -169,6 +182,13 @@ cadastrado.
 	Explo: hub.docker
 	É um repositório que você pode publicar como Pull e usar na suma maquina com Push
 ```
+## Com o Docker Hub fica muito simples compartilhar uma imagem Docker
+```
+O Docker Hub é um repositório público onde usuários podem armazenar,
+compartilhar e colaborar em imagens Docker. Isso facilita a distribuição de aplicações,
+permitindo que outras pessoas baixem e utilizem suas imagens com facilidade.
+```
+
 ### [Projeto com exemplos de publicação de imagens](https://github.com/FranciscoWallison/laradocker-publicando-imagem)
 
 ## Docker Host
@@ -420,7 +440,6 @@ Tecnologia permite o uso de múltiplos docker hosts.
  - Melhor controle do uso dos recursos do sistema operacional.
  - Trabalhar com diferentes versões de bibliotecas e linguagens.
 ````
-
 
 
 ## Vantagens das máquinas virtuais

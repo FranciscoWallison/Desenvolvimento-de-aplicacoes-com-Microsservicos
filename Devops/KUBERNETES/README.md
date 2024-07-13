@@ -9,6 +9,17 @@
 ````
      - Orquestrar os containers de forma escalavel conforme o desempenho imposto pela maquina virtual.
      - Reiniciando aplicações altomaticamente em casos de falhas.
+     - Escalabilidade: O Kubernetes permite que as aplicações sejam
+dimensionadas automaticamente para atender à demanda. Isso significa
+que as empresas podem oferecer um desempenho consistente, mesmo
+em períodos de alta carga.
+     - Resiliência: O Kubernetes pode lidar com falhas de hardware ou software
+sem interromper o funcionamento das aplicações. Isso ajuda a garantir a
+disponibilidade e a confiabilidade das aplicações.
+     - Segurança: O Kubernetes oferece uma variedade de recursos de
+segurança para proteger as aplicações contra ataques. Isso inclui
+recursos de autenticação, autorização e criptografia.
+
 ````
 
 ## Instalando no Linux

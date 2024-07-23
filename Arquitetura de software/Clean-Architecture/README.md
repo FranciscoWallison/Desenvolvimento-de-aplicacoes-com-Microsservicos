@@ -27,6 +27,20 @@ Gateways:
     em um banco de dados e, portanto, carrega tanto os dados quanto o comportamento associado a
     esse registro. Isso resulta em um alto acoplamento entre a classe e o banco de dados.
 
+"Active Record carrega dados e comportamento, ou seja, existe um alto acoplamento." -
+
+    No padrão Active Record, os objetos incorporam tanto os dados quanto o comportamento que manipula esses dados. Isso geralmente leva a um alto acoplamento entre a lógica de negócios e a persistência de dados, pois o objeto de domínio também é responsável por gerenciar a própria persistência.
+
+
+"Data Mapper proporciona separação de conceitos (SoC) pois irá separar entidades (objetos de mapeamento) do modelo de domínio."
+
+     O padrão Data Mapper separa os objetos do domínio (que contêm a lógica de negócios) da lógica de persistência. Isso é feito por meio de um "mapper" que move dados entre objetos e um banco de dados de maneira que os objetos de domínio não precisem ter conhecimento de como eles são persistidos, promovendo uma clara separação de conceitos.
+
+
+"Data Mapper permite o uso de domínios não anêmicos com maior facilidade"
+
+    O padrão Data Mapper é mais adequado para criar modelos de domínio ricos (não anêmicos), onde a lógica de negócios é encapsulada dentro dos objetos de domínio, sem misturar com a lógica de acesso a dados. Isso facilita a manutenção e evolução do modelo de domínio.
+
 "Data Mapper proporciona separação de conceitos (SoC) pois irá separar entidades (objetos de mapeamento) do modelo de domínio;" - 
 
     O Data Mapper é um padrão de design que separa as entidades do modelo de domínio (objetos de negócio)

@@ -58,3 +58,8 @@ build: create deploy config file
 "test: [...]": Criação ou modificação de testes automatizados
 test: testing create user service
 ````
+
+````
+"wip: [...]"
+Usado para indicar que um commit é um "Work in Progress" (trabalho em andamento), útil quando uma funcionalidade ou correção ainda não está completa.
+````

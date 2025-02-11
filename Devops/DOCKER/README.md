@@ -485,6 +485,7 @@ Tecnologia permite o uso de múltiplos docker hosts.
  - Configurações iniciais e atualizações frequentes do SO
  - Manter vários sistemas operacionais. 
 ````
+
 ## Possiveis erros e soluções
 ```
 Building app
@@ -501,7 +502,10 @@ Traceback (most recent call last):
    - docker rmi $(docker images -a -q)
    - docker-compose up --force-recreate
 ```
+## Ferramentas para testes
+[labs play-with-docker](https://labs.play-with-docker.com/)
 
+___________________
 ### [Vídeo Fazendo consulta utilizando PDO/php com mariadb + docker](https://www.youtube.com/watch?v=FzPgZ84lP94)
  <details><summary><b>Codigo utilizando</b></summary>
 <p>

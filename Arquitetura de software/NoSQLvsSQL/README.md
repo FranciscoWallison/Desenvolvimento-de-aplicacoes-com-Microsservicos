@@ -65,6 +65,3 @@ Uma resposta estruturada pode ser assim:
 
 Em projetos específicos, também é possível combinar ambos, usando SQL para dados transacionais e NoSQL para armazenamento de logs e cache, por exemplo."**  
 
----
-
-Se precisar adaptar para um caso específico, me avise! 🚀

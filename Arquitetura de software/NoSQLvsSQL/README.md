@@ -58,10 +58,3 @@ Os bancos **NoSQL** são indicados quando há **grandes volumes de dados, necess
 
 ---
 
-### 🚀 **Como responder em uma entrevista?**  
-Uma resposta estruturada pode ser assim:
-
-**"A escolha entre SQL e NoSQL depende dos requisitos do projeto. Para sistemas que exigem forte consistência, transações complexas e dados estruturados, eu recomendaria um banco SQL como PostgreSQL ou MySQL. Por outro lado, se a necessidade for escalabilidade horizontal, flexibilidade e performance em grandes volumes de dados, NoSQL, como MongoDB ou Cassandra, seria mais adequado.  
-
-Em projetos específicos, também é possível combinar ambos, usando SQL para dados transacionais e NoSQL para armazenamento de logs e cache, por exemplo."**  
-

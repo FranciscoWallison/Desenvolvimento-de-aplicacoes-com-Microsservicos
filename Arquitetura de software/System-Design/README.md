@@ -357,3 +357,64 @@ Incluir a estimativa de capacidade de armazenamento de dados.
 O entrevistador pode pedir para realizar o System Design de diversos tipos de sistemas,
 sejam genéricos ou realísticos.
 ````
+
+-----
+
+# Desafio: System Design da Netflix
+
+Este repositório contém a resolução do desafio de projetar a arquitetura de sistema para um serviço de streaming de vídeo em larga escala, inspirado na Netflix. O objetivo é aplicar conceitos de System Design para planejar, projetar e justificar as decisões técnicas que sustentam a plataforma.
+
+## 1. Entendimento do Sistema
+
+A primeira etapa consiste em analisar as características fundamentais do sistema, respondendo às seguintes questões:
+
+* **O sistema tem alta leitura ou alta gravação?** Explique sua resposta.
+* **No contexto do sistema, o que é mais importante: consistência ou disponibilidade?** Justifique.
+
+## 2. Requisitos Funcionais
+
+Definição das funcionalidades essenciais e de suporte do sistema.
+
+* **Features Principais (Core Features):** Quais são as funcionalidades centrais para a experiência do usuário?
+* **Features de Suporte (Support Features):** Quais funcionalidades auxiliam na operação e melhoria do serviço?
+
+## 3. Requisitos Não Funcionais
+
+Análise dos atributos de qualidade que o sistema deve atender.
+
+* **Disponibilidade:** O sistema deve permanecer acessível e operacional para os usuários a maior parte do tempo.
+* **Escalabilidade:** A arquitetura deve ser capaz de crescer e suportar um aumento significativo no número de usuários e no volume de dados.
+
+## 4. Informações para o Plano de Capacidade
+
+Dados e métricas para embasar o planejamento da infraestrutura e a estimativa de recursos.
+
+* **Usuários ativos diariamente:** 50 milhões
+* **Vídeos assistidos por dia por usuário:** 1
+* **Crescimento em horários de pico:** 15x
+* **Duração média de um vídeo:** 30 minutos
+* **Tamanho do vídeo por minuto:** 30 MB
+* **Proporção de leitura e escrita:** 100 leituras para 1 escrita
+* **Fator de Replicação (Replication Factor):** 3
+
+## 5. Modelagem de Dados
+
+Desenho do esquema de banco de dados, identificando as principais entidades do sistema com base nas funcionalidades definidas.
+
+## 6. Design da API
+
+Definição dos principais *endpoints* da API que o sistema deverá expor para permitir a comunicação entre o cliente (front-end) e o servidor (back-end).
+
+## 7. System Design da Solução
+
+Apresentação da arquitetura completa do sistema. Este diagrama deve ilustrar os componentes, serviços, bancos de dados, caches e como eles interagem, acompanhado de uma justificativa detalhada para cada escolha de design.
+
+## 8. Perguntas do Entrevistador
+
+Com base na solução de System Design proposta, foram elaboradas 3 perguntas complexas que um entrevistador técnico poderia fazer para aprofundar a discussão sobre a arquitetura.
+
+## 9. Ferramentas de Desenho
+
+Todos os diagramas e modelos foram criados utilizando a ferramenta [Excalidraw](https://excalidraw.com/).
+
+* [Link para a biblioteca de componentes do Excalidraw](https://mbafullcycle.s3.us-east-1.amazonaws.com/system-design/library.excalidrawlib)

@@ -4,6 +4,16 @@
 
 ## [Instalando Docker](https://docs.docker.com/docker-for-windows/install/)
 
+Validar quak é oo melhor para baixar:
+
+```powershell
+if ($env:PROCESSOR_ARCHITECTURE -eq "ARM64") { 
+    Write-Host "✅ Baixe: Docker Desktop for Windows - Arm" -ForegroundColor Green 
+} else { 
+    Write-Host "✅ Baixe: Docker Desktop for Windows - x86_64" -ForegroundColor Green 
+}
+
+``
 ### linux 
 Install docker [Digitalocean](https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-ubuntu-16-04-pt)
 

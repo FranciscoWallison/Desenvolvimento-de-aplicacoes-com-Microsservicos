@@ -11,7 +11,7 @@
 considerando o tempo, dinheiro e pessoas disponíveis.
 
 #### Premissas de System Design
-- Ter qualidade de experiência para o usuário; em grande escala, tudo vai falhar; não armazenar nada desnecessário.
+- Ter qualidade de experiência para o usuário, em grande escala, tudo vai falhar, não armazenar nada desnecessário.
 
 ## System Design VS Big Techs
 

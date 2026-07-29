@@ -19,3 +19,7 @@ INSERT INTO Usuarios (Nome, Email) VALUES ('Francisco Wallison', 'franciscowalli
 SELECT * FROM Usuarios;
 ````
 
+---
+
+> 📎 **Próximo passo:** [buscas-inteligentes.md](buscas-inteligentes.md) — por que `WHERE Nome LIKE '%ana%'` quebra em produção, e o que usar no lugar (Full-Text Search, trigram, busca fuzzy).
+

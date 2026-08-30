@@ -1,0 +1,25 @@
+# Dependências Node (ferramentas em tools/)
+node_modules/
+
+# Estado runtime do servidor MCP (logs, tokens de confirmação, perfis)
+tools/mcp-navegador/state/
+tools/mcp-navegador/.env
+
+# Logs
+*.log
+
+# Sistema operacional
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Material original do curso (PDFs do instrutor) - guias de setup e modulos.
+# Ficam no disco para estudo offline, mas NÃO vão para o GitHub público:
+# são material pago de terceiros. O que se publica aqui são as notas próprias.
+Devops/Cloud/Azure-Academy/materiais/
+Devops/Cloud/Azure-Academy/pdfs/
+
+# Clones de repositórios do Azure Repos feitos nos labs.
+# São repositórios Git separados — não devem virar sub-repo deste caderno,
+# e o .git/config deles pode conter credencial.
+Devops/Cloud/Azure-Academy/projetos-repor/

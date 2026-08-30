@@ -1,0 +1,32 @@
+{
+  "_comment": "Camada 1 — zonas exclusivamente humanas. Em qualquer URL que case com estes padrões, TODA tool mutadora é bloqueada e NENHUM token de confirmação libera. Login, MFA e pagamento são do usuário, não do assistente.",
+  "hardDeny": [
+    "login.microsoftonline.com",
+    "login.live.com",
+    "login.microsoft.com",
+    "login.windows.net",
+    "msft.sts.microsoft.com",
+    "*.b2clogin.com",
+    "account.live.com",
+    "signup.live.com",
+    "account.microsoft.com/billing",
+    "portal.azure.com/#blade/Microsoft_Azure_GTM",
+    "labs.azureacademy.com.br/matricula/login",
+    "labs.azureacademy.com.br/login",
+    "accounts.google.com",
+    "github.com/login",
+    "github.com/sessions"
+  ],
+  "_fieldComment": "Campos que nunca podem ser preenchidos por tool, em NENHUMA URL.",
+  "forbiddenFieldSelectors": [
+    "input[type=password]",
+    "input[autocomplete*=password]",
+    "input[autocomplete=one-time-code]",
+    "input[autocomplete=current-password]",
+    "input[autocomplete=new-password]",
+    "input[name*=passw i]",
+    "input[name*=senha i]",
+    "input[name*=otp i]",
+    "input[id*=passw i]"
+  ]
+}

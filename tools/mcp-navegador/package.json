@@ -1,0 +1,21 @@
+{
+  "name": "mcp-navegador",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Servidor MCP que dirige um Chrome real com perfil persistente, para navegar cursos/portais e capturar evidencia direto na documentacao.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "handshake": "node scripts/handshake.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "@mozilla/readability": "0.6.0",
+    "linkedom": "0.18.11",
+    "playwright-core": "1.60.0",
+    "turndown": "7.2.0",
+    "zod": "3.25.76"
+  }
+}

@@ -176,7 +176,9 @@ _AzureAcademy-CI  ──►  DEV  ──►  TEST  ──►  PRODUCAO
 | Automation | `auto-academy-wsousa` (Free) + runbook `sqlescala` publicado |
 | Release | `MVC` · `definitionId=1` · 3 stages encadeados por `environmentState` |
 
-**Custo real: ~R$ 2,30/dia** — só o plano B1. Muito abaixo dos ~R$ 13/dia do S1 que o lab pede.
+**Custo real enquanto esteve no ar: ~R$ 2,30/dia** — só o plano B1. Muito abaixo dos ~R$ 13/dia do S1 que o lab pede.
+
+> 🟢 **O ambiente foi destruído em 30/08/2026.** O release `MVC` continua no Azure DevOps como material de estudo, apontando para recursos que não existem mais. Para remontar: [ambiente-lab-azure.md](ambiente-lab-azure.md).
 
 ➡️ Para recriar tudo em ~10 minutos: **[ambiente-lab-azure.md](ambiente-lab-azure.md)** + os scripts em [`scripts/`](scripts/).
 

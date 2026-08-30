@@ -7,6 +7,12 @@
 
 ---
 
+> 🟢 **Estado em 30/08/2026: ambiente DESTRUÍdo.** Os grupos de recursos `AzureAcademy` foram apagados nas duas assinaturas ao fim do estudo. Custo do Azure em **R$ 0**. Este documento existe justamente para remontá-lo em ~10 minutos quando você voltar.
+>
+> ⚠️ O que **continua cobrando** é o job paralelo do Azure DevOps (~R$ 210/mês) — ele vive em `_settings/billing` e não foi afetado pela exclusão. Ver [README](README.md).
+
+---
+
 ## 🎯 Para que serve este documento
 
 Os labs da formação criam recursos que **custam dinheiro parados**. A estratégia que funciona é:

@@ -178,7 +178,7 @@ Com a máquina online no grupo, o stage baixa o `drop` **dentro da VM**, o *Mana
 | IP público Standard estático | ~R$ 0,40/dia |
 | **Total do módulo** | **~R$ 3,70/dia** |
 
-Somado ao ambiente atual (~R$ 2,30/dia), dá **~R$ 6/dia**.
+Somado ao ambiente do [lab-06](lab-06-release-cd-slots-e-logic-apps.md) (~R$ 2,30/dia), daria **~R$ 6/dia** — se ambos estivessem no ar. Hoje **estão destruídos**: ver [ambiente-lab-azure.md](ambiente-lab-azure.md).
 
 > 💡 **VM parada ainda cobra disco e IP.** `az vm deallocate` para a cobrança de computação mas mantém disco e IP. Para zerar mesmo, apague o grupo de recursos — ver [ambiente-lab-azure.md](ambiente-lab-azure.md).
 

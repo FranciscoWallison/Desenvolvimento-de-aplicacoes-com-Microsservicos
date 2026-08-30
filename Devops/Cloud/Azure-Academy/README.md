@@ -58,8 +58,8 @@ A ementa cobre o ciclo completo de entrega em Azure DevOps + GitHub:
 | **4** | IAC | [Infra as Code e Automações (ARM)](lab-04-iac-arm-e-automacoes.md) | 🟡 Template pronto (PR #3) · grupo `AzureAcademy` ✅ · deploy travado na quota |
 | **5** | Pipelines | [Pipelines — consertando um build clássico quebrado](lab-05-pipelines-build-classica.md) | ✅ **`AzureAcademy-CI` verde** (run #5) · artefato `drop` 9,1 MB |
 | **6** | Release | [Release (CD): ambientes, slots, gates e Logic Apps](lab-06-release-cd-slots-e-logic-apps.md) | ✅ Executado em variante — 3 web apps no lugar de slots (Standard bloqueado) |
-| 7 | Deployment Groups | Lab — Deployment Groups (VMs) | 🔜 |
-| 8 | Testes | Testes manuais e automatizados | 🔜 |
+| **7** | Deployment Groups | [Deployment Groups: deploy em VMs com IIS](lab-07-deployment-groups-vms.md) | 📋 Documentado · falta VM registrada (quota de VM **existe**) |
+| **8** | Testes | [Testes manuais e automatizados](lab-08-testes-manuais-e-automatizados.md) | 🟡 Automatizados ✅ na CI · manuais exigem licença paga |
 | 9 | Extensões | Lab — Extensões | 🔜 |
 
 > Os PDFs originais de cada módulo ficam em `materiais/` — **fora do controle de versão** (ver abaixo). O que se publica aqui são as notas próprias.

@@ -127,50 +127,55 @@ Trabalhando na organização **`dev.azure.com/wallisonsousa`** (a org nova `Azur
 | Bloqueio | Impacto |
 |---|---|
 | ~~Assinatura Azure desabilitada~~ | ✅ **RESOLVIDO em 29/08/2026** — pagamento efetuado. Agora há **duas assinaturas ativas**: `Assinatura 1` e `Azure subscription 1` |
-| ~~Grant de paralelismo~~ | ✅ **RESOLVIDO em 30/08/2026** — mas **não** pelo grant gratuito: existe **1 job paralelo Microsoft-hosted comprado** (`Billing → MS Hosted CI/CD → Paid parallel jobs = 1`). O pipeline **roda**; em compensação **custa** — ver a seção de Custos |
+| ~~Grant de paralelismo~~ | ✅ **RESOLVIDO em 31/08/2026** — e agora **de graça**. Em 30/08 o pipeline só rodava porque havia **1 job Microsoft-hosted comprado**; em 31/08 os pagos foram zerados e o **tier gratuito assumiu**: *1 job MS-hosted até 1.800 min/mês* + *1 self-hosted*. Roda igual, custa R$ 0 |
 | 🔴 **Quota de compute = 0** | **NOVO em 30/08/2026.** `Azure subscription 1` recusa criar App Service Plan — até no **F1 gratuito** — com `Current Limit (Total VMs): 0`. Testado em Brazil South e East US 2. Trava o Web App do Módulo 3 e o deploy do Módulo 4. Saídas: usar a assinatura `Assinatura 1` ou pedir aumento de cota — detalhes em [lab-03](lab-03-repos-azure-devops-github-codespaces.md) |
 | **Convidar usuários** | Só você — o convite dispara e-mail real |
 
 ---
 
-## 💰 Custos — o que está sendo cobrado
+## 💰 Custos — o que estava sendo cobrado (e o que sobrou)
 
-Levantado em **30/08/2026** em `Cost Management → Análise de custo → Custo por recurso`, assinatura `Azure subscription 1` (`057d3c78-…`).
+> 🟢 **Estado em 31/08/2026: custo recorrente do curso = R$ 0.** Os grupos `AzureAcademy` foram apagados nas duas assinaturas, os jobs paralelos pagos foram zerados e os PATs revogados. Esta seção fica como **registro do levantamento** — é o tipo de conta que vale saber fazer.
 
-**Agosto/2026 (mês parcial): R$ 13,14.** Mas o número que importa é a **projeção mensal**, porque quase tudo começou a cobrar agora:
+Levantado em **30/08/2026** em `Cost Management → Análise de custo → Custo por recurso`, assinatura `Azure subscription 1` (`057d3c78-…`). **Agosto/2026 (mês parcial): R$ 13,14** — mas o número que importava era a **projeção mensal**, porque quase tudo tinha começado a cobrar naquela semana:
 
-| Recurso | Tipo | Medidor | Ago/26 | Projeção/mês |
-|---|---|---|---|---|
-| `wallisonsousa` | Azure DevOps (org) | **Microsoft-hosted CI/CD Concurrent Job** | R$ 6,63 | **≈ R$ 210** (US$ 40) |
-| `wallisonsousa` | Azure DevOps (org) | **Self-hosted CI/CD Concurrent Job** | R$ 2,49 | **≈ R$ 79** (US$ 15) |
-| `front-assistente-contasreceber` | Static Web App **Standard** | Azure App Service — Standard App | R$ 1,77 | **≈ R$ 47** (US$ 9) |
-| `front-dashboard-analise-90-dias` | Static Web App **Standard** | Azure App Service — Standard App | R$ 1,77 | **≈ R$ 47** (US$ 9) |
-| `pipe-contasreceber` | Logic App | por execução | R$ 0,47 | variável |
-| `datalakerconstasreceber` | Storage account | — | R$ 0 | ~R$ 0 |
-| Synapse workspace + Spark pool + Foundry | — | — | **R$ 0** | **R$ 0 parado** |
+| Recurso | Tipo | Medidor | Ago/26 | Projeção/mês | Situação em 31/08 |
+|---|---|---|---|---|---|
+| `wallisonsousa` | Azure DevOps (org) | Microsoft-hosted CI/CD Concurrent Job | R$ 6,63 | ≈ R$ 210 (US$ 40) | ✅ **zerado** |
+| `wallisonsousa` | Azure DevOps (org) | Self-hosted CI/CD Concurrent Job | R$ 2,49 | ≈ R$ 79 (US$ 15) | ✅ **zerado** |
+| `front-assistente-contasreceber` | Static Web App **Standard** | App Service — Standard App | R$ 1,77 | ≈ R$ 47 (US$ 9) | ✅ **→ Free** |
+| `front-dashboard-analise-90-dias` | Static Web App **Standard** | App Service — Standard App | R$ 1,77 | ≈ R$ 47 (US$ 9) | ✅ **→ Free** |
+| `pipe-contasreceber` | Logic App | por execução/polling | R$ 0,47 | variável | ➡️ mantido (ingestão em uso) |
+| `datalakerconstasreceber` | Storage account | — | R$ 0 | ~R$ 0 | ➡️ mantido |
+| Synapse workspace + Spark pool + AI Services | — | — | **R$ 0** | **R$ 0 parado** | ➡️ mantido |
 
-> ✅ **Boa notícia:** o **Spark pool `spcontareceber` tem pausa automática ligada (15 min ociosos)** — ele só cobra vCore-hora quando um notebook roda. O SQL serverless do Synapse e o Azure AI Foundry também cobram **por uso**, não por hora parada. Nada disso é "torneira aberta".
+**Total cortado: ≈ R$ 383/mês.**
 
-### O que dá para cortar
+> ✅ **Nada disso era torneira aberta — e isso importa no diagnóstico.** O Spark pool `spcontareceber` tem **pausa automática em 15 min** ociosos; o SQL serverless do Synapse e os AI Services (gpt-4o em SKU **Standard**, não provisionado) cobram **por uso**. O que sangrava eram os itens de **preço fixo mensal** — jobs paralelos e tier Standard — que cobram exatamente igual usando ou não.
 
-| Ação | Economia | Perde o quê? |
-|---|---|---|
-| **Self-hosted paid parallel job: 1 → 0** | **≈ R$ 79/mês** | **Nada.** Não há agente self-hosted registrado, e a organização já ganha **1 job self-hosted grátis** |
-| **Static Web Apps: Standard → Free** (os dois) | **≈ R$ 94/mês** | SLA, *linked backends*, auth customizada e private endpoint. Domínio customizado e deploy por GitHub Actions continuam funcionando |
-| **MS-hosted paid parallel job: 1 → 0** | ≈ R$ 210/mês | **Trava os módulos 5–9 do curso.** Só zerar depois das aulas de pipeline — ou pedir o [grant gratuito](https://aka.ms/azpipelines-parallelism-request) (2–3 dias úteis) e zerar quando ele sair |
+### As três lições de FinOps deste levantamento
+
+| Lição | O caso concreto |
+|---|---|
+| **Preço fixo é mais perigoso que preço por uso** | O Spark pool assusta mais na tela e custava R$ 0; duas Static Web Apps discretas custavam R$ 94/mês paradas |
+| **Tier alto sem usar o que ele oferece é desperdício puro** | As duas SWAs estavam em **Standard** sem *linked backend*, sem ambiente de staging, sem domínio próprio, sem auth customizada e sem enterprise edge — pagando por seis recursos e usando zero |
+| **Comprar para destravar vira cobrança esquecida** | O job MS-hosted foi comprado para o Módulo 5 sair da fila. Quando o **grant gratuito** finalmente entrou, a compra continuou lá, cobrando em paralelo ao benefício gratuito |
 
 > 🔑 **A cobrança é diária pró-rata.** A própria tela de Billing avisa: *"This organization is enabled for user assignment based billing and **daily pro-rated charges**, instead of monthly committed purchases."* Baixar para 0 **para de cobrar no mesmo dia** — não é preciso esperar o ciclo fechar.
+
+> ⚠️ **Zerar o job pago SÓ é seguro depois que o grant gratuito aparece.** Confira em `_settings/buildqueue?_a=concurrentJobs`: tem que ler **"Free tier — 1 parallel job up to 1800 mins/mo"**. Sem essa linha, zerar trava as pipelines em `No hosted parallelism has been purchased or granted`.
 
 ### Onde mexer
 
 | O quê | Onde |
 |---|---|
-| Jobs paralelos pagos | `dev.azure.com/wallisonsousa/_settings/billing` → campos **Paid parallel jobs** |
+| Jobs paralelos pagos | `dev.azure.com/wallisonsousa/_settings/billing` → campos **Paid parallel jobs** → **Save** |
 | Conferir o efeito | `dev.azure.com/wallisonsousa/_settings/buildqueue?_a=concurrentJobs` |
-| Plano do Static Web App | Portal → o recurso → *Visão geral* → **Atualizar seu plano de hospedagem** |
+| Plano do Static Web App | `az staticwebapp update -n <app> -g <rg> --sku Free` (reversível com `--sku Standard`) |
+| Revogar PATs | `dev.azure.com/wallisonsousa/_usersSettings/tokens` → selecionar → **Revoke** (um por vez; a caixa múltipla não agrupa) |
 | Alerta de gasto | `Cost Management → Orçamentos` → criar orçamento (ex.: R$ 30/mês, alertas em 50/80/100 %) |
 
-> ⚠️ **Nada em `ContasReceber` é do curso.** Esse grupo de recursos é um projeto real (Synapse, Data Lake, Foundry, Logic App, 2 front-ends). Os recursos do curso vão para o grupo **`AzureAcademy`**, ainda a criar.
+> ⚠️ **Nada em `ContasReceber` é do curso.** Esse grupo de recursos é um projeto real (Synapse, Data Lake, AI Services, Logic App, 2 front-ends). Os recursos do curso vão para o grupo **`AzureAcademy`**, recriado pelo [ambiente-lab-azure.md](ambiente-lab-azure.md).
 
 ---
 

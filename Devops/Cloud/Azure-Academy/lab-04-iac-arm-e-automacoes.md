@@ -252,6 +252,18 @@ Pendências, agora executáveis:
 
 ---
 
+---
+
+## 📚 Leitura complementar
+
+| Livro | Onde | Por quê |
+|---|---|---|
+| **#09** *Implementing Azure DevOps Solutions* | cap. 6 — Infrastructure and Configuration as Code | ARM, Bicep e o conceito de idempotência |
+| **#07** *Practical Microsoft Azure IaaS* | cap. 7 — Automated Provisioning | Provisionamento automatizado na prática |
+| **#02** *Azure for Architects* | cap. 2 — Azure Design Patterns | Padrões que o template deveria seguir |
+
+> Acervo completo e critério de uso em **[bibliografia.md](bibliografia.md)**. Os arquivos ficam em `materiais/livros/`, fora do controle de versão.
+
 ## 🔗 Conexões
 
 | Tema | Onde |

@@ -359,6 +359,17 @@ A boa notícia: a cobrança dele é **diária pró-rata**, então baixar para 0 
 
 ---
 
+---
+
+## 📚 Leitura complementar
+
+| Livro | Onde | Por quê |
+|---|---|---|
+| **#01** *Fundamentals of Azure* | cap. 8 — Management tools | CLI, portal e ARM como formas de gerenciar |
+| **#05** *Guia do desenvolvedor do Azure* (pt-BR) | livro todo | Panorama curto e em português |
+
+> Acervo completo e critério de uso em **[bibliografia.md](bibliografia.md)**. Os arquivos ficam em `materiais/livros/`, fora do controle de versão.
+
 ## 🔗 Conexões
 
 | Tema | Onde |

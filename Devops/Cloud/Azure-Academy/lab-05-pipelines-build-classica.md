@@ -279,6 +279,17 @@ Porque no dia em que a pipeline precisar compilar `x86` **e** `x64`, você muda 
 
 ---
 
+---
+
+## 📚 Leitura complementar
+
+| Livro | Onde | Por quê |
+|---|---|---|
+| **#09** *Implementing Azure DevOps Solutions* | cap. 3 — Moving to Continuous Integration | Anatomia de um build pipeline |
+| **#10** *Azure DevOps: Complete CI/CD Pipeline* | livro todo | Passo a passo ilustrado, clássico e YAML |
+
+> Acervo completo e critério de uso em **[bibliografia.md](bibliografia.md)**. Os arquivos ficam em `materiais/livros/`, fora do controle de versão.
+
 ## 🔗 Conexões
 
 | Tema | Onde |

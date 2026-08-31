@@ -312,6 +312,17 @@ Dava para usar um quadro branco qualquer. A diferença da extensão está no esc
 
 ---
 
+---
+
+## 📚 Leitura complementar
+
+| Livro | Onde | Por quê |
+|---|---|---|
+| **#04** *Guia do Scrum™* (pt-BR) | 19 páginas | **Fonte primária** de tudo que o Boards materializa: papéis, eventos, artefatos |
+| **#03** *Managing Agile Open-Source Software Projects* | livro todo | Backlog, sprint e capacidade na ferramenta |
+
+> Acervo completo e critério de uso em **[bibliografia.md](bibliografia.md)**. Os arquivos ficam em `materiais/livros/`, fora do controle de versão.
+
 ## 🔗 Conexões
 
 | Tema | Onde |

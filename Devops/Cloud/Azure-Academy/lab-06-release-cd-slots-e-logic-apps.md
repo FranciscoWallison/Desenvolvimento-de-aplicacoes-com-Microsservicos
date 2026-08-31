@@ -373,6 +373,18 @@ Você desativa o backend **errado** — provavelmente o que estava servindo os u
 
 ---
 
+---
+
+## 📚 Leitura complementar
+
+| Livro | Onde | Por quê |
+|---|---|---|
+| **#09** *Implementing Azure DevOps Solutions* | cap. 4 — Continuous Deployment | Approvals, gates e estratégias de deploy |
+| **#08** *Microsoft Azure Essentials: Azure Automation* | livro todo | Runbooks — base do `sqlescala` e do lab de Front Door |
+| **#09** | cap. 7 — Dealing with Databases in DevOps | Por que escalar banco por pipeline é delicado |
+
+> Acervo completo e critério de uso em **[bibliografia.md](bibliografia.md)**. Os arquivos ficam em `materiais/livros/`, fora do controle de versão.
+
 ## 🔗 Conexões
 
 | Tema | Onde |

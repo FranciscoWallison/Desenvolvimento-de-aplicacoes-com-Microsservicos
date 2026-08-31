@@ -32,6 +32,7 @@ A ementa cobre o ciclo completo de entrega em Azure DevOps + GitHub:
 |---|---|
 | **[00 — Guia de Navegação MCP](00-guia-navegacao-mcp.md)** | Catálogo de URLs diretas, receitas por tipo de tarefa, erros comuns e o que só você pode fazer |
 | **[Ambiente de laboratório](ambiente-lab-azure.md)** | **Montar todo o ambiente Azure do zero e destruir depois** — scripts prontos, matriz de bloqueios de quota, custo por recurso |
+| **[Bibliografia](bibliografia.md)** | As **10 leituras complementares** do portal, mapeadas capítulo a capítulo para cada lab — e o que o curso não cobriu |
 
 ### Projetos usados nos labs
 
@@ -73,8 +74,11 @@ A ementa cobre o ciclo completo de entrega em Azure DevOps + GitHub:
 | `pdfs/Ativar_Organizacao_e_Agent_Pool.pdf` | Guia rápido das 2 atividades de setup — transcrito e expandido em `01` e `02` | ❌ `.gitignore` |
 | `pdfs/Guia de Participação.pdf` | Institucional: comunidade, infraestrutura, consultoria eSeth | ❌ `.gitignore` |
 | `materiais/*.pdf` | Os **9 PDFs dos módulos**, baixados do portal do aluno | ❌ `.gitignore` |
+| `materiais/livros/*.pdf` | Os **10 e-books** da biblioteca virtual — catalogados em **[bibliografia.md](bibliografia.md)** | ❌ `.gitignore` |
 
 > ⚖️ **Por que `pdfs/` e `materiais/` não vão para o GitHub:** são o material pago do instrutor. Este repositório é público, e publicá-los seria redistribuir conteúdo de terceiros. Eles ficam no disco para estudo offline; o que se publica são as **notas próprias** — que é o que este repositório inteiro sempre foi.
+
+> 📖 **Os e-books são outra coisa.** A biblioteca em `labs.azureacademy.com.br/pdfs` reúne títulos de **distribuição livre** (Microsoft Press, Apress, o Guia do Scrum sob Creative Commons). Mesmo assim ficam fora do git: o que este repositório publica é a **referência bibliográfica** — autor, título, capítulo — em [bibliografia.md](bibliografia.md), e cada lab agora tem uma seção *📚 Leitura complementar* apontando para o capítulo certo.
 
 ### Como rebaixar os materiais
 

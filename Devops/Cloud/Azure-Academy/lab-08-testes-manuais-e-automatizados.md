@@ -201,6 +201,16 @@ A **baseada em requisito** é montada a partir de uma query de work items: cada 
 
 ---
 
+---
+
+## 📚 Leitura complementar
+
+| Livro | Onde | Por quê |
+|---|---|---|
+| **#09** *Implementing Azure DevOps Solutions* | cap. 8 — Continuous Testing | Onde cada camada da pirâmide entra na esteira |
+
+> Acervo completo e critério de uso em **[bibliografia.md](bibliografia.md)**. Os arquivos ficam em `materiais/livros/`, fora do controle de versão.
+
 ## 🔗 Conexões
 
 | Tema | Onde |

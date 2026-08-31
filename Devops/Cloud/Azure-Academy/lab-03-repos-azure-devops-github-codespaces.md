@@ -416,6 +416,17 @@ Amount required for this deployment (Total VMs): 1
 
 ---
 
+---
+
+## 📚 Leitura complementar
+
+| Livro | Onde | Por quê |
+|---|---|---|
+| **#09** *Implementing Azure DevOps Solutions* | cap. 2 — Everything Starts with Source Control | Estratégias de branch, PR e políticas |
+| **#06** *DevOps for ASP.NET Core Developers* | livro todo | O mesmo ciclo, na ótica de quem escreve .NET |
+
+> Acervo completo e critério de uso em **[bibliografia.md](bibliografia.md)**. Os arquivos ficam em `materiais/livros/`, fora do controle de versão.
+
 ## 🔗 Conexões
 
 | Tema | Onde |

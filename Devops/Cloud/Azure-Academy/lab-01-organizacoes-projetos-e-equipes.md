@@ -442,6 +442,17 @@ O backlog de uma team é filtrado por **Area Path**. Sem areas distintas, ambas 
 
 ---
 
+---
+
+## 📚 Leitura complementar
+
+| Livro | Onde | Por quê |
+|---|---|---|
+| **#09** *Implementing Azure DevOps Solutions* | cap. 1 — Introduction to DevOps | O porquê cultural por trás de organização → projeto → equipe |
+| **#03** *Managing Agile Open-Source Software Projects* | livro todo | Gestão ágil dentro do próprio Azure DevOps |
+
+> Acervo completo e critério de uso em **[bibliografia.md](bibliografia.md)**. Os arquivos ficam em `materiais/livros/`, fora do controle de versão.
+
 ## 🔗 Conexões
 
 | Tema | Onde |

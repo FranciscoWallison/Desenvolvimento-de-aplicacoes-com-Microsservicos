@@ -264,6 +264,18 @@ Porque `settings` é armazenado e devolvido em **texto puro** por `az vm extensi
 
 ---
 
+---
+
+## 📚 Leitura complementar
+
+| Livro | Onde | Por quê |
+|---|---|---|
+| **#01** *Fundamentals of Azure* | cap. 3 — Azure Virtual Machines | O recurso que falta para o grupo ter máquina |
+| **#07** *Practical Microsoft Azure IaaS* | cap. 2 — Compute Migration | Levar workload legado para VM no Azure |
+| **#02** *Azure for Architects* | cap. 3–4 — High Availability, Scalability | O contexto arquitetural do blue/green |
+
+> Acervo completo e critério de uso em **[bibliografia.md](bibliografia.md)**. Os arquivos ficam em `materiais/livros/`, fora do controle de versão.
+
 ## 🔗 Conexões
 
 | Tema | Onde |

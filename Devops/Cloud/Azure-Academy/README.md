@@ -33,6 +33,7 @@ A ementa cobre o ciclo completo de entrega em Azure DevOps + GitHub:
 | **[00 — Guia de Navegação MCP](00-guia-navegacao-mcp.md)** | Catálogo de URLs diretas, receitas por tipo de tarefa, erros comuns e o que só você pode fazer |
 | **[Ambiente de laboratório](ambiente-lab-azure.md)** | **Montar todo o ambiente Azure do zero e destruir depois** — scripts prontos, matriz de bloqueios de quota, custo por recurso |
 | **[Bibliografia](bibliografia.md)** | As **10 leituras complementares** do portal, mapeadas capítulo a capítulo para cada lab — e o que o curso não cobriu |
+| **[Custos, desligamento e validação](custos-desligamento-e-validacao.md)** | **FinOps do lab** — modelo de cobrança de cada recurso, como desligar cada torneira e o comando que **prova** que desligou · script de auditoria |
 
 ### Projetos usados nos labs
 
@@ -136,6 +137,8 @@ Trabalhando na organização **`dev.azure.com/wallisonsousa`** (a org nova `Azur
 ## 💰 Custos — o que estava sendo cobrado (e o que sobrou)
 
 > 🟢 **Estado em 31/08/2026: custo recorrente do curso = R$ 0.** Os grupos `AzureAcademy` foram apagados nas duas assinaturas, os jobs paralelos pagos foram zerados e os PATs revogados. Esta seção fica como **registro do levantamento** — é o tipo de conta que vale saber fazer.
+>
+> 📖 O **como fazer** — modelo de cobrança de cada recurso, comando de desligamento, comando de validação e checklist — está em **[custos-desligamento-e-validacao.md](custos-desligamento-e-validacao.md)**.
 
 Levantado em **30/08/2026** em `Cost Management → Análise de custo → Custo por recurso`, assinatura `Azure subscription 1` (`057d3c78-…`). **Agosto/2026 (mês parcial): R$ 13,14** — mas o número que importava era a **projeção mensal**, porque quase tudo tinha começado a cobrar naquela semana:
 
@@ -174,6 +177,7 @@ Levantado em **30/08/2026** em `Cost Management → Análise de custo → Custo 
 | Plano do Static Web App | `az staticwebapp update -n <app> -g <rg> --sku Free` (reversível com `--sku Standard`) |
 | Revogar PATs | `dev.azure.com/wallisonsousa/_usersSettings/tokens` → selecionar → **Revoke** (um por vez; a caixa múltipla não agrupa) |
 | Alerta de gasto | `Cost Management → Orçamentos` → criar orçamento (ex.: R$ 30/mês, alertas em 50/80/100 %) |
+| Auditar a conta inteira | [`scripts/auditar-custos.ps1`](scripts/auditar-custos.ps1) — varre as assinaturas e classifica cada recurso em 🔴 fixo / 🟡 consumo / 🟢 sem custo ocioso |
 
 > ⚠️ **Nada em `ContasReceber` é do curso.** Esse grupo de recursos é um projeto real (Synapse, Data Lake, AI Services, Logic App, 2 front-ends). Os recursos do curso vão para o grupo **`AzureAcademy`**, recriado pelo [ambiente-lab-azure.md](ambiente-lab-azure.md).
 

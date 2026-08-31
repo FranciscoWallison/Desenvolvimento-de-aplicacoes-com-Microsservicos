@@ -136,7 +136,7 @@ Trabalhando na organização **`dev.azure.com/wallisonsousa`** (a org nova `Azur
 
 ## 💰 Custos — o que estava sendo cobrado (e o que sobrou)
 
-> 🟢 **Estado em 31/08/2026: custo recorrente do curso = R$ 0.** Os grupos `AzureAcademy` foram apagados nas duas assinaturas, os jobs paralelos pagos foram zerados e os PATs revogados. Esta seção fica como **registro do levantamento** — é o tipo de conta que vale saber fazer.
+> 🟢 **Estado em 31/08/2026: custo recorrente do curso = R$ 0.** Os grupos `AzureAcademy` foram apagados nas duas assinaturas, os jobs paralelos pagos foram zerados e os PATs revogados. Esta seção fica como **registro do levantamento** — é o tipo de conta que vale saber fazer. Em 31/08 também foram criados **orçamentos de R$ 30/mês** nas duas assinaturas (alertas em 50/80/100 % + previsão) e o polling do Logic App `pipe-contasreceber` caiu de **1 min para 15 min**.
 >
 > 📖 O **como fazer** — modelo de cobrança de cada recurso, comando de desligamento, comando de validação e checklist — está em **[custos-desligamento-e-validacao.md](custos-desligamento-e-validacao.md)**.
 
@@ -148,7 +148,7 @@ Levantado em **30/08/2026** em `Cost Management → Análise de custo → Custo 
 | `wallisonsousa` | Azure DevOps (org) | Self-hosted CI/CD Concurrent Job | R$ 2,49 | ≈ R$ 79 (US$ 15) | ✅ **zerado** |
 | `front-assistente-contasreceber` | Static Web App **Standard** | App Service — Standard App | R$ 1,77 | ≈ R$ 47 (US$ 9) | ✅ **→ Free** |
 | `front-dashboard-analise-90-dias` | Static Web App **Standard** | App Service — Standard App | R$ 1,77 | ≈ R$ 47 (US$ 9) | ✅ **→ Free** |
-| `pipe-contasreceber` | Logic App | por execução/polling | R$ 0,47 | variável | ➡️ mantido (ingestão em uso) |
+| `pipe-contasreceber` | Logic App | por execução/**polling** | R$ 1,47 | variável | ✅ **polling 1 min → 15 min** |
 | `datalakerconstasreceber` | Storage account | — | R$ 0 | ~R$ 0 | ➡️ mantido |
 | Synapse workspace + Spark pool + AI Services | — | — | **R$ 0** | **R$ 0 parado** | ➡️ mantido |
 
@@ -163,6 +163,8 @@ Levantado em **30/08/2026** em `Cost Management → Análise de custo → Custo 
 | **Preço fixo é mais perigoso que preço por uso** | O Spark pool assusta mais na tela e custava R$ 0; duas Static Web Apps discretas custavam R$ 94/mês paradas |
 | **Tier alto sem usar o que ele oferece é desperdício puro** | As duas SWAs estavam em **Standard** sem *linked backend*, sem ambiente de staging, sem domínio próprio, sem auth customizada e sem enterprise edge — pagando por seis recursos e usando zero |
 | **Comprar para destravar vira cobrança esquecida** | O job MS-hosted foi comprado para o Módulo 5 sair da fila. Quando o **grant gratuito** finalmente entrou, a compra continuou lá, cobrando em paralelo ao benefício gratuito |
+
+> 🔍 **A descoberta mais reveladora veio de uma pergunta de uma linha:** *"esse Logic App já rodou alguma vez?"* A resposta foi **zero execuções desde abril/2026** — ele fazia polling a cada minuto, ~43.200 verificações cobradas por mês, e **nunca disparou**. Antes de otimizar o custo de algo, verifique se esse algo está sendo usado.
 
 > 🔑 **A cobrança é diária pró-rata.** A própria tela de Billing avisa: *"This organization is enabled for user assignment based billing and **daily pro-rated charges**, instead of monthly committed purchases."* Baixar para 0 **para de cobrar no mesmo dia** — não é preciso esperar o ciclo fechar.
 

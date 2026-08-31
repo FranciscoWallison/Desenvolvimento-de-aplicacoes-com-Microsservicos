@@ -355,9 +355,53 @@ foreach ($assin in $assinaturas) {
         Write-Host '   nenhum' -ForegroundColor Green
     } else {
         foreach ($l in @($logics)) {
-            Registrar 'AMARELO' "$($l.name) [$($l.resourceGroup)]" `
-                'Consumption - cobra por acao E por verificacao de gatilho (polling cobra sem disparar)' `
-                "az logic workflow update -n $($l.name) -g $($l.resourceGroup) --state Disabled"
+            $urlBase = "https://management.azure.com$($l.id)"
+            $wf   = Invocar-Az "az rest --method get --url ""$urlBase`?api-version=2019-05-01"" -o json"
+            # Sem $top na URL de proposito: como o comando passa por
+            # Invoke-Expression, '$top' seria expandido como variavel do
+            # PowerShell (vazia) e a URL chegaria quebrada em '&=5'.
+            $runs = Invocar-Az "az rest --method get --url ""$urlBase/runs`?api-version=2019-05-01"" -o json"
+
+            # O intervalo do gatilho e o que determina o custo de polling:
+            # 1 min = ~43.200 verificacoes/mes; 15 min = ~2.880.
+            $intervalo = $null
+            $frequencia = $null
+            if ($wf) {
+                foreach ($t in $wf.properties.definition.triggers.PSObject.Properties) {
+                    if ($t.Value.recurrence) {
+                        $intervalo  = $t.Value.recurrence.interval
+                        $frequencia = $t.Value.recurrence.frequency
+                    }
+                }
+            }
+            $qtdRuns = if ($null -ne $runs) { @($runs.value).Count } else { -1 }
+
+            $descricao = "Consumption - cobra por acao E por verificacao de gatilho"
+            if ($intervalo) {
+                $porMes = switch ($frequencia) {
+                    'Minute' { [int](43200 / $intervalo) }
+                    'Hour'   { [int](720   / $intervalo) }
+                    'Day'    { [int](30    / $intervalo) }
+                    default  { 0 }
+                }
+                $descricao += " | polling a cada $intervalo $frequencia = ~$porMes verificacoes/mes"
+            }
+
+            # Zero execucao + polling agressivo = pagando para nada acontecer.
+            # Foi o caso encontrado aqui: 4 meses de polling de 1 min, 0 disparos.
+            if ($qtdRuns -eq 0) {
+                Registrar 'VERMELHO' "$($l.name) [$($l.resourceGroup)]" `
+                    "$descricao | ZERO execucoes - esta pagando polling sem nunca ter disparado" `
+                    "aumentar o intervalo do gatilho, ou desativar: az logic workflow update -n $($l.name) -g $($l.resourceGroup) --state Disabled"
+            } elseif ($qtdRuns -lt 0) {
+                Registrar 'AMARELO' "$($l.name) [$($l.resourceGroup)]" `
+                    "$descricao | historico de execucoes indisponivel" `
+                    'conferir as execucoes no portal'
+            } else {
+                Registrar 'AMARELO' "$($l.name) [$($l.resourceGroup)]" `
+                    "$descricao | $qtdRuns execucao(oes) no historico" `
+                    'se o polling for mais frequente que a chegada real de dados, aumente o intervalo'
+            }
         }
     }
 

@@ -9,7 +9,7 @@
 
 > 🟢 **Estado em 30/08/2026: ambiente DESTRUÍdo.** Os grupos de recursos `AzureAcademy` foram apagados nas duas assinaturas ao fim do estudo. Custo do Azure em **R$ 0**. Este documento existe justamente para remontá-lo em ~10 minutos quando você voltar.
 >
-> ✅ **Em 31/08/2026 o último item pago também caiu:** os jobs paralelos do Azure DevOps foram zerados (`Paid parallel jobs = 0` nos dois), e o **grant gratuito entrou no lugar** — a organização agora tem *1 job Microsoft-hosted com 1.800 min/mês* + *1 self-hosted*, de graça. As pipelines do curso continuam rodando. Custo recorrente do estudo: **R$ 0**. Ver [README](README.md).
+> ✅ **Em 31/08/2026 o último item pago também caiu:** os jobs paralelos do Azure DevOps foram zerados (`Paid parallel jobs = 0` nos dois), e o **grant gratuito entrou no lugar** — a organização agora tem *1 job Microsoft-hosted com 1.800 min/mês* + *1 self-hosted*, de graça. As pipelines do curso continuam rodando. Custo recorrente do estudo: **R$ 0**, com **orçamento de R$ 30/mês** ativo como rede de segurança. Ver [README](README.md) e **[custos-desligamento-e-validacao.md](custos-desligamento-e-validacao.md)**.
 
 ---
 

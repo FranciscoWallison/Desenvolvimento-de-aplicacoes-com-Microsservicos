@@ -201,11 +201,63 @@ az resource list --query "[].{nome:name, tipo:type, rg:resourceGroup}" -o table
 
 > ⚠️ **Rode a varredura em TODAS as assinaturas.** Este ambiente tem duas, e é fácil apagar na errada e achar que acabou. `az account list -o table` mostra quais existem.
 
-### 4. Test Plans — cancelar o trial
+### 4. Logic App — reduzir o polling antes de desligar
+
+Um Logic App Consumption com gatilho de *polling* cobra **cada verificação**, dispare ou não. O intervalo do gatilho é, portanto, um botão de custo direto:
+
+| Intervalo | Verificações/mês |
+|---|---|
+| 1 minuto | **~43.200** |
+| 15 minutos | ~2.880 |
+| 1 hora | ~720 |
+
+**Antes de desligar, pergunte se ele já rodou alguma vez.** É a checagem mais barata que existe e a que mais revela:
+
+```bash
+az rest --method get \
+  --url "https://management.azure.com/subscriptions/<sub>/resourceGroups/<rg>/providers/Microsoft.Logic/workflows/<nome>/runs?api-version=2019-05-01" \
+  --query "length(value)"
+```
+
+Neste ambiente a resposta foi **`0`**: o `pipe-contasreceber` fazia polling **a cada 1 minuto desde abril/2026** e **nunca disparou**. Quatro meses pagando ~43.200 verificações mensais para nada acontecer.
+
+**Reduzir o intervalo** (mantém a ingestão viva, só com mais latência). Não há CLI para editar o gatilho — é `GET`, alterar, `PUT`:
+
+```bash
+# 1. baixar a definição
+az rest --method get --url "https://management.azure.com<resourceId>?api-version=2019-05-01" -o json > logic.json
+
+# 2. em properties.definition.triggers.<gatilho>.recurrence, trocar interval: 1 -> 15
+
+# 3. devolver apenas location + properties.{definition,parameters,state}
+az rest --method put --url "https://management.azure.com<resourceId>?api-version=2019-05-01" \
+  --body @novo.json --headers "Content-Type=application/json"
+```
+
+**Validar** — reler da nuvem e comparar a definição inteira, não só o campo alterado:
+
+```
+definicao identica fora do intervalo : True
+parametros/conexoes identicos        : True
+estado                               : Enabled
+polling                              : a cada 15 minuto(s)
+```
+
+> 🐞 **Duas armadilhas nesse round-trip.** (1) A Azure CLI grava a saída no **codepage do Windows**, não em UTF-8 — se o nome do gatilho tiver acento (aqui: `Quando_um_blob_é_adicionado…`), `json.load` com `encoding='utf-8'` estoura em `0xe9`. Leia com `cp1252` e regrave em UTF-8. (2) O nome do gatilho é **chave** referenciada pelas ações; se ele se corromper no round-trip, o workflow quebra em silêncio. Por isso o passo de validação compara a definição **inteira** e confirma que só o `interval` mudou.
+
+**Desligar de vez**, se ele não serve para nada:
+
+```bash
+az logic workflow update -n <nome> -g <rg> --state Disabled
+```
+
+> ⚠️ Desligar não é neutro: o gatilho de blob **guarda estado**, e arquivos que chegarem enquanto ele estiver desabilitado podem não ser processados ao religar. Reduzir o intervalo é o meio-termo sem perda.
+
+### 5. Test Plans — cancelar o trial
 
 Não há CLI. `Organization settings → Billing → Basic + Test Plans`. **Marque no calendário 30 dias antes**: passado o prazo, cobra sem avisar.
 
-### 5. PATs — não é custo, é risco
+### 6. PATs — não é custo, é risco
 
 Um PAT vazado não gera fatura, mas gera incidente. Vale o mesmo ritual.
 
@@ -326,12 +378,37 @@ Resultado real desta assinatura em 31/08/2026 (mês a mês corrente, **antes** d
 
 Auditar é reativo. O que resolve de verdade é um **orçamento com alerta**:
 
+Não havia nenhum nesta conta. Foi criado em 31/08/2026 nas **duas** assinaturas, via API — `az consumption budget create` é preview e limitado:
+
 ```bash
-# não havia nenhum nesta conta
-az consumption budget list -o table
+cat > orcamento.json <<'JSON'
+{"properties":{"category":"Cost","amount":30,"timeGrain":"Monthly",
+ "timePeriod":{"startDate":"2026-09-01T00:00:00Z","endDate":"2030-09-01T00:00:00Z"},
+ "notifications":{
+  "Aviso50":{"enabled":true,"operator":"GreaterThan","threshold":50,"contactRoles":["Owner"],"thresholdType":"Actual"},
+  "Aviso80":{"enabled":true,"operator":"GreaterThan","threshold":80,"contactRoles":["Owner"],"thresholdType":"Actual"},
+  "Aviso100":{"enabled":true,"operator":"GreaterThan","threshold":100,"contactRoles":["Owner"],"thresholdType":"Actual"},
+  "Previsao100":{"enabled":true,"operator":"GreaterThan","threshold":100,"contactRoles":["Owner"],"thresholdType":"Forecasted"}}}}
+JSON
+
+az rest --method put   --url "https://management.azure.com/subscriptions/<sub>/providers/Microsoft.Consumption/budgets/teto-mensal-30?api-version=2023-05-01"   --body @orcamento.json --headers "Content-Type=application/json"
 ```
 
-`Cost Management → Orçamentos → Adicionar` · valor mensal (ex.: R$ 30) · alertas em 50/80/100 % · e-mail. **Orçamento no Azure não bloqueia gasto** — ele avisa. Para bloquear seria preciso uma Action Group com automação.
+**Validar:**
+
+```bash
+az rest --method get   --url "https://management.azure.com/subscriptions/<sub>/providers/Microsoft.Consumption/budgets?api-version=2023-05-01"   --query "value[].{nome:name, valor:properties.amount}" -o table
+```
+
+Três detalhes que valem entender:
+
+| Detalhe | Por quê |
+|---|---|
+| **`contactRoles: ["Owner"]`** | Avisa quem tem o papel, sem cravar e-mail no JSON — sobrevive a troca de dono |
+| **`thresholdType: Forecasted`** | Avisa quando a **projeção** estoura o teto, não quando o dinheiro já saiu. É o único alerta que chega a tempo |
+| **`startDate` no dia 1º** | Orçamento mensal **exige** primeiro dia do mês; outra data é rejeitada |
+
+> ⚠️ **Orçamento no Azure não bloqueia gasto** — ele avisa. Para bloquear seria preciso ligar o alerta a uma Action Group que rode uma automação (parar recursos, remover permissão). O orçamento sozinho é detecção, não prevenção.
 
 ---
 
@@ -440,7 +517,8 @@ A prova neste ambiente: `spendingLimit: Off` (sem limite de gasto, pagamento ati
 | Static Web Apps Standard → Free | ✅ 31/08/2026 |
 | PATs revogados | ✅ 31/08/2026 |
 | Script de auditoria | ✅ [`scripts/auditar-custos.ps1`](scripts/auditar-custos.ps1) |
-| **Orçamento com alerta** | 🔜 **não existe nenhum** — é o item que falta |
+| **Orçamento com alerta** (R$ 30/mês, 50/80/100 % + previsão) | ✅ 31/08/2026 — nas **duas** assinaturas |
+| Logic App: polling de 1 min → 15 min | ✅ 31/08/2026 — 43.200 → 2.880 verificações/mês |
 | Validação do custo diário pós-desligamento | 🔜 conferir a partir de 01/09/2026 |
 
 ---

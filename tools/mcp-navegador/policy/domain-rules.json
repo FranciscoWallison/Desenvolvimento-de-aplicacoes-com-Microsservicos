@@ -1,0 +1,27 @@
+{
+  "_comment": "Camada 3 — regras por domínio + ação. Independem do texto do elemento: certas telas inteiras são sensíveis.",
+  "rules": [
+    {
+      "host": "dev.azure.com",
+      "urlContains": "/_settings/billing",
+      "tools": ["browser_click", "browser_type", "browser_select_option"],
+      "reason": "tela de billing do Azure DevOps — vincula assinatura e gera custo"
+    },
+    {
+      "host": "dev.azure.com",
+      "urlContains": "/_settings/buildqueue",
+      "textMatches": "(buy|comprar|purchase|parallel jobs)",
+      "reason": "compra de jobs paralelos (~US$ 40/mês por job Microsoft-hosted)"
+    },
+    {
+      "host": "portal.azure.com",
+      "textMatches": "(Create|Criar|Delete|Excluir|Review \\+ create|Revisar \\+ criar)",
+      "reason": "criação/remoção de recurso no Azure Portal — pode gerar custo e é difícil de reverter"
+    },
+    {
+      "host": "*",
+      "tools": ["browser_evaluate"],
+      "reason": "execução de JavaScript arbitrário na página"
+    }
+  ]
+}

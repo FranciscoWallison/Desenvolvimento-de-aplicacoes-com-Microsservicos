@@ -3,6 +3,8 @@
 > O board tem um único objetivo: deixar **barato errar em produção**.
 > Ele mostra, para cada entrega, **o que o usuário ganhou** e **o que o time construiu**, e reserva os últimos dias da sprint para observar isso rodando de verdade e corrigir a tempo.
 
+**Mapa mental para apresentar:** [board-de-entrega.excalidraw](board-de-entrega.excalidraw) — abra em [excalidraw.com](https://excalidraw.com/) pelo menu **☰ → Abrir** (`Ctrl+O`).
+
 ---
 
 ## 1. A ideia em uma frase
@@ -16,6 +18,8 @@ Três mecanismos sustentam isso:
 | **Feature flag em todo card** | O botão de desfazer. Erro em prod vira "desliga a chave", não "reunião de emergência". |
 | **Code freeze no dia 7** | Cria os dias de folga no fim da sprint. Sem freeze, não existe janela de correção. |
 | **Buffer de ~20% da capacidade** | O tempo que o time *não* planejou usar — é dele que sai a correção. |
+
+> **Notação usada no documento:** `D1` a `D10` são os **10 dias úteis** da sprint, contados a partir do planning. Com a sprint começando numa segunda: semana 1 = D1 (seg) a D5 (sex); semana 2 = D6 (seg) a D10 (sex). Sábado e domingo não contam. O calendário completo está no §5.
 
 ---
 

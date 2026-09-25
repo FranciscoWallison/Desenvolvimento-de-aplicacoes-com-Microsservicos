@@ -21,8 +21,9 @@
 7. [Verificação: como provar que o novo faz o mesmo que o velho](#7-verificação-como-provar-que-o-novo-faz-o-mesmo-que-o-velho)
 8. [Armadilhas comuns](#8-armadilhas-comuns)
 9. [Checklist](#9-checklist)
-10. [Case prático: qual dos meus repositórios migrar](#10-case-prático-qual-dos-meus-repositórios-migrar)
-11. [Glossário e referências](#11-glossário-e-referências)
+10. [Harness Engineering: o ambiente que torna o agente confiável](#10-harness-engineering-o-ambiente-que-torna-o-agente-confiável)
+11. [Case prático: qual dos meus repositórios migrar](#11-case-prático-qual-dos-meus-repositórios-migrar)
+12. [Glossário e referências](#12-glossário-e-referências)
 
 ---
 
@@ -486,6 +487,8 @@ Cuidado com a comparação: **normalizar antes de comparar** (timestamps, IDs ge
 | **Migrar o bug junto** | Paridade cega | Coluna `Decisão: manter/corrigir/descartar` |
 | **Waterfall automatizado** | Spec gerada uma vez e nunca mais atualizada | Spec-anchored: spec muda na mesma PR que o código |
 | **Aprovação obsoleta** | Plano muda depois do "ok" | Hash do conteúdo na aprovação (Shopify) |
+| **Harness** | Tudo em um agente exceto o modelo: contexto, ferramentas, permissões, testes, linters, revisões |
+| **Guia / Sensor** | Controle antes da ação (*feedforward*) / depois da ação (*feedback*) — Böckeler |
 | **Architectural drift** | Cada task resolvida isolada, sem visão do todo | `design.md` forte + review humano frequente |
 | **Controle de segurança implícito some** | No legado estava na tela, não na regra | `security-reviewer` procura exatamente isso |
 | **Contexto estourado** | Mandar o legado inteiro de uma vez | Um módulo por vez; subagente lê e devolve só o resumo |
@@ -511,7 +514,73 @@ Cuidado com a comparação: **normalizar antes de comparar** (timestamps, IDs ge
 
 ---
 
-## 10. Case prático: qual dos meus repositórios migrar
+## 10. Harness Engineering: o ambiente que torna o agente confiável
+
+### Definição
+
+> **Harness** é tudo em um agente de IA **exceto o modelo**: contexto, ferramentas, permissões, testes, linters, logs, revisões. *Harness engineering* é projetar esse ambiente — em vez de escrever o código, o time escreve as **restrições e os ciclos de feedback** dentro dos quais o agente escreve o código.
+
+O termo ganhou força em 2026 com dois textos:
+- **OpenAI** — [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/): um produto com mais de 1 milhão de linhas sem código escrito à mão. Arquitetura em camadas **imposta por linters customizados e testes estruturais**, e um *"garbage collection"* recorrente em que agentes procuram desvios (*drift*) e propõem correções.
+- **Birgitta Böckeler (Thoughtworks)** — [Harness engineering for coding agent users](https://martinfowler.com/articles/harness-engineering.html) (martinfowler.com, abr/2026): o modelo mental mais útil, resumido abaixo.
+
+### O modelo mental: guias × sensores
+
+| | **Computacional** (determinístico, ms–s) | **Inferencial** (LLM, lento, não determinístico) |
+|---|---|---|
+| **Guia** (*feedforward*: antes de agir) | Templates, scaffolds, regras de permissão | `CLAUDE.md`, specs, prompts de subagentes |
+| **Sensor** (*feedback*: depois de agir) | Testes, linters, type checker, regras de arquitetura | Agente revisor, *LLM-as-judge* |
+
+E três **categorias** do que o harness regula:
+
+| Categoria | Pergunta | Exemplos |
+|---|---|---|
+| **Manutenibilidade** | O código está saudável? | Duplicação, complexidade, cobertura |
+| **Adequação arquitetural** (*architecture fitness*) | O sistema respeita as características pretendidas? | *Fitness functions*, dependências entre camadas, requisitos de performance, convenções de observabilidade |
+| **Comportamento** | Faz o que deveria? | Spec como guia, suíte de testes como sensor |
+
+> 💡 **Sensores escritos para o agente ler.** Um erro de linter que diz *"`domain/` não pode importar `@prisma/client`; injete o repositório pela porta `ContaRepository`"* corrige o agente sozinho. Um `ERROR: import/no-restricted-paths` sem explicação gera tentativa e erro.
+
+### Por que isso importa MUITO em migração de legado
+
+Böckeler aponta dois pontos que, lidos juntos, explicam o valor deste tipo de projeto:
+
+1. *"O harness é mais necessário exatamente onde é mais difícil de construir"* — em sistemas legados com dívida técnica.
+2. **O harness de comportamento é o mais imaturo**: especificação funcional como guia e testes como sensor ainda não dão confiança para autonomia, porque testes gerados por IA não são bons o bastante.
+
+**Migração é o caso em que o harness de comportamento fica mais fácil**, porque existe um **oráculo executável**: o sistema antigo define a resposta certa. O golden master (seção 7) é um **sensor computacional de comportamento** que não depende de alguém escrever os testes certos — ele compara com a realidade. Foi isso que o Tardis fez pelo Shopify.
+
+Ou seja: SDD fornece os **guias** (regras, requisitos, tasks), e o oráculo fornece o **sensor** mais difícil de obter. Harness engineering é o nome da disciplina que junta as duas coisas.
+
+### Mapa: o que um harness de migração precisa
+
+| Peça | Tipo | Categoria | Exemplo concreto |
+|---|---|---|---|
+| Contexto do projeto | guia inferencial | todas | `CLAUDE.md` curto e normativo — um **mapa**, não uma enciclopédia |
+| Legado somente leitura | guia computacional | — | `deny: Edit(/legacy/**)` + subagente com `tools: Read, Grep, Glob` |
+| Regras com evidência | guia inferencial | comportamento | `regras.md` com `arquivo:linha` e sonda |
+| Oráculo rodando | infraestrutura | comportamento | Legado em Docker com seed determinístico |
+| Golden master | sensor computacional | comportamento | Casos HTTP comparando legado × novo |
+| Rastreabilidade | sensor computacional | comportamento | Regra sem requisito / requisito sem teste = falha |
+| Regras de camadas | sensor computacional | arquitetura | `dependency-cruiser` / `eslint-plugin-boundaries` |
+| Isolamento de tenant | sensor computacional | arquitetura | Teste estrutural: nenhuma query fora da extensão de tenant |
+| Observabilidade do oráculo | sensor | comportamento | Log de SQL do legado acessível ao agente (*o que esse endpoint realmente faz no banco?*) |
+| Ciclo rápido | infraestrutura | todas | Hooks que rodam typecheck/testes do arquivo editado em segundos |
+| Revisão semântica | sensor inferencial | arquitetura/segurança | Subagente `security-reviewer`, revisor de spec × código |
+| Aprovação amarrada | guia computacional | — | Hash do `tasks.md` aprovado; mudou → aprovação cai (Shopify) |
+| *Garbage collection* | sensor recorrente | manutenibilidade | Agente agendado que reroda rastreabilidade e procura drift entre spec e código |
+
+> 🔧 **Implementação real:** o case [sisfin-modernizacao](https://github.com/FranciscoWallison/sisfin-modernizacao) tem esse mapa implementado e testado — hooks de pré/pós-edição, aprovação por hash, `oraculo-sql` (SQL que cada requisição dispara no legado), golden master com `--alvo novo` para divergências aprovadas por ADR, e CI. Viabilidade peça a peça em [`docs/harness.md`](https://github.com/FranciscoWallison/sisfin-modernizacao/blob/main/docs/harness.md).
+
+### Limites (o que o harness NÃO resolve)
+
+- **Diagnóstico errado.** Nem guia nem sensor pegam uma premissa falsa. Exemplo real do case: a dúvida "o admin não tem cliente" estava errada — só a **sonda no oráculo** mostrou isso. O humano (ou a sonda) continua sendo quem valida o entendimento.
+- **Harness também é código**: cresce, fica inconsistente e precisa de manutenção. Comece pelos sensores computacionais mais baratos (testes, tipos, paridade) antes de agentes revisores.
+- **Oráculo tem prazo de validade**: depois do cutover o legado some. Os casos de paridade precisam virar testes do sistema novo antes disso.
+
+---
+
+## 11. Case prático: qual dos meus repositórios migrar
 
 > Levantamento feito em 24/09/2026 sobre os 150 repositórios próprios (não-fork) de [FranciscoWallison](https://github.com/FranciscoWallison?tab=repositories), via `gh api`. Critérios de um bom case: **stack realmente legada**, **regras de negócio de verdade** (não só CRUD), **tamanho que cabe em semanas**, e **possibilidade de rodar o velho** para capturar paridade.
 
@@ -574,7 +643,7 @@ E cada movimento gera um `Statement` (extrato) com o saldo resultante. Isso vira
 
 ---
 
-## 11. Glossário e referências
+## 12. Glossário e referências
 
 | Termo | Significado |
 |---|---|
@@ -592,6 +661,8 @@ E cada movimento gera um `Statement` (extrato) com o saldo resultante. Isso vira
 - SoftDesign — [Spec-Driven Development](https://www.softdesign.com.br/blog/spec-driven-development/)
 - GitHub — [Spec Kit](https://github.com/github/spec-kit)
 - Kiro — [Specs](https://kiro.dev/docs/specs/)
+- OpenAI — [Harness engineering: leveraging Codex in an agent-first world](https://openai.com/index/harness-engineering/)
+- Birgitta Böckeler — [Harness engineering for coding agent users](https://martinfowler.com/articles/harness-engineering.html)
 - Martin Fowler — [Strangler Fig Application](https://martinfowler.com/bliki/StranglerFigApplication.html)
 - Michael Feathers — *Working Effectively with Legacy Code* (testes de caracterização)
 - Claude Code — [Subagents](https://docs.anthropic.com/en/docs/claude-code/sub-agents) · [Slash commands](https://docs.anthropic.com/en/docs/claude-code/slash-commands)

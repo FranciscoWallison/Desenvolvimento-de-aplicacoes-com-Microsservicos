@@ -647,7 +647,7 @@ E cada movimento gera um `Statement` (extrato) com o saldo resultante. Isso vira
 
 | Termo | Significado |
 |---|---|
-| **AS-IS / TO-BE** | Estado atual documentado / estado desejado especificado |
+| **AS-IS / TO-BE** | Estado atual documentado / estado desejado especificado (o mesmo par aplicado a processos de negócio: [mapeamento de processos](../../Governanca-e-Gestao/Gestao/mapeamento-de-processos-as-is-to-be.md)) |
 | **Oráculo** | Implementação de referência que define a resposta correta para um teste |
 | **EARS** | Notação de requisitos "QUANDO … O SISTEMA DEVE …" |
 | **Golden master** | Saídas gravadas do sistema antigo usadas como gabarito |
